@@ -12,30 +12,25 @@ auto e = 456uL;
 
 (source_file
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
-    (int_literal)))
+    (integer_literal)))
 
 ================================================================================
 Zeros
@@ -85,153 +80,124 @@ auto f15 = 0x0p20f;
 
 (source_file
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
-    (int_literal))
+    (integer_literal))
   (comment)
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
-    (int_literal))
+    (integer_literal))
   (comment)
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
-    (int_literal))
+    (integer_literal))
   (comment)
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (comment)
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (comment)
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal)))
 
@@ -262,89 +228,72 @@ auto e8 = 0x12P30F;
 
 (source_file
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (comment)
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (float_literal)))
 
@@ -356,17 +305,12 @@ auto s1 = q{ if {""} /*comment*/ bob };
 
 (source_file
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
-    (string_literal
-      (token_string
-        (keyword
-          (if))
-        (string_literal
-          (quoted_string))
-        (comment)
-        (identifier)))))
+    (token_string_literal
+      (quoted_string_literal)
+      (comment)
+      (identifier))))
 
 ================================================================================
 Arrays
@@ -378,13 +322,12 @@ auto a1 = [ 1, 2, 3 ];
 
 (source_file
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (array_literal
-      (int_literal)
-      (int_literal)
-      (int_literal))))
+      (integer_literal)
+      (integer_literal)
+      (integer_literal))))
 
 ================================================================================
 Associative Arrays
@@ -396,22 +339,15 @@ auto aa1 = [ "bob": 1, "sue": 2, "charlie": 3 ];
 
 (source_file
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (array_literal
-      (expression
-        (string_literal
-          (quoted_string)))
-      (int_literal)
-      (expression
-        (string_literal
-          (quoted_string)))
-      (int_literal)
-      (expression
-        (string_literal
-          (quoted_string)))
-      (int_literal))))
+      (quoted_string_literal)
+      (integer_literal)
+      (quoted_string_literal)
+      (integer_literal)
+      (quoted_string_literal)
+      (integer_literal))))
 
 ================================================================================
 Trailing Period
@@ -425,23 +361,19 @@ auto r = x[1..9];
 
 (source_file
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (property_expression
-      (int_literal)
+      (integer_literal)
       (identifier)))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
-    (index_expression
+    (slice_expression
       (identifier)
-      (index
-        (expression
-          (int_literal))
-        (expression
-          (int_literal))))))
+      (slice_expression_range
+        (integer_literal)
+        (integer_literal)))))
 
 ================================================================================
 Simple delimited string
@@ -454,13 +386,12 @@ int x;
 
 (source_file
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
-    (string_literal))
+    (regular_string_literal))
   (variable_declaration
     (type
-      (int))
+      (identifier))
     (declarator
       (identifier))))
 
@@ -475,13 +406,12 @@ int x;
 
 (source_file
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
-    (string_literal))
+    (regular_string_literal))
   (variable_declaration
     (type
-      (int))
+      (identifier))
     (declarator
       (identifier))))
 
@@ -500,13 +430,12 @@ int x;
 
 (source_file
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
-    (string_literal))
+    (regular_string_literal))
   (variable_declaration
     (type
-      (int))
+      (identifier))
     (declarator
       (identifier))))
 
@@ -525,13 +454,12 @@ int x;
 
 (source_file
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
-    (string_literal))
+    (regular_string_literal))
   (variable_declaration
     (type
-      (int))
+      (identifier))
     (declarator
       (identifier))))
 
@@ -544,7 +472,7 @@ int b = 0xb___011__11_;
 (source_file
   (variable_declaration
     (type
-      (int))
+      (identifier))
     (declarator
       (identifier)
-      (int_literal))))
+      (integer_literal))))

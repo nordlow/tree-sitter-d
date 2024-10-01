@@ -5,9 +5,9 @@
 (enum_declaration (enum) . (identifier) @name) @definition.type
 
 (class_declaration (class) . (identifier) @name) @definition.class
-(constructor (this) @name) @definition.method
-(destructor (this) @name) @definition.method
-(postblit (this) @name) @definition.method
+(constructor_declaration (this) @name) @definition.method
+(destructor_declaration (this) @name) @definition.method
+(postblit_declaration (this) @name) @definition.method
 
 (manifest_declarator . (identifier) @name) @definition.type
 

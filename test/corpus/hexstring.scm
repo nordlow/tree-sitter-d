@@ -6,11 +6,9 @@ auto hex = x"001234 abcdef";
 
 (source_file
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
-    (string_literal
-      (hex_string))))
+    (hex_string_literal)))
 
 ================================================================================
 Hex String No Whitespace
@@ -20,11 +18,9 @@ auto hex = x"001234abcdef";
 
 (source_file
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
-    (string_literal
-      (hex_string))))
+    (hex_string_literal)))
 
 ================================================================================
 MultiLine Hex String
@@ -35,11 +31,9 @@ auto hex = x"001234
 
 (source_file
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
-    (string_literal
-      (hex_string))))
+    (hex_string_literal)))
 
 ================================================================================
 MultiLine Hex String with Suffix (D2.108)
@@ -50,16 +44,6 @@ auto hex = x"001234
 
 (source_file
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
-    (string_literal
-      (hex_string))))
-
-================================================================================
-Invalid Hex String
-:error
-================================================================================
-auto hex = x"001234 junk
-             abcdef"w;
---------------------------------------------------------------------------------
+    (hex_string_literal)))

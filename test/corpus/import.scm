@@ -6,7 +6,6 @@ import garrett.damore;
 
 (source_file
   (import_declaration
-    (import)
     (imported
       (module_fqn
         (identifier)
@@ -20,7 +19,6 @@ import garrett.damore, dcell.tables;
 
 (source_file
   (import_declaration
-    (import)
     (imported
       (module_fqn
         (identifier)
@@ -38,7 +36,6 @@ import garrett.damore, tabs = dcell.tables, dcell.terminfo;
 
 (source_file
   (import_declaration
-    (import)
     (imported
       (module_fqn
         (identifier)
@@ -61,7 +58,6 @@ import garrett = garrett.damore;
 
 (source_file
   (import_declaration
-    (import)
     (imported
       (identifier)
       (module_fqn
@@ -76,7 +72,6 @@ import garrett.damore : what = where;
 
 (source_file
   (import_declaration
-    (import)
     (imported
       (module_fqn
         (identifier)
@@ -93,7 +88,6 @@ import garrett.damore : what = where, when = then;
 
 (source_file
   (import_declaration
-    (import)
     (imported
       (module_fqn
         (identifier)
@@ -113,7 +107,6 @@ import garrett = garrett.damore : what = where, when = then;
 
 (source_file
   (import_declaration
-    (import)
     (imported
       (identifier)
       (module_fqn
@@ -134,8 +127,6 @@ static import garrett = garrett.damore : what = where, when = then;
 
 (source_file
   (import_declaration
-    (static)
-    (import)
     (imported
       (identifier)
       (module_fqn
@@ -156,11 +147,7 @@ auto x = import("something.png");
 
 (source_file
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (import_expression
-      (import)
-      (expression
-        (string_literal
-          (quoted_string))))))
+      (quoted_string_literal))))

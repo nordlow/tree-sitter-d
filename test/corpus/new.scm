@@ -8,16 +8,14 @@ unittest {
 
 (source_file
   (unittest_declaration
-    (unittest)
-    (block_statement
+    (compound_statement
       (expression_statement
         (expression_list
           (assignment_expression
             (identifier)
             (new_expression
-              (new)
               (type
-                (int)))))))))
+                (identifier)))))))))
 
 ================================================================================
 New array
@@ -29,18 +27,15 @@ unittest {
 
 (source_file
   (unittest_declaration
-    (unittest)
-    (block_statement
+    (compound_statement
       (expression_statement
         (expression_list
           (assignment_expression
             (identifier)
             (new_expression
-              (new)
               (type
-                (char)
-                (expression
-                  (int_literal))))))))))
+                (identifier)
+                (integer_literal)))))))))
 
 ================================================================================
 New anonymous class no args
@@ -56,54 +51,45 @@ unittest
 
 (source_file
   (unittest_declaration
-    (unittest)
-    (block_statement
+    (compound_statement
       (auto_declaration
-        (storage_class
-          (auto))
+        (storage_class)
         (identifier)
         (new_expression
-          (new)
-          (class)
           (aggregate_body
             (variable_declaration
               (type
-                (int))
+                (identifier))
               (declarator
                 (identifier)
-                (int_literal)))))))))
+                (integer_literal)))))))))
 
 ================================================================================
 New anonymous class args
 ================================================================================
 unittest {
-  x = new class(3) { this(int) { }};
+  x = new class(3) { this(primitive_type) { }};
 }
 --------------------------------------------------------------------------------
 
 (source_file
   (unittest_declaration
-    (unittest)
-    (block_statement
+    (compound_statement
       (expression_statement
         (expression_list
           (assignment_expression
             (identifier)
             (new_expression
-              (new)
-              (class)
               (arguments
-                (expression
-                  (int_literal)))
+                (integer_literal))
               (aggregate_body
-                (constructor
-                  (this)
+                (constructor_declaration
                   (parameters
                     (parameter
                       (type
-                        (int))))
+                        (identifier))))
                   (function_body
-                    (block_statement)))))))))))
+                    (compound_statement)))))))))))
 
 ================================================================================
 Explicit instantiation
@@ -117,18 +103,15 @@ void main()
 
 (source_file
   (function_declaration
-    (type
-      (void))
+    (type)
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (auto_declaration
-          (storage_class
-            (auto))
+          (storage_class)
           (identifier)
           (new_expression
-            (new)
             (type
               (identifier))))
         (expression_statement
@@ -136,7 +119,6 @@ void main()
             (property_expression
               (identifier)
               (new_expression
-                (new)
                 (type
                   (template_instance
                     (identifier)

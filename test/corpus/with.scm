@@ -6,12 +6,9 @@ unittest { with (x) x++; }
 
 (source_file
   (unittest_declaration
-    (unittest)
-    (block_statement
+    (compound_statement
       (with_statement
-        (with)
-        (expression
-          (identifier))
+        (identifier)
         (scope_statement
           (expression_statement
             (expression_list
@@ -26,16 +23,13 @@ unittest { with (x) int y = 0; }
 
 (source_file
   (unittest_declaration
-    (unittest)
-    (block_statement
+    (compound_statement
       (with_statement
-        (with)
-        (expression
-          (identifier))
+        (identifier)
         (scope_statement
           (variable_declaration
             (type
-              (int))
+              (identifier))
             (declarator
               (identifier)
-              (int_literal))))))))
+              (integer_literal))))))))
