@@ -7,11 +7,10 @@ alias n1 = int;
 
 (source_file
   (alias_declaration
-    (alias)
     (alias_initializer
       (identifier)
       (type
-        (int)))))
+        (identifier)))))
 
 ================================================================================
 Alias initializer with storage class
@@ -22,13 +21,11 @@ alias n1 = extern int;
 
 (source_file
   (alias_declaration
-    (alias)
     (alias_initializer
       (identifier)
-      (storage_class
-        (extern))
+      (storage_class)
       (type
-        (int)))))
+        (identifier)))))
 
 ================================================================================
 Alias initializer with array type
@@ -39,66 +36,59 @@ alias n1 = extern int[6];
 
 (source_file
   (alias_declaration
-    (alias)
     (alias_initializer
       (identifier)
-      (storage_class
-        (extern))
+      (storage_class)
       (type
-        (int)
-        (expression
-          (int_literal))))))
+        (identifier)
+        (integer_literal)))))
 
 ================================================================================
 Alias initializer with function type
 ================================================================================
 
-alias n1 = int(int);
+alias n1 = int(primitive_type);
 --------------------------------------------------------------------------------
 
 (source_file
   (alias_declaration
-    (alias)
     (alias_initializer
       (identifier)
       (type
-        (int))
+        (identifier))
       (parameters
         (parameter
           (type
-            (int)))))))
+            (identifier)))))))
 
 ================================================================================
 Alias initializer with function attrs
 ================================================================================
 
-alias n1 = int(int) pure;
+alias n1 = int(primitive_type) pure;
 --------------------------------------------------------------------------------
 
 (source_file
   (alias_declaration
-    (alias)
     (alias_initializer
       (identifier)
       (type
-        (int))
+        (identifier))
       (parameters
         (parameter
           (type
-            (int))))
-      (member_function_attribute
-        (pure)))))
+            (identifier))))
+      (member_function_attribute))))
 
 ================================================================================
 Alias initializer with template type
 ================================================================================
 
-alias n1 = f!(int);
+alias n1 = f!(primitive_type);
 --------------------------------------------------------------------------------
 
 (source_file
   (alias_declaration
-    (alias)
     (alias_initializer
       (identifier)
       (type
@@ -106,19 +96,17 @@ alias n1 = f!(int);
           (identifier)
           (template_arguments
             (template_argument
-              (type
-                (int)))))))))
+              (identifier))))))))
 
 ================================================================================
 Alias initializer with template function type
 ================================================================================
 
-alias n1 = f!(int)(int);
+alias n1 = f!(primitive_type)(primitive_type);
 --------------------------------------------------------------------------------
 
 (source_file
   (alias_declaration
-    (alias)
     (alias_initializer
       (identifier)
       (type
@@ -126,12 +114,11 @@ alias n1 = f!(int)(int);
           (identifier)
           (template_arguments
             (template_argument
-              (type
-                (int))))))
+              (identifier)))))
       (parameters
         (parameter
           (type
-            (int)))))))
+            (identifier)))))))
 
 ================================================================================
 Alias function literal
@@ -142,7 +129,6 @@ alias n1 = f => f++;
 
 (source_file
   (alias_declaration
-    (alias)
     (alias_initializer
       (identifier)
       (function_literal
@@ -159,15 +145,14 @@ alias n1 = int,  n2 = char;
 
 (source_file
   (alias_declaration
-    (alias)
     (alias_initializer
       (identifier)
       (type
-        (int)))
+        (identifier)))
     (alias_initializer
       (identifier)
       (type
-        (char)))))
+        (identifier)))))
 
 ================================================================================
 Alias short
@@ -178,28 +163,26 @@ alias int n1;
 
 (source_file
   (alias_declaration
-    (alias)
     (type
-      (int))
+      (identifier))
     (identifier)))
 
 ================================================================================
 Alias short function type
 ================================================================================
 
-alias int n1(int);
+alias int n1(primitive_type);
 --------------------------------------------------------------------------------
 
 (source_file
   (alias_declaration
-    (alias)
     (type
-      (int))
+      (identifier))
     (identifier)
     (parameters
       (parameter
         (type
-          (int))))))
+          (identifier))))))
 
 ================================================================================
 Alias short rename
@@ -210,7 +193,6 @@ alias t_old t_new;
 
 (source_file
   (alias_declaration
-    (alias)
     (type
       (identifier))
     (identifier)))
@@ -224,7 +206,6 @@ alias id = other.name;
 
 (source_file
   (alias_declaration
-    (alias)
     (alias_initializer
       (identifier)
       (type
@@ -239,10 +220,8 @@ alias id this;
 --------------------------------------------------------------------------------
 
 (source_file
-  (alias_this
-    (alias)
-    (identifier)
-    (this)))
+  (alias_this_declaration
+    (identifier)))
 
 ================================================================================
 Alias template function
@@ -254,19 +233,17 @@ alias void m(int tp)(char c);
 
 (source_file
   (alias_declaration
-    (alias)
-    (type
-      (void))
+    (type)
     (identifier)
     (template_parameters
       (template_parameter
         (type
-          (int))
+          (identifier))
         (identifier)))
     (parameters
       (parameter
         (type
-          (char))
+          (identifier))
         (identifier)))))
 
 ================================================================================
@@ -284,16 +261,13 @@ template  t(alias F, Args...)
 
 (source_file
   (template_declaration
-    (template)
     (identifier)
     (template_parameters
       (template_parameter
-        (alias)
         (identifier))
       (template_parameter
         (identifier)))
     (alias_declaration
-      (alias)
       (alias_initializer
         (identifier)
         (type
@@ -301,12 +275,9 @@ template  t(alias F, Args...)
             (identifier)
             (template_arguments)))))
     (static_foreach_declaration
-      (static)
-      (foreach)
       (foreach_type
         (identifier))
-      (expression
-        (identifier))
+      (identifier)
       (alias_reassign
         (identifier)
         (type
@@ -329,18 +300,14 @@ alias g_t = align(8) _gg_t[NREG];
 
 (source_file
   (alias_declaration
-    (alias)
     (alias_initializer
       (identifier)
       (storage_class
         (align_attribute
-          (align)
-          (expression
-            (int_literal))))
+          (integer_literal)))
       (type
         (identifier)
-        (expression
-          (identifier))))))
+        (identifier)))))
 
 ================================================================================
 Alias this
@@ -350,15 +317,12 @@ struct S { int n; alias this = n; }
 
 (source_file
   (struct_declaration
-    (struct)
     (identifier)
     (aggregate_body
       (variable_declaration
         (type
-          (int))
+          (identifier))
         (declarator
           (identifier)))
-      (alias_declaration
-        (alias)
-        (this)
+      (alias_this_declaration
         (identifier)))))

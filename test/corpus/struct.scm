@@ -8,7 +8,6 @@ struct s {}
 
 (source_file
   (struct_declaration
-    (struct)
     (identifier)
     (aggregate_body)))
 
@@ -24,12 +23,11 @@ struct s {
 
 (source_file
   (struct_declaration
-    (struct)
     (identifier)
     (aggregate_body
       (variable_declaration
         (type
-          (int))
+          (identifier))
         (declarator
           (identifier))))))
 
@@ -46,17 +44,16 @@ struct s {
 
 (source_file
   (struct_declaration
-    (struct)
     (identifier)
     (aggregate_body
       (variable_declaration
         (type
-          (int))
+          (identifier))
         (declarator
           (identifier)))
       (variable_declaration
         (type
-          (int))
+          (identifier))
         (declarator
           (identifier))))))
 
@@ -70,15 +67,13 @@ auto s = { 0, "x" };
 
 (source_file
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (aggregate_initializer
       (member_initializer
-        (int_literal))
+        (integer_literal))
       (member_initializer
-        (string_literal
-          (quoted_string))))))
+        (quoted_string_literal)))))
 
 ==================
 Anonymous trailing comma initialization
@@ -90,15 +85,13 @@ auto s = { 0, "x", };
 
 (source_file
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (aggregate_initializer
       (member_initializer
-        (int_literal))
+        (integer_literal))
       (member_initializer
-        (string_literal
-          (quoted_string))))))
+        (quoted_string_literal)))))
 
 ==================
 Named field initialization
@@ -110,17 +103,15 @@ auto s = { zero: 0, name: "x" };
 
 (source_file
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (aggregate_initializer
       (member_initializer
         (identifier)
-        (int_literal))
+        (integer_literal))
       (member_initializer
         (identifier)
-        (string_literal
-          (quoted_string))))))
+        (quoted_string_literal)))))
 
 ==================
 Named field trailing comma initialization
@@ -132,14 +123,12 @@ auto s = { zero: 0, name: "x", };
 
 (source_file
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (aggregate_initializer
       (member_initializer
         (identifier)
-        (int_literal))
+        (integer_literal))
       (member_initializer
         (identifier)
-        (string_literal
-          (quoted_string))))))
+        (quoted_string_literal)))))

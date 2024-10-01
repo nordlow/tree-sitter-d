@@ -11,18 +11,17 @@ int f() {
 (source_file
   (function_declaration
     (type
-      (int))
+      (identifier))
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (asm_statement
-          (asm)
           (asm_inline
             (identifier)
-            (int_literal)
-            (int_literal)
-            (int_literal))
+            (integer_literal)
+            (integer_literal)
+            (integer_literal))
           (comment))))))
 
 ================================================================================
@@ -36,13 +35,12 @@ int f() {
 (source_file
   (function_declaration
     (type
-      (int))
+      (identifier))
     (identifier)
     (parameters)
     (function_body
-      (block_statement
-        (asm_statement
-          (asm))))))
+      (compound_statement
+        (asm_statement)))))
 
 ================================================================================
 Inline assember with attributes
@@ -57,14 +55,12 @@ int f() {
 (source_file
   (function_declaration
     (type
-      (int))
+      (identifier))
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (asm_statement
-          (asm)
-          (pure)
           (at_attribute
             (identifier))
           (asm_inline
@@ -85,15 +81,13 @@ int f() {
 (source_file
   (function_declaration
     (type
-      (int))
+      (identifier))
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (asm_statement
-          (asm)
           (asm_inline
             (identifier)
-            (string_literal
-              (quoted_string)))
+            (quoted_string_literal))
           (comment))))))

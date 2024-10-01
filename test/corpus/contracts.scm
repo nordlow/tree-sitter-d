@@ -12,43 +12,28 @@ class C
 
 (source_file
   (class_declaration
-    (class)
     (identifier)
     (aggregate_body
       (function_declaration
         (type
-          (int))
+          (identifier))
         (identifier)
         (parameters)
         (function_body
           (out_statement
-            (out)
-            (block_statement))
+            (compound_statement))
           (in_statement
-            (in)
-            (block_statement))
+            (compound_statement))
           (out_statement
-            (out)
             (identifier)
-            (block_statement))
+            (compound_statement))
           (in_contract_expression
-            (in)
-            (assert_arguments
-              (expression
-                (true))))
+            (assert_arguments))
           (out_contract_expression
-            (out)
-            (assert_arguments
-              (expression
-                (true))))
+            (assert_arguments))
           (out_contract_expression
-            (out)
             (identifier)
-            (assert_arguments
-              (expression
-                (true))))
-          (block_statement
+            (assert_arguments))
+          (compound_statement
             (return_statement
-              (return)
-              (expression
-                (int_literal)))))))))
+              (integer_literal))))))))

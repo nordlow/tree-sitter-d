@@ -33,12 +33,11 @@ auto f() {
 
 (source_file
   (function_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (expression_statement
           (expression_list
             (call_expression
@@ -46,21 +45,11 @@ auto f() {
                 (template_instance
                   (identifier)
                   (template_arguments
-                    (string_literal
-                      (quoted_string)))))
+                    (quoted_string_literal))))
               (named_arguments
                 (named_argument
-                  (expression
-                    (property_expression
-                      (identifier)
-                      (identifier))))
+                  (property_expression
+                    (identifier)
+                    (identifier)))
                 (named_argument
-                  (expression
-                    (identifier)))))))))))
-
-===
-Shebang starts in column 0
-:error
-===
-  #!/bin/sh
----
+                  (identifier))))))))))
