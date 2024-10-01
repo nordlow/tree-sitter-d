@@ -662,8 +662,7 @@ unittest {
                   (false)))
               (named_argument
                 (expression
-                  (string_literal
-                    (quoted_string))))
+                  (quoted_string)))
               (named_argument
                 (identifier)
                 (expression
