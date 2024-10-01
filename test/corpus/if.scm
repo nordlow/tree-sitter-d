@@ -9,14 +9,11 @@ unittest {
 
 (source_file
   (unittest_declaration
-    (unittest)
-    (block_statement
+    (compound_statement
       (if_statement
-        (if)
-        (if_condition
-          (true))
+        (if_condition)
         (scope_statement
-          (block_statement
+          (compound_statement
             (expression_statement
               (expression_list
                 (identifier)))))))))
@@ -32,20 +29,16 @@ unittest {
 
 (source_file
   (unittest_declaration
-    (unittest)
-    (block_statement
+    (compound_statement
       (if_statement
-        (if)
-        (if_condition
-          (true))
+        (if_condition)
         (scope_statement
-          (block_statement
+          (compound_statement
             (expression_statement
               (expression_list
                 (identifier)))))
-        (else)
         (scope_statement
-          (block_statement
+          (compound_statement
             (expression_statement
               (expression_list
                 (identifier)))))))))
@@ -61,14 +54,10 @@ unittest {
 
 (source_file
   (unittest_declaration
-    (unittest)
-    (block_statement
+    (compound_statement
       (if_statement
-        (if)
         (if_condition
-          (auto)
           (identifier)
-          (expression
-            (identifier)))
+          (identifier))
         (scope_statement
-          (block_statement))))))
+          (compound_statement))))))

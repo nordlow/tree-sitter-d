@@ -9,7 +9,7 @@
 ; SPDX-License-Identifier: MIT
 
 (string_literal) @string
-(int_literal) @number
+(integer_literal) @number
 (float_literal) @number
 (char_literal) @number
 (identifier) @variable
@@ -21,7 +21,6 @@
 	(lazy)
 	(align)
 	(extern)
-	(static)
 	(abstract)
 	(final)
 	(override)
@@ -33,7 +32,7 @@
 	(deprecated)
 	(nothrow)
 	(pure)
-	(type_ctor)
+	(type_qualifier)
 ] @keyword.storage
 
 (parameter_attribute (return) @keyword.storage)
@@ -91,7 +90,6 @@
     (ref)
     (scope)
     (shared)
-    (static)
     (struct)
     (super)
     (synchronized)
@@ -119,11 +117,9 @@
     (default)
     (finally)
     (else)
-    (for)
     (foreach)
     (foreach_reverse)
     (goto)
-    (if)
     (switch)
     (try)
     (return)
@@ -218,7 +214,7 @@
     (ushort)
     (wchar)
     (dchar)
-    (int)
+    (primitive_type)
     (uint)
     (long)
     (ulong)
@@ -248,7 +244,7 @@
 (goto_statement (goto) @keyword.control (identifier) @label)
 
 ; this covers other cases where the identifier can only
-; be a type (such as in an is-expression on a constraint)
+; be a type (such as in an is-expression on a template_constraint)
 (type (identifier) @type)
 
 ; these are listed last, because they override keyword queries

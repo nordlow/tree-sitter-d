@@ -20,7 +20,7 @@
 (super)
 ] @keyword.self
 
-(int_literal) @value.number
+(integer_literal) @value.number
 (float_literal) @value.number
 (char_literal) @value.number ; not sure what is best for this
 (special_keyword) @value.symbols
@@ -42,26 +42,24 @@
 ] @keyword.operator
 
 [
-	(lazy)
-	(align)
-	(extern)
-	(static)
-	(abstract)
-	(final)
-	(override)
-	(synchronized)
-	(auto)
-	(scope)
-	(gshared)
-	(ref)
-	(deprecated)
-	(nothrow)
-	(pure)
-	(type_ctor)
+	"lazy"
+	"align"
+	"abstract"
+	"final"
+	"override"
+	"synchronized"
+	"auto"
+	"scope"
+	"gshared"
+	"ref"
+	"deprecated"
+	"nothrow"
+	"pure"
+	(type_qualifier)
 ] @keyword.modifier
 
 ; these are special only when it shows up here
-(parameter_attribute (return) @keyword.modifier)
+(parameter_attribute "return" @keyword.modifier)
 (parameter_attribute (in) @keyword.modifier)
 (parameter_attribute (out) @keyword.modifier)
 
@@ -121,12 +119,11 @@
 	(case)
 	(catch)
 	(continue)
-	(do)
+	"do"
 	(default)
 	(finally)
 	(else)
 	(goto)
-	(if)
 	(switch)
 	(try)
 ] @keyword.control
@@ -134,28 +131,28 @@
 ; builtin types.  it would be nice to have a different markup for it.
 [
 	(void)
-	(bool)
-	(byte)
-	(ubyte)
-	(char)
-	(short)
-	(ushort)
-	(wchar)
-	(dchar)
-	(int)
-	(uint)
-	(long)
-	(ulong)
-	(real)
-	(double)
-	(float)
-	(size_t)
-	(ptrdiff_t)
-	(string)
-	(cstring)
-	(dstring)
-	(wstring)
-	(noreturn)
+	"bool"
+	"byte"
+	"ubyte"
+	"char"
+	"short"
+	"ushort"
+	"wchar"
+	"dchar"
+	(primitive_type)
+	"uint"
+	"long"
+	"ulong"
+	"real"
+	"double"
+	"float"
+	"size_t"
+	"ptrdiff_t"
+	"string"
+	"cstring"
+	"dstring"
+	"wstring"
+	"noreturn"
 ] @identifier.type.core
 
 [
@@ -170,55 +167,54 @@
 
 ; some editors (Helix) have a different selector for return statements.
 ; TODO: this keyword is sometimes a parameter attribute
-(return) @keyword.control
+"return" @keyword.control
 
 ; some editors (Helix) have a selector for imports
 (import) @keyword.control
 
 ; some editors have a repeat keyword construct
 [
-	(for)
-	(foreach)
-	(foreach_reverse)
-	(while)
+	"foreach"
+	"foreach_reverse"
+	"while"
 ] @keyword.control
 
 (cast) @keyword.operator
 
 [
-	(abstract)
-	(alias)
-	(align)
-	(asm)
-	(assert)
-	(auto)
-	(cast)
-	(debug)
-	(delete)
-	(deprecated)
-	(export)
-	(extern)
-	(final)
-	(invariant)
-	(is)
+	"abstract"
+	"alias"
+	"align"
+	"asm"
+	"assert"
+	"auto"
+	"cast"
+	"debug"
+	"delete"
+	"deprecated"
+	"export"
+	"extern"
+	"final"
+	"invariant"
+	"is"
 	; "macro" - obsolete
-	(mixin)
-	(module)
-	(new)
-	(override)
-	(pragma)
-	(scope)
-	(synchronized)
-	(template)
-	(throw)
-	(typeid)
-	(typeof)
-	(unittest)
-	(version)
-	(with)
-	(traits)
-	(vector)
-	(parameters_)
+	"mixin"
+	"module"
+	"new"
+	"override"
+	"pragma"
+	"scope"
+	"synchronized"
+	"template"
+	"throw"
+	"typeid"
+	"typeof"
+	"unittest"
+	"version"
+	"with"
+	"traits"
+	"vector"
+	"__parameters"
 ] @keyword
 
 [
@@ -240,25 +236,24 @@
 	(pure)
 	(gshared)
 	(shared)
-	(static)
 ] @keyword.modifier
 
 [
-	(cent)
-	(ucent)
-	(ireal)
-	(idouble)
-	(ifloat)
-	(creal)
-	(cdouble)
-	(cfloat)
+	"cent"
+	"ucent"
+	"ireal"
+	"idouble"
+	"ifloat"
+	"creal"
+	"cdouble"
+	"cfloat"
 ] @invalid ; these types are deprecated
 
-(debug_condition (debug) (int_literal) @invalid) ; deprecated in 2.101
-(debug_specification (debug) (int_literal) @invalid) ; deprecated in 2.101
-(version_condition (version) (int_literal) @invalid) ; deprecated in 2.101
-(version_specification (version) (int_literal) @invalid) ; deprecated in 2.101
-(version_condition (identifier) @value.symbol)
+(static_debug_condition (debug) (integer_literal) @invalid) ; deprecated in 2.101
+(debug_specification (debug) (integer_literal) @invalid) ; deprecated in 2.101
+(static_version_condition (version) (integer_literal) @invalid) ; deprecated in 2.101
+(version_specification (version) (integer_literal) @invalid) ; deprecated in 2.101
+(static_version_condition (identifier) @value.symbol)
 
 (module_fqn) @processing ; this is a crummy workaround since we don't have anything for imports
 (module_declaration (module_fqn)) @definition.package

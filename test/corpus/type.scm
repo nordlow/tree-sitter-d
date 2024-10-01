@@ -7,7 +7,7 @@ int x;
 (source_file
   (variable_declaration
     (type
-      (int))
+      (identifier))
     (declarator
       (identifier))))
 
@@ -48,11 +48,10 @@ unittest {
 
 (source_file
   (unittest_declaration
-    (unittest)
-    (block_statement
+    (compound_statement
       (variable_declaration
         (type
-          (int))
+          (identifier))
         (declarator
           (identifier))))))
 
@@ -66,8 +65,7 @@ unittest {
 
 (source_file
   (unittest_declaration
-    (unittest)
-    (block_statement
+    (compound_statement
       (variable_declaration
         (type
           (identifier))
@@ -84,8 +82,7 @@ myType.subType x;
 
 (source_file
   (unittest_declaration
-    (unittest)
-    (block_statement
+    (compound_statement
       (variable_declaration
         (type
           (identifier)
@@ -117,9 +114,8 @@ int[3] z;
 (source_file
   (variable_declaration
     (type
-      (int)
-      (expression
-        (int_literal)))
+      (identifier)
+      (integer_literal))
     (declarator
       (identifier))))
 
@@ -132,7 +128,7 @@ int[] z;
 (source_file
   (variable_declaration
     (type
-      (int))
+      (identifier))
     (declarator
       (identifier))))
 
@@ -173,8 +169,7 @@ Z[4].Z[] z;
   (variable_declaration
     (type
       (identifier)
-      (expression
-        (int_literal))
+      (integer_literal)
       (identifier))
     (declarator
       (identifier))))
@@ -190,29 +185,23 @@ void f()
 
 (source_file
   (function_declaration
-    (type
-      (void))
+    (type)
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (enum_declaration
-          (enum)
           (identifier)
           (type
             (vector_type
-              (vector)
               (type
-                (float)
-                (expression
-                  (int_literal)))))
+                (identifier)
+                (integer_literal))))
           (enum_member
             (identifier)
             (primary_expression
               (vector_type
-                (vector)
                 (type
-                  (float)
-                  (expression
-                    (int_literal))))
+                  (identifier)
+                  (integer_literal)))
               (identifier))))))))
