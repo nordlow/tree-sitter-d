@@ -265,7 +265,6 @@ module.exports = grammar({
         $.foreach_reverse,
         $.function,
         $.goto,
-        $.if,
         $.import,
         $.in,
         $.interface,
@@ -287,7 +286,6 @@ module.exports = grammar({
         $.ref,
         $.return,
         $.scope,
-        $.static,
         $.struct,
         $.super,
         $.switch,
@@ -394,7 +392,6 @@ module.exports = grammar({
     foreach_reverse: (_$) => token("foreach_reverse"),
     function: (_$) => token("function"),
     goto: (_$) => token("goto"),
-    if: (_$) => token("if"),
     immutable: (_$) => token("immutable"),
     import: (_$) => token("import"),
     in: (_$) => token("in"),
@@ -419,7 +416,6 @@ module.exports = grammar({
     return: (_$) => token("return"),
     scope: (_$) => token("scope"),
     shared: (_$) => token("shared"),
-    static: (_$) => token("static"),
     struct: (_$) => token("struct"),
     switch: (_$) => token("switch"),
     synchronized: (_$) => token("synchronized"),
@@ -599,7 +595,7 @@ module.exports = grammar({
         $.at_attribute,
         $.type_ctor,
         $.deprecated,
-        $.static,
+        "static",
         $.extern,
         $.abstract,
         $.final,
@@ -862,7 +858,7 @@ module.exports = grammar({
           $.protected,
           $.public,
           $.export,
-          $.static,
+          "static",
           $.extern,
           $.abstract,
           $.final,
@@ -1517,7 +1513,7 @@ module.exports = grammar({
     if_statement: ($) =>
       prec.right(
         seq(
-          $.if,
+          "if",
           $.if_condition,
           $.consequence,
           optional(seq($.else, $.alternative)),
@@ -1878,7 +1874,7 @@ module.exports = grammar({
           ),
           seq(
             optional($.shared),
-            $.static,
+            "static",
             $.this,
             "(",
             ")",
@@ -1891,7 +1887,7 @@ module.exports = grammar({
     destructor: ($) =>
       seq(
         repeat($._attribute),
-        optional(seq(optional($.shared), $.static)),
+        optional(seq(optional($.shared), "static")),
         "~",
         $.this,
         "(",
@@ -2312,7 +2308,7 @@ module.exports = grammar({
     //
     // Constraint
     //
-    constraint: ($) => seq($.if, "(", $.expression, ")"),
+    constraint: ($) => seq("if", "(", $.expression, ")"),
 
     /**************************************************
      *
@@ -2429,14 +2425,14 @@ module.exports = grammar({
     debug_specification: ($) =>
       seq($.debug, "=", choice($.int_literal, $.identifier), ";"),
 
-    static_if_condition: ($) => seq($.static, $.if, "(", $.expression, ")"),
+    static_if_condition: ($) => seq("static", "if", "(", $.expression, ")"),
 
-    static_foreach_statement: ($) => seq($.static, $.foreach_statement),
+    static_foreach_statement: ($) => seq("static", $.foreach_statement),
 
     static_foreach_declaration: ($) =>
       choice(
         seq(
-          $.static,
+          "static",
           $._foreach,
           "(",
           commaSep1($.foreach_type),
@@ -2448,7 +2444,7 @@ module.exports = grammar({
           "}",
         ),
         seq(
-          $.static,
+          "static",
           $._foreach,
           "(",
           commaSep1($.foreach_type),
@@ -2458,7 +2454,7 @@ module.exports = grammar({
           $._declaration,
         ),
         seq(
-          $.static,
+          "static",
           $._foreach,
           "(",
           $.foreach_type,
@@ -2472,7 +2468,7 @@ module.exports = grammar({
           "}",
         ),
         seq(
-          $.static,
+          "static",
           $._foreach,
           "(",
           $.foreach_type,
@@ -2485,7 +2481,7 @@ module.exports = grammar({
         ),
       ),
 
-    static_assert: ($) => seq($.static, $.assert_expression, ";"),
+    static_assert: ($) => seq("static", $.assert_expression, ";"),
 
     /**************************************************
      *
