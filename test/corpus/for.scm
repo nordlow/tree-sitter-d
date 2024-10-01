@@ -9,16 +9,14 @@ void f() {
 
 (source_file
   (function_declaration
-    (type
-      (void))
+    (type)
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (for_statement
-          (for)
           (scope_statement
-            (block_statement)))))))
+            (compound_statement)))))))
 
 ================================================================================
 Empty for loop no step
@@ -31,16 +29,14 @@ void f() {
 
 (source_file
   (function_declaration
-    (type
-      (void))
+    (type)
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (for_statement
-          (for)
           (scope_statement
-            (block_statement)))))))
+            (compound_statement)))))))
 
 ================================================================================
 For loop init only
@@ -53,21 +49,19 @@ void f() {
 
 (source_file
   (function_declaration
-    (type
-      (void))
+    (type)
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (for_statement
-          (for)
           (expression_statement
             (expression_list
               (assignment_expression
                 (identifier)
-                (int_literal))))
+                (integer_literal))))
           (scope_statement
-            (block_statement)))))))
+            (compound_statement)))))))
 
 ================================================================================
 For loop init declaration
@@ -80,22 +74,20 @@ void f() {
 
 (source_file
   (function_declaration
-    (type
-      (void))
+    (type)
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (for_statement
-          (for)
           (variable_declaration
             (type
-              (int))
+              (identifier))
             (declarator
               (identifier)
-              (int_literal)))
+              (integer_literal)))
           (scope_statement
-            (block_statement)))))))
+            (compound_statement)))))))
 
 ================================================================================
 For loop no step
@@ -108,26 +100,22 @@ void f() {
 
 (source_file
   (function_declaration
-    (type
-      (void))
+    (type)
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (for_statement
-          (for)
           (expression_statement
             (expression_list
               (assignment_expression
                 (identifier)
-                (int_literal))))
-          (expression
-            (binary_expression
-              (rel_expression
-                (identifier)
-                (int_literal))))
+                (integer_literal))))
+          (rel_binary_expression
+            (identifier)
+            (integer_literal))
           (scope_statement
-            (block_statement)))))))
+            (compound_statement)))))))
 
 ================================================================================
 For loop no test
@@ -140,24 +128,22 @@ void f() {
 
 (source_file
   (function_declaration
-    (type
-      (void))
+    (type)
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (for_statement
-          (for)
           (expression_statement
             (expression_list
               (assignment_expression
                 (identifier)
-                (int_literal))))
+                (integer_literal))))
           (expression_list
             (postfix_expression
               (identifier)))
           (scope_statement
-            (block_statement)))))))
+            (compound_statement)))))))
 
 ================================================================================
 For loop no init
@@ -170,21 +156,18 @@ void f() {
 
 (source_file
   (function_declaration
-    (type
-      (void))
+    (type)
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (for_statement
-          (for)
-          (expression
-            (identifier))
+          (identifier)
           (expression_list
             (postfix_expression
               (identifier)))
           (scope_statement
-            (block_statement)))))))
+            (compound_statement)))))))
 
 ================================================================================
 For loop step only
@@ -197,19 +180,17 @@ void f() {
 
 (source_file
   (function_declaration
-    (type
-      (void))
+    (type)
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (for_statement
-          (for)
           (expression_list
             (postfix_expression
               (identifier)))
           (scope_statement
-            (block_statement)))))))
+            (compound_statement)))))))
 
 ================================================================================
 For loop test only
@@ -222,21 +203,17 @@ void f() {
 
 (source_file
   (function_declaration
-    (type
-      (void))
+    (type)
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (for_statement
-          (for)
-          (expression
-            (binary_expression
-              (equal_expression
-                (identifier)
-                (int_literal))))
+          (equal_binary_expression
+            (identifier)
+            (integer_literal))
           (scope_statement
-            (block_statement)))))))
+            (compound_statement)))))))
 
 ================================================================================
 For loop test only 2 clause
@@ -249,21 +226,17 @@ void f() {
 
 (source_file
   (function_declaration
-    (type
-      (void))
+    (type)
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (for_statement
-          (for)
-          (expression
-            (binary_expression
-              (equal_expression
-                (identifier)
-                (int_literal))))
+          (equal_binary_expression
+            (identifier)
+            (integer_literal))
           (scope_statement
-            (block_statement)))))))
+            (compound_statement)))))))
 
 ================================================================================
 For loop 3 clause
@@ -276,30 +249,26 @@ void f() {
 
 (source_file
   (function_declaration
-    (type
-      (void))
+    (type)
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (for_statement
-          (for)
           (variable_declaration
             (type
-              (int))
+              (identifier))
             (declarator
               (identifier)
-              (int_literal)))
-          (expression
-            (binary_expression
-              (equal_expression
-                (identifier)
-                (int_literal))))
+              (integer_literal)))
+          (equal_binary_expression
+            (identifier)
+            (integer_literal))
           (expression_list
             (postfix_expression
               (identifier)))
           (scope_statement
-            (block_statement)))))))
+            (compound_statement)))))))
 
 ================================================================================
 For loop comma expressions
@@ -312,29 +281,25 @@ void f() {
 
 (source_file
   (function_declaration
-    (type
-      (void))
+    (type)
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (for_statement
-          (for)
           (variable_declaration
             (type
-              (int))
+              (identifier))
             (declarator
               (identifier)
-              (int_literal)))
-          (expression
-            (binary_expression
-              (equal_expression
-                (identifier)
-                (int_literal))))
+              (integer_literal)))
+          (equal_binary_expression
+            (identifier)
+            (integer_literal))
           (expression_list
             (postfix_expression
               (identifier))
             (unary_expression
               (identifier)))
           (scope_statement
-            (block_statement)))))))
+            (compound_statement)))))))
