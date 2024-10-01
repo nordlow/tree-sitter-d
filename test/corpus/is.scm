@@ -3,7 +3,7 @@ Is expression
 ================================================================================
 
 void f() {
-	return is(int);
+	return is(primitive_type);
 }
 --------------------------------------------------------------------------------
 
@@ -16,12 +16,11 @@ void f() {
     (function_body
       (block_statement
         (return_statement
-          (return)
           (expression
             (is_expression
               (is)
               (type
-                (int)))))))))
+                (identifier)))))))))
 
 ================================================================================
 Is expression specialization
@@ -42,16 +41,13 @@ void f() {
     (function_body
       (block_statement
         (return_statement
-          (return)
           (expression
             (is_expression
               (is)
               (type
-                (int))
-              (type_specialization
-                (shared)))))
+                (identifier))
+              (type_specialization))))
         (return_statement
-          (return)
           (expression
             (is_expression
               (is)
@@ -79,17 +75,14 @@ void f() {
     (function_body
       (block_statement
         (return_statement
-          (return)
           (expression
             (is_expression
               (is)
               (type
-                (int))
+                (identifier))
               (identifier)
-              (type_specialization
-                (shared)))))
+              (type_specialization))))
         (return_statement
-          (return)
           (expression
             (is_expression
               (is)
@@ -117,19 +110,16 @@ void f() {
     (function_body
       (block_statement
         (return_statement
-          (return)
           (expression
             (is_expression
               (is)
               (type
-                (int))
+                (identifier))
               (identifier)
-              (type_specialization
-                (shared))
+              (type_specialization)
               (template_parameter
                 (identifier)))))
         (return_statement
-          (return)
           (expression
             (is_expression
               (is)
@@ -156,13 +146,10 @@ void f() {
     (function_body
       (block_statement
         (return_statement
-          (return)
           (expression
-            (binary_expression
-              (identity_expression
-                (identifier)
-                (is)
-                (null)))))))))
+            (identity_binary_expression
+              (identifier)
+              (is))))))))
 
 ================================================================================
 Is not identity expression
@@ -182,10 +169,7 @@ void f() {
     (function_body
       (block_statement
         (return_statement
-          (return)
           (expression
-            (binary_expression
-              (identity_expression
-                (identifier)
-                (not_is)
-                (null)))))))))
+            (identity_binary_expression
+              (identifier)
+              (not_is))))))))

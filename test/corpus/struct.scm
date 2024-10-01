@@ -29,7 +29,7 @@ struct s {
     (aggregate_body
       (variable_declaration
         (type
-          (int))
+          (identifier))
         (declarator
           (identifier))))))
 
@@ -51,12 +51,12 @@ struct s {
     (aggregate_body
       (variable_declaration
         (type
-          (int))
+          (identifier))
         (declarator
           (identifier)))
       (variable_declaration
         (type
-          (int))
+          (identifier))
         (declarator
           (identifier))))))
 
@@ -75,10 +75,9 @@ auto s = { 0, "x" };
     (identifier)
     (aggregate_initializer
       (member_initializer
-        (int_literal))
+        (integer_literal))
       (member_initializer
-        (string_literal
-          (quoted_string))))))
+        (quoted_string_literal)))))
 
 ==================
 Anonymous trailing comma initialization
@@ -95,10 +94,9 @@ auto s = { 0, "x", };
     (identifier)
     (aggregate_initializer
       (member_initializer
-        (int_literal))
+        (integer_literal))
       (member_initializer
-        (string_literal
-          (quoted_string))))))
+        (quoted_string_literal)))))
 
 ==================
 Named field initialization
@@ -116,11 +114,10 @@ auto s = { zero: 0, name: "x" };
     (aggregate_initializer
       (member_initializer
         (identifier)
-        (int_literal))
+        (integer_literal))
       (member_initializer
         (identifier)
-        (string_literal
-          (quoted_string))))))
+        (quoted_string_literal)))))
 
 ==================
 Named field trailing comma initialization
@@ -138,8 +135,7 @@ auto s = { zero: 0, name: "x", };
     (aggregate_initializer
       (member_initializer
         (identifier)
-        (int_literal))
+        (integer_literal))
       (member_initializer
         (identifier)
-        (string_literal
-          (quoted_string))))))
+        (quoted_string_literal)))))

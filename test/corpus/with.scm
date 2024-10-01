@@ -35,7 +35,7 @@ unittest { with (x) int y = 0; }
         (scope_statement
           (variable_declaration
             (type
-              (int))
+              (identifier))
             (declarator
               (identifier)
-              (int_literal))))))))
+              (integer_literal))))))))

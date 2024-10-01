@@ -134,7 +134,6 @@ static import garrett = garrett.damore : what = where, when = then;
 
 (source_file
   (import_declaration
-    (static)
     (import)
     (imported
       (identifier)
@@ -162,5 +161,4 @@ auto x = import("something.png");
     (import_expression
       (import)
       (expression
-        (string_literal
-          (quoted_string))))))
+        (quoted_string_literal)))))

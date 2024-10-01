@@ -11,8 +11,7 @@ auto s4 = `abc def
     (storage_class
       (auto))
     (identifier)
-    (string_literal
-      (raw_string))))
+    (raw_string_literal)))
 
 ================================================================================
 Empty Backquoted String
@@ -26,8 +25,7 @@ auto s4 = ``;
     (storage_class
       (auto))
     (identifier)
-    (string_literal
-      (raw_string))))
+    (raw_string_literal)))
 
 ================================================================================
 Backquoted String With Suffix
@@ -41,8 +39,7 @@ auto s4 = `abc def`c;
     (storage_class
       (auto))
     (identifier)
-    (string_literal
-      (raw_string))))
+    (raw_string_literal)))
 
 ================================================================================
 Raw String
@@ -58,8 +55,7 @@ this is some text
     (storage_class
       (auto))
     (identifier)
-    (string_literal
-      (raw_string))))
+    (raw_string_literal)))
 
 ================================================================================
 Raw String Suffix w
@@ -73,8 +69,7 @@ auto s = r"something"w;
     (storage_class
       (auto))
     (identifier)
-    (string_literal
-      (raw_string))))
+    (raw_string_literal)))
 
 ================================================================================
 Raw String Suffix Invalid (whitespace)
@@ -88,7 +83,6 @@ auto s = r"something" w;
     (storage_class
       (auto))
     (identifier)
-    (string_literal
-      (raw_string))
+    (raw_string_literal)
     (ERROR
       (identifier))))

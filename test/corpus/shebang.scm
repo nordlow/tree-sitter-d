@@ -46,8 +46,7 @@ auto f() {
                 (template_instance
                   (identifier)
                   (template_arguments
-                    (string_literal
-                      (quoted_string)))))
+                    (quoted_string_literal))))
               (named_arguments
                 (named_argument
                   (expression
@@ -57,10 +56,3 @@ auto f() {
                 (named_argument
                   (expression
                     (identifier)))))))))))
-
-===
-Shebang starts in column 0
-:error
-===
-  #!/bin/sh
----

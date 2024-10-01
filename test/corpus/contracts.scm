@@ -17,7 +17,7 @@ class C
     (aggregate_body
       (function_declaration
         (type
-          (int))
+          (identifier))
         (identifier)
         (parameters)
         (function_body
@@ -34,21 +34,17 @@ class C
           (in_contract_expression
             (in)
             (assert_arguments
-              (expression
-                (true))))
+              (expression)))
           (out_contract_expression
             (out)
             (assert_arguments
-              (expression
-                (true))))
+              (expression)))
           (out_contract_expression
             (out)
             (identifier)
             (assert_arguments
-              (expression
-                (true))))
+              (expression)))
           (block_statement
             (return_statement
-              (return)
               (expression
-                (int_literal)))))))))
+                (integer_literal)))))))))

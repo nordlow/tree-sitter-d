@@ -16,7 +16,6 @@ void f() {
     (function_body
       (block_statement
         (foreach_statement
-          (foreach)
           (foreach_type
             (identifier))
           (expression
@@ -42,7 +41,6 @@ void f() {
     (function_body
       (block_statement
         (foreach_statement
-          (foreach_reverse)
           (foreach_type
             (identifier))
           (expression
@@ -68,10 +66,9 @@ void f() {
     (function_body
       (block_statement
         (foreach_statement
-          (foreach)
           (foreach_type
             (type
-              (int))
+              (identifier))
             (identifier))
           (expression
             (identifier))
@@ -96,14 +93,13 @@ void f() {
     (function_body
       (block_statement
         (foreach_statement
-          (foreach)
           (foreach_type
             (type
-              (int))
+              (identifier))
             (identifier))
           (foreach_type
             (type
-              (char))
+              (identifier))
             (identifier))
           (expression
             (identifier))
@@ -128,7 +124,6 @@ void f() {
     (function_body
       (block_statement
         (foreach_statement
-          (foreach)
           (foreach_type
             (identifier))
           (expression
@@ -156,10 +151,9 @@ void f() {
     (function_body
       (block_statement
         (foreach_statement
-          (foreach)
           (foreach_type
             (type
-              (int))
+              (identifier))
             (identifier))
           (expression
             (identifier))
@@ -186,15 +180,14 @@ void f() {
     (function_body
       (block_statement
         (foreach_statement
-          (foreach)
           (foreach_type
             (type
-              (int))
+              (identifier))
             (identifier))
           (expression
-            (int_literal))
+            (integer_literal))
           (expression
-            (int_literal))
+            (integer_literal))
           (scope_statement
             (block_statement)))))))
 
@@ -217,11 +210,10 @@ void f() {
     (function_body
       (block_statement
         (foreach_statement
-          (foreach)
           (foreach_type
             (scope)
             (type
-              (string))
+              (identifier))
             (identifier))
           (foreach_type
             (scope)

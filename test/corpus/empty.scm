@@ -28,8 +28,7 @@ string s = "__EOF__";
 (source_file
   (variable_declaration
     (type
-      (string))
+      (identifier))
     (declarator
       (identifier)
-      (string_literal
-        (quoted_string)))))
+      (quoted_string_literal))))

@@ -6,8 +6,7 @@ extern(C++) class Foo{}
 
 (source_file
   (class_declaration
-    (linkage_attribute
-      (extern))
+    (linkage_attribute)
     (class)
     (identifier)
     (aggregate_body)))
@@ -20,8 +19,7 @@ extern(C++,) class Foo{}
 
 (source_file
   (class_declaration
-    (linkage_attribute
-      (extern))
+    (linkage_attribute)
     (class)
     (identifier)
     (aggregate_body)))
@@ -38,10 +36,8 @@ class ScopeClass { }
 (source_file
   (class_declaration
     (linkage_attribute
-      (extern)
       (class))
     (linkage_attribute
-      (extern)
       (namespace_list
         (expression
           (traits_expression
@@ -50,7 +46,6 @@ class ScopeClass { }
             (template_argument
               (identifier))))))
     (linkage_attribute
-      (extern)
       (namespace_list
         (expression
           (primary_expression

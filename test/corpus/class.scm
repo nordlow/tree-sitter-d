@@ -16,7 +16,6 @@ if (isTrue(T))
       (template_parameter
         (identifier)))
     (constraint
-      (if)
       (expression
         (call_expression
           (identifier)
@@ -31,7 +30,7 @@ if (isTrue(T))
 ================================================================================
 Base class can start with dot
 ================================================================================
-class X : Y, .Z { 
+class X : Y, .Z {
 }
 --------------------------------------------------------------------------------
 
@@ -56,16 +55,16 @@ class U : int, float , __vector(int[3]) {}
     (class)
     (identifier)
     (base_class
-      (int))
+      (identifier))
     (base_class
-      (float))
+      (identifier))
     (base_class
       (vector_type
         (vector)
         (type
-          (int)
+          (identifier)
           (expression
-            (int_literal)))))
+            (integer_literal)))))
     (aggregate_body)))
 
 ================================================================================
@@ -90,15 +89,14 @@ class T : typeof(new A), .B, const(C), D!int {}
     (base_class
       (identifier))
     (base_class
-      (type_ctor
-        (const))
+      (type_ctor)
       (type
         (identifier)))
     (base_class
       (template_instance
         (identifier)
         (template_arguments
-          (int))))
+          (identifier))))
     (aggregate_body)))
 
 ================================================================================

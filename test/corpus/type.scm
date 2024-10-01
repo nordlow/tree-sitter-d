@@ -7,7 +7,7 @@ int x;
 (source_file
   (variable_declaration
     (type
-      (int))
+      (identifier))
     (declarator
       (identifier))))
 
@@ -52,7 +52,7 @@ unittest {
     (block_statement
       (variable_declaration
         (type
-          (int))
+          (identifier))
         (declarator
           (identifier))))))
 
@@ -117,9 +117,9 @@ int[3] z;
 (source_file
   (variable_declaration
     (type
-      (int)
+      (identifier)
       (expression
-        (int_literal)))
+        (integer_literal)))
     (declarator
       (identifier))))
 
@@ -132,7 +132,7 @@ int[] z;
 (source_file
   (variable_declaration
     (type
-      (int))
+      (identifier))
     (declarator
       (identifier))))
 
@@ -174,7 +174,7 @@ Z[4].Z[] z;
     (type
       (identifier)
       (expression
-        (int_literal))
+        (integer_literal))
       (identifier))
     (declarator
       (identifier))))
@@ -203,16 +203,16 @@ void f()
             (vector_type
               (vector)
               (type
-                (float)
+                (identifier)
                 (expression
-                  (int_literal)))))
+                  (integer_literal)))))
           (enum_member
             (identifier)
             (primary_expression
               (vector_type
                 (vector)
                 (type
-                  (float)
+                  (identifier)
                   (expression
-                    (int_literal))))
+                    (integer_literal))))
               (identifier))))))))

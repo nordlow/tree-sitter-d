@@ -8,15 +8,14 @@ int f() { return 0; }
 (source_file
   (function_declaration
     (type
-      (int))
+      (identifier))
     (identifier)
     (parameters)
     (function_body
       (block_statement
         (return_statement
-          (return)
           (expression
-            (int_literal)))))))
+            (integer_literal)))))))
 
 ================================================================================
 Single Parameter Function
@@ -28,17 +27,16 @@ int f(int c) { return c; }
 (source_file
   (function_declaration
     (type
-      (int))
+      (identifier))
     (identifier)
     (parameters
       (parameter
         (type
-          (int))
+          (identifier))
         (identifier)))
     (function_body
       (block_statement
         (return_statement
-          (return)
           (expression
             (identifier)))))))
 
@@ -52,18 +50,17 @@ int f(int c, ...) { return c; }
 (source_file
   (function_declaration
     (type
-      (int))
+      (identifier))
     (identifier)
     (parameters
       (parameter
         (type
-          (int))
+          (identifier))
         (identifier))
       (ellipses))
     (function_body
       (block_statement
         (return_statement
-          (return)
           (expression
             (identifier)))))))
 
@@ -77,14 +74,13 @@ int f(...) { return c; }
 (source_file
   (function_declaration
     (type
-      (int))
+      (identifier))
     (identifier)
     (parameters
       (ellipses))
     (function_body
       (block_statement
         (return_statement
-          (return)
           (expression
             (identifier)))))))
 
@@ -98,12 +94,12 @@ int f(int...) { return c; }
 (source_file
   (function_declaration
     (type
-      (int))
+      (identifier))
     (identifier)
     (parameters
       (parameter
         (type
-          (int))
+          (primitive_type))
         (ellipses)))
     (function_body
       (block_statement
@@ -122,16 +118,16 @@ int f(int a, int b) @safe pure @myattr { return a+b; }
 (source_file
   (function_declaration
     (type
-      (int))
+      (identifier))
     (identifier)
     (parameters
       (parameter
         (type
-          (int))
+          (identifier))
         (identifier))
       (parameter
         (type
-          (int))
+          (identifier))
         (identifier)))
     (member_function_attribute
       (at_attribute
@@ -144,12 +140,10 @@ int f(int a, int b) @safe pure @myattr { return a+b; }
     (function_body
       (block_statement
         (return_statement
-          (return)
           (expression
-            (binary_expression
-              (add_expression
-                (identifier)
-                (identifier)))))))))
+            (add_binary_expression
+              (identifier)
+              (identifier))))))))
 
 ================================================================================
 Function literal no parameters
@@ -175,16 +169,15 @@ unittest {
                   (function_literal
                     (block_statement
                       (return_statement
-                        (return)
                         (expression
-                          (int_literal))))))))))))))
+                          (integer_literal))))))))))))))
 
 ================================================================================
 Function literal anonymous parameter
 ================================================================================
 
 unittest {
-	f((int){return 1;});
+	f((primitive_type){return 1;});
 }
 
 --------------------------------------------------------------------------------
@@ -202,12 +195,11 @@ unittest {
                 (expression
                   (function_literal
                     (type
-                      (int))
+                      (identifier))
                     (block_statement
                       (return_statement
-                        (return)
                         (expression
-                          (int_literal))))))))))))))
+                          (integer_literal))))))))))))))
 
 ================================================================================
 Function literal named parameter
@@ -232,13 +224,12 @@ unittest {
                 (expression
                   (function_literal
                     (type
-                      (bool))
+                      (identifier))
                     (identifier)
                     (block_statement
                       (return_statement
-                        (return)
                         (expression
-                          (int_literal))))))))))))))
+                          (integer_literal))))))))))))))
 
 ================================================================================
 Function literal auto ref
@@ -264,7 +255,7 @@ alias h = delegate auto ref (int x) { return x; };
       (auto)
       (ref)
       (type
-        (int))
+        (identifier))
       (identifier)
       (identifier)))
   (auto_declaration
@@ -275,11 +266,10 @@ alias h = delegate auto ref (int x) { return x; };
       (auto)
       (ref)
       (type
-        (int))
+        (identifier))
       (identifier)
       (block_statement
         (return_statement
-          (return)
           (expression
             (identifier))))))
   (auto_declaration
@@ -293,11 +283,10 @@ alias h = delegate auto ref (int x) { return x; };
       (parameters
         (parameter
           (type
-            (int))
+            (identifier))
           (identifier)))
       (block_statement
         (return_statement
-          (return)
           (expression
             (identifier))))))
   (auto_declaration
@@ -309,11 +298,10 @@ alias h = delegate auto ref (int x) { return x; };
       (auto)
       (ref)
       (type
-        (int))
+        (identifier))
       (identifier)
       (block_statement
         (return_statement
-          (return)
           (expression
             (identifier))))))
   (end_file))
@@ -333,14 +321,12 @@ Auto functions
     (parameters)
     (member_function_attribute
       (pure))
-    (member_function_attribute
-      (immutable))
+    (member_function_attribute)
     (function_body
       (block_statement
         (return_statement
-          (return)
           (expression
-            (int_literal))))))
+            (integer_literal))))))
   (function_declaration
     (storage_class
       (auto))
@@ -348,14 +334,12 @@ Auto functions
     (parameters)
     (member_function_attribute
       (pure))
-    (member_function_attribute
-      (const))
+    (member_function_attribute)
     (function_body
       (block_statement
         (return_statement
-          (return)
           (expression
-            (int_literal)))))))
+            (integer_literal)))))))
 
 ================================================================================
 Qualified lambda functions
@@ -372,13 +356,11 @@ Qualified lambda functions
     (function_literal
       (member_function_attribute
         (pure))
-      (member_function_attribute
-        (immutable))
+      (member_function_attribute)
       (block_statement
         (return_statement
-          (return)
           (expression
-            (int_literal))))))
+            (integer_literal))))))
   (auto_declaration
     (storage_class
       (auto))
@@ -386,13 +368,11 @@ Qualified lambda functions
     (function_literal
       (member_function_attribute
         (pure))
-      (member_function_attribute
-        (const))
+      (member_function_attribute)
       (block_statement
         (return_statement
-          (return)
           (expression
-            (int_literal)))))))
+            (integer_literal)))))))
 
 ================================================================================
 Qualifeid delegates
@@ -410,13 +390,11 @@ Qualifeid delegates
       (delegate)
       (member_function_attribute
         (pure))
-      (member_function_attribute
-        (immutable))
+      (member_function_attribute)
       (block_statement
         (return_statement
-          (return)
           (expression
-            (int_literal))))))
+            (integer_literal))))))
   (auto_declaration
     (storage_class
       (auto))
@@ -425,13 +403,11 @@ Qualifeid delegates
       (delegate)
       (member_function_attribute
         (pure))
-      (member_function_attribute
-        (const))
+      (member_function_attribute)
       (block_statement
         (return_statement
-          (return)
           (expression
-            (int_literal)))))))
+            (integer_literal)))))))
 
 ================================================================================
 Function Contract Statement
@@ -450,7 +426,7 @@ interface Stack {
     (aggregate_body
       (function_declaration
         (type
-          (int))
+          (identifier))
         (identifier)
         (parameters)
         (function_body
@@ -469,25 +445,25 @@ int g(float = 1.3 ...) {}
 (source_file
   (function_declaration
     (type
-      (int))
+      (identifier))
     (identifier)
     (parameters
       (parameter
         (type
-          (int))
+          (identifier))
         (identifier)
-        (int_literal)
+        (integer_literal)
         (ellipses)))
     (function_body
       (block_statement)))
   (function_declaration
     (type
-      (int))
+      (identifier))
     (identifier)
     (parameters
       (parameter
         (type
-          (float))
+          (primitive_type))
         (float_literal)
         (ellipses)))
     (function_body
@@ -520,9 +496,8 @@ void test()
           (function_body
             (block_statement
               (return_statement
-                (return)
                 (expression
-                  (int_literal))))))))))
+                  (integer_literal))))))))))
 
 ================================================================================
 Shortened function body
@@ -533,18 +508,17 @@ int f(int x) => x * 2;
 (source_file
   (function_declaration
     (type
-      (int))
+      (identifier))
     (identifier)
     (parameters
       (parameter
         (type
-          (int))
+          (identifier))
         (identifier)))
     (function_body
-      (binary_expression
-        (mul_expression
-          (identifier)
-          (int_literal))))))
+      (mul_binary_expression
+        (identifier)
+        (integer_literal)))))
 
 ================================================================================
 Shorted function body with contract
@@ -555,26 +529,24 @@ float recip(float x)in(x != 0) => 1/x;
 (source_file
   (function_declaration
     (type
-      (float))
+      (identifier))
     (identifier)
     (parameters
       (parameter
         (type
-          (float))
+          (identifier))
         (identifier)))
     (function_body
       (in_contract_expression
         (in)
         (assert_arguments
           (expression
-            (binary_expression
-              (equal_expression
-                (identifier)
-                (int_literal))))))
-      (binary_expression
-        (mul_expression
-          (int_literal)
-          (identifier))))))
+            (equal_binary_expression
+              (identifier)
+              (integer_literal)))))
+      (mul_binary_expression
+        (integer_literal)
+        (identifier)))))
 
 ================================================================================
 Enum is not a return type (DMD 2.105)
@@ -608,8 +580,7 @@ unittest {
             (named_arguments
               (named_argument
                 (identifier)
-                (expression
-                  (false))))))))))
+                (expression)))))))))
 
 ================================================================================
 Function call multiple named parameters
@@ -631,12 +602,11 @@ unittest {
             (named_arguments
               (named_argument
                 (identifier)
-                (expression
-                  (false)))
+                (expression))
               (named_argument
                 (identifier)
                 (expression
-                  (int_literal))))))))))
+                  (integer_literal))))))))))
 
 ================================================================================
 Function call multiple named and unnamed parameters
@@ -658,19 +628,17 @@ unittest {
             (named_arguments
               (named_argument
                 (identifier)
-                (expression
-                  (false)))
+                (expression))
               (named_argument
                 (expression
-                  (string_literal
-                    (quoted_string))))
+                  (quoted_string_literal)))
               (named_argument
                 (identifier)
                 (expression
-                  (int_literal)))
+                  (integer_literal)))
               (named_argument
                 (expression
-                  (char_literal))))))))))
+                  (character_literal))))))))))
 
 ================================================================================
 Function declaration attributes

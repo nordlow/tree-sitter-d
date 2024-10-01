@@ -26,7 +26,7 @@ enum X : int { x }
     (enum)
     (identifier)
     (type
-      (int))
+      (identifier))
     (enum_member
       (identifier))))
 
@@ -44,10 +44,10 @@ enum X { x = 1, y = 2 }
     (identifier)
     (enum_member
       (identifier)
-      (int_literal))
+      (integer_literal))
     (enum_member
       (identifier)
-      (int_literal))))
+      (integer_literal))))
 
 ================================================================================
 Enum with missing body
@@ -130,7 +130,7 @@ enum { x = 1 }
     (enum)
     (enum_member
       (identifier)
-      (int_literal))))
+      (integer_literal))))
 
 ================================================================================
 Anonymous enum typed values
@@ -144,9 +144,9 @@ enum { int x = 1 }
     (enum)
     (anonymous_enum_member
       (type
-        (int))
+        (identifier))
       (identifier)
-      (int_literal))))
+      (integer_literal))))
 
 ================================================================================
 Anonymous enum mixed
@@ -165,14 +165,14 @@ enum {
     (enum)
     (anonymous_enum_member
       (type
-        (int))
+        (identifier))
       (identifier)
-      (int_literal))
+      (integer_literal))
     (enum_member
       (identifier))
     (enum_member
       (identifier)
-      (int_literal))))
+      (integer_literal))))
 
 ================================================================================
 Anonymous enum with UDAs
@@ -194,26 +194,22 @@ enum
   (anonymous_enum_declaration
     (at_attribute
       (expression
-        (string_literal
-          (quoted_string))))
+        (quoted_string_literal)))
     (enum)
     (enum_member
       (identifier))
     (enum_member
       (at_attribute
         (expression
-          (string_literal
-            (quoted_string))))
+          (quoted_string_literal)))
       (identifier))
     (enum_member
       (at_attribute
         (expression
-          (string_literal
-            (quoted_string))))
+          (quoted_string_literal)))
       (at_attribute
         (expression
-          (string_literal
-            (quoted_string))))
+          (quoted_string_literal)))
       (identifier))
     (enum_member
       (at_attribute
@@ -228,8 +224,7 @@ enum
     (enum_member
       (at_attribute
         (expression
-          (string_literal
-            (quoted_string))))
+          (quoted_string_literal)))
       (at_attribute
         (identifier))
       (identifier))
@@ -238,6 +233,5 @@ enum
         (identifier))
       (at_attribute
         (expression
-          (string_literal
-            (quoted_string))))
+          (quoted_string_literal)))
       (identifier))))

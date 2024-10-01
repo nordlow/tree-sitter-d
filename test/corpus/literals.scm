@@ -15,27 +15,27 @@ auto e = 456uL;
     (storage_class
       (auto))
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
     (storage_class
       (auto))
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
     (storage_class
       (auto))
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
     (storage_class
       (auto))
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
     (storage_class
       (auto))
     (identifier)
-    (int_literal)))
+    (integer_literal)))
 
 ================================================================================
 Zeros
@@ -88,74 +88,74 @@ auto f15 = 0x0p20f;
     (storage_class
       (auto))
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
     (storage_class
       (auto))
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
     (storage_class
       (auto))
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
     (storage_class
       (auto))
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
     (storage_class
       (auto))
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
     (storage_class
       (auto))
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
     (storage_class
       (auto))
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
     (storage_class
       (auto))
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
     (storage_class
       (auto))
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
     (storage_class
       (auto))
     (identifier)
-    (int_literal))
+    (integer_literal))
   (comment)
   (auto_declaration
     (storage_class
       (auto))
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
     (storage_class
       (auto))
     (identifier)
-    (int_literal))
+    (integer_literal))
   (comment)
   (auto_declaration
     (storage_class
       (auto))
     (identifier)
-    (int_literal))
+    (integer_literal))
   (auto_declaration
     (storage_class
       (auto))
     (identifier)
-    (int_literal))
+    (integer_literal))
   (comment)
   (auto_declaration
     (storage_class
@@ -359,14 +359,10 @@ auto s1 = q{ if {""} /*comment*/ bob };
     (storage_class
       (auto))
     (identifier)
-    (string_literal
-      (token_string
-        (keyword
-          (if))
-        (string_literal
-          (quoted_string))
-        (comment)
-        (identifier)))))
+    (token_string_literal
+      (quoted_string_literal)
+      (comment)
+      (identifier))))
 
 ================================================================================
 Arrays
@@ -382,9 +378,9 @@ auto a1 = [ 1, 2, 3 ];
       (auto))
     (identifier)
     (array_literal
-      (int_literal)
-      (int_literal)
-      (int_literal))))
+      (integer_literal)
+      (integer_literal)
+      (integer_literal))))
 
 ================================================================================
 Associative Arrays
@@ -401,17 +397,14 @@ auto aa1 = [ "bob": 1, "sue": 2, "charlie": 3 ];
     (identifier)
     (array_literal
       (expression
-        (string_literal
-          (quoted_string)))
-      (int_literal)
+        (quoted_string_literal))
+      (integer_literal)
       (expression
-        (string_literal
-          (quoted_string)))
-      (int_literal)
+        (quoted_string_literal))
+      (integer_literal)
       (expression
-        (string_literal
-          (quoted_string)))
-      (int_literal))))
+        (quoted_string_literal))
+      (integer_literal))))
 
 ================================================================================
 Trailing Period
@@ -429,19 +422,19 @@ auto r = x[1..9];
       (auto))
     (identifier)
     (property_expression
-      (int_literal)
+      (integer_literal)
       (identifier)))
   (auto_declaration
     (storage_class
       (auto))
     (identifier)
-    (index_expression
+    (slice_expression
       (identifier)
-      (index
+      (slice_expression_range
         (expression
-          (int_literal))
+          (integer_literal))
         (expression
-          (int_literal))))))
+          (integer_literal))))))
 
 ================================================================================
 Simple delimited string
@@ -457,10 +450,10 @@ int x;
     (storage_class
       (auto))
     (identifier)
-    (string_literal))
+    (regular_string_literal))
   (variable_declaration
     (type
-      (int))
+      (identifier))
     (declarator
       (identifier))))
 
@@ -478,10 +471,10 @@ int x;
     (storage_class
       (auto))
     (identifier)
-    (string_literal))
+    (regular_string_literal))
   (variable_declaration
     (type
-      (int))
+      (identifier))
     (declarator
       (identifier))))
 
@@ -503,10 +496,10 @@ int x;
     (storage_class
       (auto))
     (identifier)
-    (string_literal))
+    (regular_string_literal))
   (variable_declaration
     (type
-      (int))
+      (identifier))
     (declarator
       (identifier))))
 
@@ -528,10 +521,10 @@ int x;
     (storage_class
       (auto))
     (identifier)
-    (string_literal))
+    (regular_string_literal))
   (variable_declaration
     (type
-      (int))
+      (identifier))
     (declarator
       (identifier))))
 
@@ -544,7 +537,7 @@ int b = 0xb___011__11_;
 (source_file
   (variable_declaration
     (type
-      (int))
+      (identifier))
     (declarator
       (identifier)
-      (int_literal))))
+      (integer_literal))))

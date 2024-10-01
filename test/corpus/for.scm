@@ -16,7 +16,6 @@ void f() {
     (function_body
       (block_statement
         (for_statement
-          (for)
           (scope_statement
             (block_statement)))))))
 
@@ -38,7 +37,6 @@ void f() {
     (function_body
       (block_statement
         (for_statement
-          (for)
           (scope_statement
             (block_statement)))))))
 
@@ -60,12 +58,11 @@ void f() {
     (function_body
       (block_statement
         (for_statement
-          (for)
           (expression_statement
             (expression_list
               (assignment_expression
                 (identifier)
-                (int_literal))))
+                (integer_literal))))
           (scope_statement
             (block_statement)))))))
 
@@ -87,13 +84,12 @@ void f() {
     (function_body
       (block_statement
         (for_statement
-          (for)
           (variable_declaration
             (type
-              (int))
+              (identifier))
             (declarator
               (identifier)
-              (int_literal)))
+              (integer_literal)))
           (scope_statement
             (block_statement)))))))
 
@@ -115,17 +111,15 @@ void f() {
     (function_body
       (block_statement
         (for_statement
-          (for)
           (expression_statement
             (expression_list
               (assignment_expression
                 (identifier)
-                (int_literal))))
+                (integer_literal))))
           (expression
-            (binary_expression
-              (rel_expression
-                (identifier)
-                (int_literal))))
+            (rel_binary_expression
+              (identifier)
+              (integer_literal)))
           (scope_statement
             (block_statement)))))))
 
@@ -147,12 +141,11 @@ void f() {
     (function_body
       (block_statement
         (for_statement
-          (for)
           (expression_statement
             (expression_list
               (assignment_expression
                 (identifier)
-                (int_literal))))
+                (integer_literal))))
           (expression_list
             (postfix_expression
               (identifier)))
@@ -177,7 +170,6 @@ void f() {
     (function_body
       (block_statement
         (for_statement
-          (for)
           (expression
             (identifier))
           (expression_list
@@ -204,7 +196,6 @@ void f() {
     (function_body
       (block_statement
         (for_statement
-          (for)
           (expression_list
             (postfix_expression
               (identifier)))
@@ -229,12 +220,10 @@ void f() {
     (function_body
       (block_statement
         (for_statement
-          (for)
           (expression
-            (binary_expression
-              (equal_expression
-                (identifier)
-                (int_literal))))
+            (equal_binary_expression
+              (identifier)
+              (integer_literal)))
           (scope_statement
             (block_statement)))))))
 
@@ -256,12 +245,10 @@ void f() {
     (function_body
       (block_statement
         (for_statement
-          (for)
           (expression
-            (binary_expression
-              (equal_expression
-                (identifier)
-                (int_literal))))
+            (equal_binary_expression
+              (identifier)
+              (integer_literal)))
           (scope_statement
             (block_statement)))))))
 
@@ -283,18 +270,16 @@ void f() {
     (function_body
       (block_statement
         (for_statement
-          (for)
           (variable_declaration
             (type
-              (int))
+              (identifier))
             (declarator
               (identifier)
-              (int_literal)))
+              (integer_literal)))
           (expression
-            (binary_expression
-              (equal_expression
-                (identifier)
-                (int_literal))))
+            (equal_binary_expression
+              (identifier)
+              (integer_literal)))
           (expression_list
             (postfix_expression
               (identifier)))
@@ -319,18 +304,16 @@ void f() {
     (function_body
       (block_statement
         (for_statement
-          (for)
           (variable_declaration
             (type
-              (int))
+              (identifier))
             (declarator
               (identifier)
-              (int_literal)))
+              (integer_literal)))
           (expression
-            (binary_expression
-              (equal_expression
-                (identifier)
-                (int_literal))))
+            (equal_binary_expression
+              (identifier)
+              (integer_literal)))
           (expression_list
             (postfix_expression
               (identifier))

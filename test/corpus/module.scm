@@ -42,8 +42,7 @@ deprecated ("it is too old") module test.blah.bah;
       (deprecated_attribute
         (deprecated)
         (expression
-          (string_literal
-            (quoted_string))))
+          (quoted_string_literal)))
       (module)
       (module_fqn
         (identifier)
@@ -80,8 +79,7 @@ Module at-attribute parameter
         (identifier)
         (arguments
           (expression
-            (string_literal
-              (quoted_string)))))
+            (quoted_string_literal))))
       (module)
       (module_fqn
         (identifier)
@@ -101,12 +99,12 @@ Module multiple attributes
         (identifier)
         (arguments
           (expression
-            (int_literal))))
+            (integer_literal))))
       (at_attribute
         (identifier)
         (arguments
           (expression
-            (int_literal))))
+            (integer_literal))))
       (module)
       (module_fqn
         (identifier)

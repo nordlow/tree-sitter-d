@@ -26,88 +26,73 @@ unittest
       (conditional_declaration
         (condition
           (static_if_condition
-            (static)
-            (if)
             (expression
-              (binary_expression
-                (equal_expression
-                  (identifier)
-                  (int_literal))))))
+              (equal_binary_expression
+                (identifier)
+                (integer_literal)))))
         (manifest_constant
           (enum)
           (manifest_declarator
             (identifier)
-            (int_literal)))
+            (integer_literal)))
         (else)
         (conditional_declaration
           (condition
             (static_if_condition
-              (static)
-              (if)
               (expression
-                (binary_expression
-                  (equal_expression
-                    (identifier)
-                    (int_literal))))))
+                (equal_binary_expression
+                  (identifier)
+                  (integer_literal)))))
           (conditional_declaration
             (condition
               (static_if_condition
-                (static)
-                (if)
                 (expression
-                  (binary_expression
-                    (equal_expression
-                      (identifier)
-                      (int_literal))))))
+                  (equal_binary_expression
+                    (identifier)
+                    (integer_literal)))))
             (variable_declaration
               (type
-                (char))
+                (identifier))
               (declarator
                 (identifier)
-                (char_literal)))
+                (character_literal)))
             (else)
             (variable_declaration
               (type
-                (char))
+                (identifier))
               (declarator
                 (identifier)
-                (int_literal))))
+                (integer_literal))))
           (else)
           (conditional_declaration
             (condition
               (static_if_condition
-                (static)
-                (if)
                 (expression
-                  (binary_expression
-                    (equal_expression
-                      (identifier)
-                      (int_literal))))))
+                  (equal_binary_expression
+                    (identifier)
+                    (integer_literal)))))
             (variable_declaration
               (type
-                (int))
+                (identifier))
               (declarator
                 (identifier)
-                (int_literal)))
+                (integer_literal)))
             (else)
             (conditional_declaration
               (condition
                 (static_if_condition
-                  (static)
-                  (if)
                   (expression
-                    (binary_expression
-                      (equal_expression
-                        (identifier)
-                        (int_literal))))))
+                    (equal_binary_expression
+                      (identifier)
+                      (integer_literal)))))
               (manifest_constant
                 (enum)
                 (manifest_declarator
                   (identifier)
-                  (int_literal)))
+                  (integer_literal)))
               (else)
               (manifest_constant
                 (enum)
                 (manifest_declarator
                   (identifier)
-                  (int_literal))))))))))
+                  (integer_literal))))))))))

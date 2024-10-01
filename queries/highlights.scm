@@ -9,7 +9,7 @@
 ; SPDX-License-Identifier: MIT
 
 (string_literal) @string
-(int_literal) @number
+(integer_literal) @number
 (float_literal) @number
 (char_literal) @number
 (identifier) @variable
@@ -21,7 +21,6 @@
 	(lazy)
 	(align)
 	(extern)
-	(static)
 	(abstract)
 	(final)
 	(override)
@@ -91,7 +90,6 @@
     (ref)
     (scope)
     (shared)
-    (static)
     (struct)
     (super)
     (synchronized)
@@ -119,11 +117,9 @@
     (default)
     (finally)
     (else)
-    (for)
     (foreach)
     (foreach_reverse)
     (goto)
-    (if)
     (switch)
     (try)
     (return)
@@ -218,7 +214,7 @@
     (ushort)
     (wchar)
     (dchar)
-    (int)
+    (primitive_type)
     (uint)
     (long)
     (ulong)

@@ -18,10 +18,9 @@ void f() {
         (expression_statement
           (expression_list
             (assert_expression
-              (assert)
               (assert_arguments
                 (expression
-                  (int_literal))))))))))
+                  (integer_literal))))))))))
 
 ================================================================================
 Assert Expression Multiple arguments
@@ -43,13 +42,11 @@ void f() {
         (expression_statement
           (expression_list
             (assert_expression
-              (assert)
               (assert_arguments
                 (expression
-                  (int_literal))
+                  (integer_literal))
                 (expression
-                  (string_literal
-                    (quoted_string)))))))))))
+                  (quoted_string_literal))))))))))
 
 ================================================================================
 Static Assert Expression Multiple arguments
@@ -68,13 +65,10 @@ void f() {
     (parameters)
     (function_body
       (block_statement
-        (static_assert
-          (static)
+        (static_assert_statement
           (assert_expression
-            (assert)
             (assert_arguments
               (expression
-                (int_literal))
+                (integer_literal))
               (expression
-                (string_literal
-                  (quoted_string))))))))))
+                (quoted_string_literal)))))))))

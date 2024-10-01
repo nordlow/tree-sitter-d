@@ -9,7 +9,7 @@ auto c1 = 'a';
     (storage_class
       (auto))
     (identifier)
-    (char_literal)))
+    (character_literal)))
 
 ================================================================================
 Hexadecimal character literal
@@ -22,7 +22,7 @@ auto c2 = '\x12';
     (storage_class
       (auto))
     (identifier)
-    (char_literal
+    (character_literal
       (escape_sequence))))
 
 ================================================================================
@@ -37,13 +37,13 @@ auto c4 = '\U01EF1234';
     (storage_class
       (auto))
     (identifier)
-    (char_literal
+    (character_literal
       (escape_sequence)))
   (auto_declaration
     (storage_class
       (auto))
     (identifier)
-    (char_literal
+    (character_literal
       (escape_sequence))))
 
 ================================================================================
@@ -57,7 +57,7 @@ auto c5 = '\&copy;';
     (storage_class
       (auto))
     (identifier)
-    (char_literal
+    (character_literal
       (htmlentity))))
 
 ================================================================================
@@ -74,25 +74,25 @@ auto c12 = '\\';
     (storage_class
       (auto))
     (identifier)
-    (char_literal
+    (character_literal
       (escape_sequence)))
   (auto_declaration
     (storage_class
       (auto))
     (identifier)
-    (char_literal
+    (character_literal
       (escape_sequence)))
   (auto_declaration
     (storage_class
       (auto))
     (identifier)
-    (char_literal
+    (character_literal
       (escape_sequence)))
   (auto_declaration
     (storage_class
       (auto))
     (identifier)
-    (char_literal
+    (character_literal
       (escape_sequence))))
 
 ================================================================================
@@ -110,17 +110,17 @@ auto c10 = '\012';
     (storage_class
       (auto))
     (identifier)
-    (char_literal
+    (character_literal
       (escape_sequence)))
   (auto_declaration
     (storage_class
       (auto))
     (identifier)
-    (char_literal
+    (character_literal
       (escape_sequence)))
   (auto_declaration
     (storage_class
       (auto))
     (identifier)
-    (char_literal
+    (character_literal
       (escape_sequence))))

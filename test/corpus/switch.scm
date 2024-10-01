@@ -25,7 +25,7 @@ unittest {
             (case_statement
               (case)
               (expression_list
-                (char_literal))
+                (character_literal))
               (break_statement
                 (break)))
             (case_statement
@@ -60,10 +60,10 @@ unittest {
             (case_statement
               (case)
               (expression
-                (char_literal))
+                (character_literal))
               (case)
               (expression
-                (char_literal))
+                (character_literal))
               (break_statement
                 (break)))
             (case_statement
@@ -96,9 +96,9 @@ unittest {
             (case_statement
               (case)
               (expression_list
-                (char_literal)
-                (char_literal)
-                (char_literal))
+                (character_literal)
+                (character_literal)
+                (character_literal))
               (break_statement
                 (break)))))))))
 
@@ -113,7 +113,7 @@ int f() {
 (source_file
   (function_declaration
     (type
-      (int))
+      (identifier))
     (identifier)
     (parameters)
     (function_body
@@ -125,7 +125,7 @@ int f() {
           (scope_statement
             (variable_declaration
               (type
-                (int))
+                (identifier))
               (declarator
                 (identifier)
-                (int_literal)))))))))
+                (integer_literal)))))))))

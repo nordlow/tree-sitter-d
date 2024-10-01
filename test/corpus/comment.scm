@@ -65,23 +65,19 @@ enum w = "/+ is /* not */ a // comment+/";
     (enum)
     (manifest_declarator
       (identifier)
-      (string_literal
-        (quoted_string))))
+      (quoted_string_literal)))
   (manifest_constant
     (enum)
     (manifest_declarator
       (identifier)
-      (string_literal
-        (quoted_string))))
+      (quoted_string_literal)))
   (manifest_constant
     (enum)
     (manifest_declarator
       (identifier)
-      (string_literal
-        (quoted_string))))
+      (quoted_string_literal)))
   (manifest_constant
     (enum)
     (manifest_declarator
       (identifier)
-      (string_literal
-        (quoted_string)))))
+      (quoted_string_literal))))

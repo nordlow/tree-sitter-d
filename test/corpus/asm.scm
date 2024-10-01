@@ -11,7 +11,7 @@ int f() {
 (source_file
   (function_declaration
     (type
-      (int))
+      (identifier))
     (identifier)
     (parameters)
     (function_body
@@ -20,9 +20,9 @@ int f() {
           (asm)
           (asm_inline
             (identifier)
-            (int_literal)
-            (int_literal)
-            (int_literal))
+            (integer_literal)
+            (integer_literal)
+            (integer_literal))
           (comment))))))
 
 ================================================================================
@@ -36,7 +36,7 @@ int f() {
 (source_file
   (function_declaration
     (type
-      (int))
+      (identifier))
     (identifier)
     (parameters)
     (function_body
@@ -57,7 +57,7 @@ int f() {
 (source_file
   (function_declaration
     (type
-      (int))
+      (identifier))
     (identifier)
     (parameters)
     (function_body
@@ -85,7 +85,7 @@ int f() {
 (source_file
   (function_declaration
     (type
-      (int))
+      (identifier))
     (identifier)
     (parameters)
     (function_body
@@ -94,6 +94,5 @@ int f() {
           (asm)
           (asm_inline
             (identifier)
-            (string_literal
-              (quoted_string)))
+            (quoted_string_literal))
           (comment))))))

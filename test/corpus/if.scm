@@ -12,9 +12,7 @@ unittest {
     (unittest)
     (block_statement
       (if_statement
-        (if)
-        (if_condition
-          (true))
+        (if_condition)
         (scope_statement
           (block_statement
             (expression_statement
@@ -35,9 +33,7 @@ unittest {
     (unittest)
     (block_statement
       (if_statement
-        (if)
-        (if_condition
-          (true))
+        (if_condition)
         (scope_statement
           (block_statement
             (expression_statement
@@ -64,7 +60,6 @@ unittest {
     (unittest)
     (block_statement
       (if_statement
-        (if)
         (if_condition
           (auto)
           (identifier)
