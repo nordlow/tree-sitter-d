@@ -29,7 +29,7 @@ struct s {
     (aggregate_body
       (variable_declaration
         (type
-          (int))
+          (primitive_type))
         (declarator
           (identifier))))))
 
@@ -51,12 +51,12 @@ struct s {
     (aggregate_body
       (variable_declaration
         (type
-          (int))
+          (primitive_type))
         (declarator
           (identifier)))
       (variable_declaration
         (type
-          (int))
+          (primitive_type))
         (declarator
           (identifier))))))
 

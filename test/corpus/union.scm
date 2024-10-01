@@ -29,7 +29,7 @@ union s {
     (aggregate_body
       (variable_declaration
         (type
-          (int))
+          (primitive_type))
         (declarator
           (identifier))))))
 
@@ -51,12 +51,12 @@ union s {
     (aggregate_body
       (variable_declaration
         (type
-          (int))
+          (primitive_type))
         (declarator
           (identifier)))
       (variable_declaration
         (type
-          (int))
+          (primitive_type))
         (declarator
           (identifier))))))
 
@@ -76,7 +76,7 @@ union {
     (aggregate_body
       (variable_declaration
         (type
-          (int))
+          (primitive_type))
         (declarator
           (identifier))))))
 
@@ -100,7 +100,7 @@ union u (something) {
     (aggregate_body
       (variable_declaration
         (type
-          (int))
+          (primitive_type))
         (declarator
           (identifier))))))
 
@@ -122,14 +122,13 @@ union u (something) if (!something) {
       (template_parameter
         (identifier)))
     (constraint
-      (if)
       (expression
         (unary_expression
           (identifier))))
     (aggregate_body
       (variable_declaration
         (type
-          (int))
+          (primitive_type))
         (declarator
           (identifier))))))
 
@@ -152,12 +151,12 @@ auto u1 = U(asInt: 0x3F800000);
     (aggregate_body
       (variable_declaration
         (type
-          (float))
+          (primitive_type))
         (declarator
           (identifier)))
       (variable_declaration
         (type
-          (uint))
+          (primitive_type))
         (declarator
           (identifier)))))
   (auto_declaration

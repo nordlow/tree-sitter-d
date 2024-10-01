@@ -3,7 +3,7 @@ Is expression
 ================================================================================
 
 void f() {
-	return is(int);
+	return is(primitive_type);
 }
 --------------------------------------------------------------------------------
 
@@ -21,7 +21,7 @@ void f() {
             (is_expression
               (is)
               (type
-                (int)))))))))
+                (identifier)))))))))
 
 ================================================================================
 Is expression specialization
@@ -47,7 +47,7 @@ void f() {
             (is_expression
               (is)
               (type
-                (int))
+                (primitive_type))
               (type_specialization
                 (shared)))))
         (return_statement
@@ -84,7 +84,7 @@ void f() {
             (is_expression
               (is)
               (type
-                (int))
+                (primitive_type))
               (identifier)
               (type_specialization
                 (shared)))))
@@ -122,7 +122,7 @@ void f() {
             (is_expression
               (is)
               (type
-                (int))
+                (primitive_type))
               (identifier)
               (type_specialization
                 (shared))

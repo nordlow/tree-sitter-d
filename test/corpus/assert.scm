@@ -69,7 +69,6 @@ void f() {
     (function_body
       (block_statement
         (static_assert
-          (static)
           (assert_expression
             (assert)
             (assert_arguments

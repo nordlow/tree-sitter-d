@@ -350,10 +350,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "static_assert",
           "named": true
         },
@@ -529,10 +525,6 @@
         },
         {
           "type": "scope",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -714,10 +706,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "storage_class",
           "named": true
         },
@@ -838,10 +826,6 @@
         },
         {
           "type": "scope",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -1146,10 +1130,6 @@
         },
         {
           "type": "scope",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -1516,7 +1496,103 @@
       "required": false,
       "types": [
         {
+          "type": "abstract",
+          "named": true
+        },
+        {
+          "type": "alias",
+          "named": true
+        },
+        {
+          "type": "align",
+          "named": true
+        },
+        {
+          "type": "asm",
+          "named": true
+        },
+        {
+          "type": "assert",
+          "named": true
+        },
+        {
+          "type": "auto",
+          "named": true
+        },
+        {
+          "type": "break",
+          "named": true
+        },
+        {
+          "type": "case",
+          "named": true
+        },
+        {
+          "type": "cast",
+          "named": true
+        },
+        {
+          "type": "catch",
+          "named": true
+        },
+        {
           "type": "char_literal",
+          "named": true
+        },
+        {
+          "type": "class",
+          "named": true
+        },
+        {
+          "type": "continue",
+          "named": true
+        },
+        {
+          "type": "debug",
+          "named": true
+        },
+        {
+          "type": "default",
+          "named": true
+        },
+        {
+          "type": "delegate",
+          "named": true
+        },
+        {
+          "type": "delete",
+          "named": true
+        },
+        {
+          "type": "deprecated",
+          "named": true
+        },
+        {
+          "type": "else",
+          "named": true
+        },
+        {
+          "type": "enum",
+          "named": true
+        },
+        {
+          "type": "export",
+          "named": true
+        },
+        {
+          "type": "extern",
+          "named": true
+        },
+        {
+          "type": "false",
+          "named": true
+        },
+        {
+          "type": "final",
+          "named": true
+        },
+        {
+          "type": "finally",
           "named": true
         },
         {
@@ -1524,7 +1600,27 @@
           "named": true
         },
         {
+          "type": "function",
+          "named": true
+        },
+        {
+          "type": "goto",
+          "named": true
+        },
+        {
+          "type": "gshared",
+          "named": true
+        },
+        {
           "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "import",
+          "named": true
+        },
+        {
+          "type": "in",
           "named": true
         },
         {
@@ -1532,11 +1628,175 @@
           "named": true
         },
         {
-          "type": "keyword",
+          "type": "interface",
+          "named": true
+        },
+        {
+          "type": "invariant",
+          "named": true
+        },
+        {
+          "type": "is",
+          "named": true
+        },
+        {
+          "type": "lazy",
+          "named": true
+        },
+        {
+          "type": "mixin",
+          "named": true
+        },
+        {
+          "type": "module",
+          "named": true
+        },
+        {
+          "type": "new",
+          "named": true
+        },
+        {
+          "type": "nothrow",
+          "named": true
+        },
+        {
+          "type": "null",
+          "named": true
+        },
+        {
+          "type": "out",
+          "named": true
+        },
+        {
+          "type": "override",
+          "named": true
+        },
+        {
+          "type": "package",
+          "named": true
+        },
+        {
+          "type": "parameters_",
+          "named": true
+        },
+        {
+          "type": "pragma",
+          "named": true
+        },
+        {
+          "type": "primitive_type",
+          "named": true
+        },
+        {
+          "type": "private",
+          "named": true
+        },
+        {
+          "type": "protected",
+          "named": true
+        },
+        {
+          "type": "public",
+          "named": true
+        },
+        {
+          "type": "pure",
+          "named": true
+        },
+        {
+          "type": "ref",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "scope",
+          "named": true
+        },
+        {
+          "type": "special_keyword",
           "named": true
         },
         {
           "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "struct",
+          "named": true
+        },
+        {
+          "type": "super",
+          "named": true
+        },
+        {
+          "type": "switch",
+          "named": true
+        },
+        {
+          "type": "synchronized",
+          "named": true
+        },
+        {
+          "type": "template",
+          "named": true
+        },
+        {
+          "type": "this",
+          "named": true
+        },
+        {
+          "type": "throw",
+          "named": true
+        },
+        {
+          "type": "traits",
+          "named": true
+        },
+        {
+          "type": "true",
+          "named": true
+        },
+        {
+          "type": "try",
+          "named": true
+        },
+        {
+          "type": "type_ctor",
+          "named": true
+        },
+        {
+          "type": "typeid",
+          "named": true
+        },
+        {
+          "type": "typeof",
+          "named": true
+        },
+        {
+          "type": "union",
+          "named": true
+        },
+        {
+          "type": "unittest",
+          "named": true
+        },
+        {
+          "type": "vector",
+          "named": true
+        },
+        {
+          "type": "version",
+          "named": true
+        },
+        {
+          "type": "void",
+          "named": true
+        },
+        {
+          "type": "with",
           "named": true
         }
       ]
@@ -1854,7 +2114,7 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
         {
           "type": "abstract",
@@ -1942,10 +2202,6 @@
         },
         {
           "type": "scope",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -2225,10 +2481,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "storage_class",
           "named": true
         },
@@ -2256,55 +2508,7 @@
       "required": true,
       "types": [
         {
-          "type": "bool",
-          "named": true
-        },
-        {
-          "type": "byte",
-          "named": true
-        },
-        {
-          "type": "cdouble",
-          "named": true
-        },
-        {
-          "type": "cent",
-          "named": true
-        },
-        {
-          "type": "cfloat",
-          "named": true
-        },
-        {
-          "type": "char",
-          "named": true
-        },
-        {
-          "type": "creal",
-          "named": true
-        },
-        {
-          "type": "cstring",
-          "named": true
-        },
-        {
-          "type": "dchar",
-          "named": true
-        },
-        {
-          "type": "double",
-          "named": true
-        },
-        {
-          "type": "dstring",
-          "named": true
-        },
-        {
           "type": "expression",
-          "named": true
-        },
-        {
-          "type": "float",
           "named": true
         },
         {
@@ -2312,51 +2516,11 @@
           "named": true
         },
         {
-          "type": "idouble",
-          "named": true
-        },
-        {
-          "type": "ifloat",
-          "named": true
-        },
-        {
-          "type": "int",
-          "named": true
-        },
-        {
-          "type": "ireal",
-          "named": true
-        },
-        {
-          "type": "long",
-          "named": true
-        },
-        {
           "type": "mixin_expression",
           "named": true
         },
         {
-          "type": "noreturn",
-          "named": true
-        },
-        {
-          "type": "ptrdiff_t",
-          "named": true
-        },
-        {
-          "type": "real",
-          "named": true
-        },
-        {
-          "type": "short",
-          "named": true
-        },
-        {
-          "type": "size_t",
-          "named": true
-        },
-        {
-          "type": "string",
+          "type": "primitive_type",
           "named": true
         },
         {
@@ -2380,39 +2544,11 @@
           "named": true
         },
         {
-          "type": "ubyte",
-          "named": true
-        },
-        {
-          "type": "ucent",
-          "named": true
-        },
-        {
-          "type": "uint",
-          "named": true
-        },
-        {
-          "type": "ulong",
-          "named": true
-        },
-        {
-          "type": "ushort",
-          "named": true
-        },
-        {
           "type": "vector_type",
           "named": true
         },
         {
           "type": "void",
-          "named": true
-        },
-        {
-          "type": "wchar",
-          "named": true
-        },
-        {
-          "type": "wstring",
           "named": true
         }
       ]
@@ -2889,10 +3025,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "static_assert",
           "named": true
         },
@@ -2999,14 +3131,6 @@
           "named": true
         },
         {
-          "type": "bool",
-          "named": true
-        },
-        {
-          "type": "byte",
-          "named": true
-        },
-        {
           "type": "call_expression",
           "named": true
         },
@@ -3015,35 +3139,7 @@
           "named": true
         },
         {
-          "type": "cdouble",
-          "named": true
-        },
-        {
-          "type": "cent",
-          "named": true
-        },
-        {
-          "type": "cfloat",
-          "named": true
-        },
-        {
-          "type": "char",
-          "named": true
-        },
-        {
           "type": "char_literal",
-          "named": true
-        },
-        {
-          "type": "creal",
-          "named": true
-        },
-        {
-          "type": "cstring",
-          "named": true
-        },
-        {
-          "type": "dchar",
           "named": true
         },
         {
@@ -3055,19 +3151,7 @@
           "named": true
         },
         {
-          "type": "double",
-          "named": true
-        },
-        {
-          "type": "dstring",
-          "named": true
-        },
-        {
           "type": "false",
-          "named": true
-        },
-        {
-          "type": "float",
           "named": true
         },
         {
@@ -3083,14 +3167,6 @@
           "named": true
         },
         {
-          "type": "idouble",
-          "named": true
-        },
-        {
-          "type": "ifloat",
-          "named": true
-        },
-        {
           "type": "import_expression",
           "named": true
         },
@@ -3099,23 +3175,11 @@
           "named": true
         },
         {
-          "type": "int",
-          "named": true
-        },
-        {
           "type": "int_literal",
           "named": true
         },
         {
-          "type": "ireal",
-          "named": true
-        },
-        {
           "type": "is_expression",
-          "named": true
-        },
-        {
-          "type": "long",
           "named": true
         },
         {
@@ -3131,10 +3195,6 @@
           "named": true
         },
         {
-          "type": "noreturn",
-          "named": true
-        },
-        {
           "type": "null",
           "named": true
         },
@@ -3147,31 +3207,15 @@
           "named": true
         },
         {
+          "type": "primitive_type",
+          "named": true
+        },
+        {
           "type": "property_expression",
           "named": true
         },
         {
-          "type": "ptrdiff_t",
-          "named": true
-        },
-        {
-          "type": "real",
-          "named": true
-        },
-        {
-          "type": "short",
-          "named": true
-        },
-        {
-          "type": "size_t",
-          "named": true
-        },
-        {
           "type": "special_keyword",
-          "named": true
-        },
-        {
-          "type": "string",
           "named": true
         },
         {
@@ -3215,35 +3259,7 @@
           "named": true
         },
         {
-          "type": "ubyte",
-          "named": true
-        },
-        {
-          "type": "ucent",
-          "named": true
-        },
-        {
-          "type": "uint",
-          "named": true
-        },
-        {
-          "type": "ulong",
-          "named": true
-        },
-        {
           "type": "unary_expression",
-          "named": true
-        },
-        {
-          "type": "ushort",
-          "named": true
-        },
-        {
-          "type": "wchar",
-          "named": true
-        },
-        {
-          "type": "wstring",
           "named": true
         }
       ]
@@ -3507,10 +3523,6 @@
         },
         {
           "type": "scope_guard_statement",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -4071,10 +4083,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "synchronized",
           "named": true
         },
@@ -4301,10 +4309,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "static_assert",
           "named": true
         },
@@ -4396,15 +4400,11 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": true,
+      "multiple": false,
       "required": true,
       "types": [
         {
           "type": "expression",
-          "named": true
-        },
-        {
-          "type": "if",
           "named": true
         }
       ]
@@ -4524,10 +4524,6 @@
         },
         {
           "type": "shared",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -5048,10 +5044,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "synchronized",
           "named": true
         },
@@ -5090,20 +5082,6 @@
           }
         ]
       }
-    },
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "do",
-          "named": true
-        },
-        {
-          "type": "while",
-          "named": true
-        }
-      ]
     }
   },
   {
@@ -5222,10 +5200,6 @@
         },
         {
           "type": "scope",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -6187,16 +6161,6 @@
           }
         ]
       }
-    },
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "for",
-          "named": true
-        }
-      ]
     }
   },
   {
@@ -6220,14 +6184,6 @@
       "types": [
         {
           "type": "expression",
-          "named": true
-        },
-        {
-          "type": "foreach",
-          "named": true
-        },
-        {
-          "type": "foreach_reverse",
           "named": true
         },
         {
@@ -6318,10 +6274,6 @@
         },
         {
           "type": "delete_expression",
-          "named": true
-        },
-        {
-          "type": "do",
           "named": true
         },
         {
@@ -6568,10 +6520,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "storage_class",
           "named": true
         },
@@ -6648,10 +6596,6 @@
         },
         {
           "type": "delete_expression",
-          "named": true
-        },
-        {
-          "type": "do",
           "named": true
         },
         {
@@ -7229,10 +7173,6 @@
           "named": true
         },
         {
-          "type": "if",
-          "named": true
-        },
-        {
           "type": "if_condition",
           "named": true
         }
@@ -7360,10 +7300,6 @@
         },
         {
           "type": "scope",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -7735,10 +7671,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "synchronized",
           "named": true
         },
@@ -7804,7 +7736,103 @@
       "required": false,
       "types": [
         {
+          "type": "abstract",
+          "named": true
+        },
+        {
+          "type": "alias",
+          "named": true
+        },
+        {
+          "type": "align",
+          "named": true
+        },
+        {
+          "type": "asm",
+          "named": true
+        },
+        {
+          "type": "assert",
+          "named": true
+        },
+        {
+          "type": "auto",
+          "named": true
+        },
+        {
+          "type": "break",
+          "named": true
+        },
+        {
+          "type": "case",
+          "named": true
+        },
+        {
+          "type": "cast",
+          "named": true
+        },
+        {
+          "type": "catch",
+          "named": true
+        },
+        {
           "type": "char_literal",
+          "named": true
+        },
+        {
+          "type": "class",
+          "named": true
+        },
+        {
+          "type": "continue",
+          "named": true
+        },
+        {
+          "type": "debug",
+          "named": true
+        },
+        {
+          "type": "default",
+          "named": true
+        },
+        {
+          "type": "delegate",
+          "named": true
+        },
+        {
+          "type": "delete",
+          "named": true
+        },
+        {
+          "type": "deprecated",
+          "named": true
+        },
+        {
+          "type": "else",
+          "named": true
+        },
+        {
+          "type": "enum",
+          "named": true
+        },
+        {
+          "type": "export",
+          "named": true
+        },
+        {
+          "type": "extern",
+          "named": true
+        },
+        {
+          "type": "false",
+          "named": true
+        },
+        {
+          "type": "final",
+          "named": true
+        },
+        {
+          "type": "finally",
           "named": true
         },
         {
@@ -7812,7 +7840,27 @@
           "named": true
         },
         {
+          "type": "function",
+          "named": true
+        },
+        {
+          "type": "goto",
+          "named": true
+        },
+        {
+          "type": "gshared",
+          "named": true
+        },
+        {
           "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "import",
+          "named": true
+        },
+        {
+          "type": "in",
           "named": true
         },
         {
@@ -7820,15 +7868,179 @@
           "named": true
         },
         {
+          "type": "interface",
+          "named": true
+        },
+        {
           "type": "interpolation_expression",
           "named": true
         },
         {
-          "type": "keyword",
+          "type": "invariant",
+          "named": true
+        },
+        {
+          "type": "is",
+          "named": true
+        },
+        {
+          "type": "lazy",
+          "named": true
+        },
+        {
+          "type": "mixin",
+          "named": true
+        },
+        {
+          "type": "module",
+          "named": true
+        },
+        {
+          "type": "new",
+          "named": true
+        },
+        {
+          "type": "nothrow",
+          "named": true
+        },
+        {
+          "type": "null",
+          "named": true
+        },
+        {
+          "type": "out",
+          "named": true
+        },
+        {
+          "type": "override",
+          "named": true
+        },
+        {
+          "type": "package",
+          "named": true
+        },
+        {
+          "type": "parameters_",
+          "named": true
+        },
+        {
+          "type": "pragma",
+          "named": true
+        },
+        {
+          "type": "primitive_type",
+          "named": true
+        },
+        {
+          "type": "private",
+          "named": true
+        },
+        {
+          "type": "protected",
+          "named": true
+        },
+        {
+          "type": "public",
+          "named": true
+        },
+        {
+          "type": "pure",
+          "named": true
+        },
+        {
+          "type": "ref",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "scope",
+          "named": true
+        },
+        {
+          "type": "special_keyword",
           "named": true
         },
         {
           "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "struct",
+          "named": true
+        },
+        {
+          "type": "super",
+          "named": true
+        },
+        {
+          "type": "switch",
+          "named": true
+        },
+        {
+          "type": "synchronized",
+          "named": true
+        },
+        {
+          "type": "template",
+          "named": true
+        },
+        {
+          "type": "this",
+          "named": true
+        },
+        {
+          "type": "throw",
+          "named": true
+        },
+        {
+          "type": "traits",
+          "named": true
+        },
+        {
+          "type": "true",
+          "named": true
+        },
+        {
+          "type": "try",
+          "named": true
+        },
+        {
+          "type": "type_ctor",
+          "named": true
+        },
+        {
+          "type": "typeid",
+          "named": true
+        },
+        {
+          "type": "typeof",
+          "named": true
+        },
+        {
+          "type": "union",
+          "named": true
+        },
+        {
+          "type": "unittest",
+          "named": true
+        },
+        {
+          "type": "vector",
+          "named": true
+        },
+        {
+          "type": "version",
+          "named": true
+        },
+        {
+          "type": "void",
+          "named": true
+        },
+        {
+          "type": "with",
           "named": true
         }
       ]
@@ -7958,10 +8170,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "synchronized",
           "named": true
         },
@@ -7998,445 +8206,6 @@
         },
         {
           "type": "type_specialization",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "keyword",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "abstract",
-          "named": true
-        },
-        {
-          "type": "alias",
-          "named": true
-        },
-        {
-          "type": "align",
-          "named": true
-        },
-        {
-          "type": "asm",
-          "named": true
-        },
-        {
-          "type": "assert",
-          "named": true
-        },
-        {
-          "type": "auto",
-          "named": true
-        },
-        {
-          "type": "bool",
-          "named": true
-        },
-        {
-          "type": "break",
-          "named": true
-        },
-        {
-          "type": "byte",
-          "named": true
-        },
-        {
-          "type": "case",
-          "named": true
-        },
-        {
-          "type": "cast",
-          "named": true
-        },
-        {
-          "type": "catch",
-          "named": true
-        },
-        {
-          "type": "cdouble",
-          "named": true
-        },
-        {
-          "type": "cent",
-          "named": true
-        },
-        {
-          "type": "cfloat",
-          "named": true
-        },
-        {
-          "type": "char",
-          "named": true
-        },
-        {
-          "type": "class",
-          "named": true
-        },
-        {
-          "type": "continue",
-          "named": true
-        },
-        {
-          "type": "creal",
-          "named": true
-        },
-        {
-          "type": "cstring",
-          "named": true
-        },
-        {
-          "type": "dchar",
-          "named": true
-        },
-        {
-          "type": "debug",
-          "named": true
-        },
-        {
-          "type": "default",
-          "named": true
-        },
-        {
-          "type": "delegate",
-          "named": true
-        },
-        {
-          "type": "delete",
-          "named": true
-        },
-        {
-          "type": "deprecated",
-          "named": true
-        },
-        {
-          "type": "do",
-          "named": true
-        },
-        {
-          "type": "double",
-          "named": true
-        },
-        {
-          "type": "dstring",
-          "named": true
-        },
-        {
-          "type": "else",
-          "named": true
-        },
-        {
-          "type": "enum",
-          "named": true
-        },
-        {
-          "type": "export",
-          "named": true
-        },
-        {
-          "type": "extern",
-          "named": true
-        },
-        {
-          "type": "false",
-          "named": true
-        },
-        {
-          "type": "final",
-          "named": true
-        },
-        {
-          "type": "finally",
-          "named": true
-        },
-        {
-          "type": "float",
-          "named": true
-        },
-        {
-          "type": "for",
-          "named": true
-        },
-        {
-          "type": "foreach",
-          "named": true
-        },
-        {
-          "type": "foreach_reverse",
-          "named": true
-        },
-        {
-          "type": "function",
-          "named": true
-        },
-        {
-          "type": "goto",
-          "named": true
-        },
-        {
-          "type": "gshared",
-          "named": true
-        },
-        {
-          "type": "idouble",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "ifloat",
-          "named": true
-        },
-        {
-          "type": "import",
-          "named": true
-        },
-        {
-          "type": "in",
-          "named": true
-        },
-        {
-          "type": "int",
-          "named": true
-        },
-        {
-          "type": "interface",
-          "named": true
-        },
-        {
-          "type": "invariant",
-          "named": true
-        },
-        {
-          "type": "ireal",
-          "named": true
-        },
-        {
-          "type": "is",
-          "named": true
-        },
-        {
-          "type": "lazy",
-          "named": true
-        },
-        {
-          "type": "long",
-          "named": true
-        },
-        {
-          "type": "mixin",
-          "named": true
-        },
-        {
-          "type": "module",
-          "named": true
-        },
-        {
-          "type": "new",
-          "named": true
-        },
-        {
-          "type": "noreturn",
-          "named": true
-        },
-        {
-          "type": "nothrow",
-          "named": true
-        },
-        {
-          "type": "null",
-          "named": true
-        },
-        {
-          "type": "out",
-          "named": true
-        },
-        {
-          "type": "override",
-          "named": true
-        },
-        {
-          "type": "package",
-          "named": true
-        },
-        {
-          "type": "parameters_",
-          "named": true
-        },
-        {
-          "type": "pragma",
-          "named": true
-        },
-        {
-          "type": "private",
-          "named": true
-        },
-        {
-          "type": "protected",
-          "named": true
-        },
-        {
-          "type": "ptrdiff_t",
-          "named": true
-        },
-        {
-          "type": "public",
-          "named": true
-        },
-        {
-          "type": "pure",
-          "named": true
-        },
-        {
-          "type": "real",
-          "named": true
-        },
-        {
-          "type": "ref",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "scope",
-          "named": true
-        },
-        {
-          "type": "short",
-          "named": true
-        },
-        {
-          "type": "size_t",
-          "named": true
-        },
-        {
-          "type": "special_keyword",
-          "named": true
-        },
-        {
-          "type": "static",
-          "named": true
-        },
-        {
-          "type": "string",
-          "named": true
-        },
-        {
-          "type": "struct",
-          "named": true
-        },
-        {
-          "type": "super",
-          "named": true
-        },
-        {
-          "type": "switch",
-          "named": true
-        },
-        {
-          "type": "synchronized",
-          "named": true
-        },
-        {
-          "type": "template",
-          "named": true
-        },
-        {
-          "type": "this",
-          "named": true
-        },
-        {
-          "type": "throw",
-          "named": true
-        },
-        {
-          "type": "traits",
-          "named": true
-        },
-        {
-          "type": "true",
-          "named": true
-        },
-        {
-          "type": "try",
-          "named": true
-        },
-        {
-          "type": "type_ctor",
-          "named": true
-        },
-        {
-          "type": "typeid",
-          "named": true
-        },
-        {
-          "type": "typeof",
-          "named": true
-        },
-        {
-          "type": "ubyte",
-          "named": true
-        },
-        {
-          "type": "ucent",
-          "named": true
-        },
-        {
-          "type": "uint",
-          "named": true
-        },
-        {
-          "type": "ulong",
-          "named": true
-        },
-        {
-          "type": "union",
-          "named": true
-        },
-        {
-          "type": "unittest",
-          "named": true
-        },
-        {
-          "type": "ushort",
-          "named": true
-        },
-        {
-          "type": "vector",
-          "named": true
-        },
-        {
-          "type": "version",
-          "named": true
-        },
-        {
-          "type": "void",
-          "named": true
-        },
-        {
-          "type": "wchar",
-          "named": true
-        },
-        {
-          "type": "while",
-          "named": true
-        },
-        {
-          "type": "with",
-          "named": true
-        },
-        {
-          "type": "wstring",
           "named": true
         }
       ]
@@ -8939,10 +8708,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "storage_class",
           "named": true
         },
@@ -9431,10 +9196,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "synchronized",
           "named": true
         },
@@ -9562,10 +9323,6 @@
         },
         {
           "type": "scope",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -9792,10 +9549,6 @@
         },
         {
           "type": "scope",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -10668,10 +10421,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "synchronized",
           "named": true
         },
@@ -11183,10 +10932,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "static_assert",
           "named": true
         },
@@ -11384,55 +11129,7 @@
       "required": true,
       "types": [
         {
-          "type": "bool",
-          "named": true
-        },
-        {
-          "type": "byte",
-          "named": true
-        },
-        {
-          "type": "cdouble",
-          "named": true
-        },
-        {
-          "type": "cent",
-          "named": true
-        },
-        {
-          "type": "cfloat",
-          "named": true
-        },
-        {
-          "type": "char",
-          "named": true
-        },
-        {
-          "type": "creal",
-          "named": true
-        },
-        {
-          "type": "cstring",
-          "named": true
-        },
-        {
-          "type": "dchar",
-          "named": true
-        },
-        {
-          "type": "double",
-          "named": true
-        },
-        {
-          "type": "dstring",
-          "named": true
-        },
-        {
           "type": "expression_list",
-          "named": true
-        },
-        {
-          "type": "float",
           "named": true
         },
         {
@@ -11440,47 +11137,7 @@
           "named": true
         },
         {
-          "type": "idouble",
-          "named": true
-        },
-        {
-          "type": "ifloat",
-          "named": true
-        },
-        {
-          "type": "int",
-          "named": true
-        },
-        {
-          "type": "ireal",
-          "named": true
-        },
-        {
-          "type": "long",
-          "named": true
-        },
-        {
-          "type": "noreturn",
-          "named": true
-        },
-        {
-          "type": "ptrdiff_t",
-          "named": true
-        },
-        {
-          "type": "real",
-          "named": true
-        },
-        {
-          "type": "short",
-          "named": true
-        },
-        {
-          "type": "size_t",
-          "named": true
-        },
-        {
-          "type": "string",
+          "type": "primitive_type",
           "named": true
         },
         {
@@ -11496,43 +11153,20 @@
           "named": true
         },
         {
-          "type": "ubyte",
-          "named": true
-        },
-        {
-          "type": "ucent",
-          "named": true
-        },
-        {
-          "type": "uint",
-          "named": true
-        },
-        {
-          "type": "ulong",
-          "named": true
-        },
-        {
-          "type": "ushort",
-          "named": true
-        },
-        {
           "type": "vector_type",
           "named": true
         },
         {
           "type": "void",
           "named": true
-        },
-        {
-          "type": "wchar",
-          "named": true
-        },
-        {
-          "type": "wstring",
-          "named": true
         }
       ]
     }
+  },
+  {
+    "type": "primitive_type",
+    "named": true,
+    "fields": {}
   },
   {
     "type": "property_expression",
@@ -12169,10 +11803,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "static_assert",
           "named": true
         },
@@ -12606,10 +12236,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "static_assert",
           "named": true
         },
@@ -12666,15 +12292,11 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": true,
+      "multiple": false,
       "required": true,
       "types": [
         {
           "type": "assert_expression",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         }
       ]
@@ -12770,14 +12392,6 @@
         },
         {
           "type": "final",
-          "named": true
-        },
-        {
-          "type": "foreach",
-          "named": true
-        },
-        {
-          "type": "foreach_reverse",
           "named": true
         },
         {
@@ -12877,10 +12491,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "static_assert",
           "named": true
         },
@@ -12932,15 +12542,11 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": true,
+      "multiple": false,
       "required": true,
       "types": [
         {
           "type": "foreach_statement",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         }
       ]
@@ -12951,19 +12557,11 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": true,
+      "multiple": false,
       "required": true,
       "types": [
         {
           "type": "expression",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         }
       ]
@@ -12975,7 +12573,7 @@
     "fields": {},
     "children": {
       "multiple": false,
-      "required": true,
+      "required": false,
       "types": [
         {
           "type": "abstract",
@@ -13031,10 +12629,6 @@
         },
         {
           "type": "scope",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -13193,10 +12787,6 @@
         },
         {
           "type": "scope",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -13435,59 +13025,11 @@
       "required": false,
       "types": [
         {
-          "type": "bool",
-          "named": true
-        },
-        {
-          "type": "byte",
-          "named": true
-        },
-        {
-          "type": "cdouble",
-          "named": true
-        },
-        {
-          "type": "cent",
-          "named": true
-        },
-        {
-          "type": "cfloat",
-          "named": true
-        },
-        {
-          "type": "char",
-          "named": true
-        },
-        {
           "type": "char_literal",
           "named": true
         },
         {
-          "type": "creal",
-          "named": true
-        },
-        {
-          "type": "cstring",
-          "named": true
-        },
-        {
-          "type": "dchar",
-          "named": true
-        },
-        {
-          "type": "double",
-          "named": true
-        },
-        {
-          "type": "dstring",
-          "named": true
-        },
-        {
           "type": "false",
-          "named": true
-        },
-        {
-          "type": "float",
           "named": true
         },
         {
@@ -13499,31 +13041,7 @@
           "named": true
         },
         {
-          "type": "idouble",
-          "named": true
-        },
-        {
-          "type": "ifloat",
-          "named": true
-        },
-        {
-          "type": "int",
-          "named": true
-        },
-        {
           "type": "int_literal",
-          "named": true
-        },
-        {
-          "type": "ireal",
-          "named": true
-        },
-        {
-          "type": "long",
-          "named": true
-        },
-        {
-          "type": "noreturn",
           "named": true
         },
         {
@@ -13531,27 +13049,11 @@
           "named": true
         },
         {
-          "type": "ptrdiff_t",
-          "named": true
-        },
-        {
-          "type": "real",
-          "named": true
-        },
-        {
-          "type": "short",
-          "named": true
-        },
-        {
-          "type": "size_t",
+          "type": "primitive_type",
           "named": true
         },
         {
           "type": "special_keyword",
-          "named": true
-        },
-        {
-          "type": "string",
           "named": true
         },
         {
@@ -13571,35 +13073,7 @@
           "named": true
         },
         {
-          "type": "ubyte",
-          "named": true
-        },
-        {
-          "type": "ucent",
-          "named": true
-        },
-        {
-          "type": "uint",
-          "named": true
-        },
-        {
-          "type": "ulong",
-          "named": true
-        },
-        {
-          "type": "ushort",
-          "named": true
-        },
-        {
           "type": "void",
-          "named": true
-        },
-        {
-          "type": "wchar",
-          "named": true
-        },
-        {
-          "type": "wstring",
           "named": true
         }
       ]
@@ -13794,10 +13268,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "static_assert",
           "named": true
         },
@@ -13973,10 +13443,6 @@
         },
         {
           "type": "scope",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -14644,7 +14110,103 @@
       "required": false,
       "types": [
         {
+          "type": "abstract",
+          "named": true
+        },
+        {
+          "type": "alias",
+          "named": true
+        },
+        {
+          "type": "align",
+          "named": true
+        },
+        {
+          "type": "asm",
+          "named": true
+        },
+        {
+          "type": "assert",
+          "named": true
+        },
+        {
+          "type": "auto",
+          "named": true
+        },
+        {
+          "type": "break",
+          "named": true
+        },
+        {
+          "type": "case",
+          "named": true
+        },
+        {
+          "type": "cast",
+          "named": true
+        },
+        {
+          "type": "catch",
+          "named": true
+        },
+        {
           "type": "char_literal",
+          "named": true
+        },
+        {
+          "type": "class",
+          "named": true
+        },
+        {
+          "type": "continue",
+          "named": true
+        },
+        {
+          "type": "debug",
+          "named": true
+        },
+        {
+          "type": "default",
+          "named": true
+        },
+        {
+          "type": "delegate",
+          "named": true
+        },
+        {
+          "type": "delete",
+          "named": true
+        },
+        {
+          "type": "deprecated",
+          "named": true
+        },
+        {
+          "type": "else",
+          "named": true
+        },
+        {
+          "type": "enum",
+          "named": true
+        },
+        {
+          "type": "export",
+          "named": true
+        },
+        {
+          "type": "extern",
+          "named": true
+        },
+        {
+          "type": "false",
+          "named": true
+        },
+        {
+          "type": "final",
+          "named": true
+        },
+        {
+          "type": "finally",
           "named": true
         },
         {
@@ -14652,7 +14214,27 @@
           "named": true
         },
         {
+          "type": "function",
+          "named": true
+        },
+        {
+          "type": "goto",
+          "named": true
+        },
+        {
+          "type": "gshared",
+          "named": true
+        },
+        {
           "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "import",
+          "named": true
+        },
+        {
+          "type": "in",
           "named": true
         },
         {
@@ -14660,11 +14242,175 @@
           "named": true
         },
         {
-          "type": "keyword",
+          "type": "interface",
+          "named": true
+        },
+        {
+          "type": "invariant",
+          "named": true
+        },
+        {
+          "type": "is",
+          "named": true
+        },
+        {
+          "type": "lazy",
+          "named": true
+        },
+        {
+          "type": "mixin",
+          "named": true
+        },
+        {
+          "type": "module",
+          "named": true
+        },
+        {
+          "type": "new",
+          "named": true
+        },
+        {
+          "type": "nothrow",
+          "named": true
+        },
+        {
+          "type": "null",
+          "named": true
+        },
+        {
+          "type": "out",
+          "named": true
+        },
+        {
+          "type": "override",
+          "named": true
+        },
+        {
+          "type": "package",
+          "named": true
+        },
+        {
+          "type": "parameters_",
+          "named": true
+        },
+        {
+          "type": "pragma",
+          "named": true
+        },
+        {
+          "type": "primitive_type",
+          "named": true
+        },
+        {
+          "type": "private",
+          "named": true
+        },
+        {
+          "type": "protected",
+          "named": true
+        },
+        {
+          "type": "public",
+          "named": true
+        },
+        {
+          "type": "pure",
+          "named": true
+        },
+        {
+          "type": "ref",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "scope",
+          "named": true
+        },
+        {
+          "type": "special_keyword",
           "named": true
         },
         {
           "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "struct",
+          "named": true
+        },
+        {
+          "type": "super",
+          "named": true
+        },
+        {
+          "type": "switch",
+          "named": true
+        },
+        {
+          "type": "synchronized",
+          "named": true
+        },
+        {
+          "type": "template",
+          "named": true
+        },
+        {
+          "type": "this",
+          "named": true
+        },
+        {
+          "type": "throw",
+          "named": true
+        },
+        {
+          "type": "traits",
+          "named": true
+        },
+        {
+          "type": "true",
+          "named": true
+        },
+        {
+          "type": "try",
+          "named": true
+        },
+        {
+          "type": "type_ctor",
+          "named": true
+        },
+        {
+          "type": "typeid",
+          "named": true
+        },
+        {
+          "type": "typeof",
+          "named": true
+        },
+        {
+          "type": "union",
+          "named": true
+        },
+        {
+          "type": "unittest",
+          "named": true
+        },
+        {
+          "type": "vector",
+          "named": true
+        },
+        {
+          "type": "version",
+          "named": true
+        },
+        {
+          "type": "void",
+          "named": true
+        },
+        {
+          "type": "with",
           "named": true
         }
       ]
@@ -14740,59 +14486,11 @@
           "named": true
         },
         {
-          "type": "bool",
-          "named": true
-        },
-        {
-          "type": "byte",
-          "named": true
-        },
-        {
-          "type": "cdouble",
-          "named": true
-        },
-        {
-          "type": "cent",
-          "named": true
-        },
-        {
-          "type": "cfloat",
-          "named": true
-        },
-        {
-          "type": "char",
-          "named": true
-        },
-        {
-          "type": "creal",
-          "named": true
-        },
-        {
-          "type": "cstring",
-          "named": true
-        },
-        {
-          "type": "dchar",
-          "named": true
-        },
-        {
           "type": "delegate",
           "named": true
         },
         {
-          "type": "double",
-          "named": true
-        },
-        {
-          "type": "dstring",
-          "named": true
-        },
-        {
           "type": "expression",
-          "named": true
-        },
-        {
-          "type": "float",
           "named": true
         },
         {
@@ -14804,35 +14502,11 @@
           "named": true
         },
         {
-          "type": "idouble",
-          "named": true
-        },
-        {
-          "type": "ifloat",
-          "named": true
-        },
-        {
-          "type": "int",
-          "named": true
-        },
-        {
-          "type": "ireal",
-          "named": true
-        },
-        {
-          "type": "long",
-          "named": true
-        },
-        {
           "type": "member_function_attribute",
           "named": true
         },
         {
           "type": "mixin_expression",
-          "named": true
-        },
-        {
-          "type": "noreturn",
           "named": true
         },
         {
@@ -14844,27 +14518,11 @@
           "named": true
         },
         {
-          "type": "ptrdiff_t",
+          "type": "primitive_type",
           "named": true
         },
         {
           "type": "pure",
-          "named": true
-        },
-        {
-          "type": "real",
-          "named": true
-        },
-        {
-          "type": "short",
-          "named": true
-        },
-        {
-          "type": "size_t",
-          "named": true
-        },
-        {
-          "type": "string",
           "named": true
         },
         {
@@ -14888,39 +14546,11 @@
           "named": true
         },
         {
-          "type": "ubyte",
-          "named": true
-        },
-        {
-          "type": "ucent",
-          "named": true
-        },
-        {
-          "type": "uint",
-          "named": true
-        },
-        {
-          "type": "ulong",
-          "named": true
-        },
-        {
-          "type": "ushort",
-          "named": true
-        },
-        {
           "type": "vector_type",
           "named": true
         },
         {
           "type": "void",
-          "named": true
-        },
-        {
-          "type": "wchar",
-          "named": true
-        },
-        {
-          "type": "wstring",
           "named": true
         }
       ]
@@ -15369,10 +14999,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "synchronized",
           "named": true
         },
@@ -15492,10 +15118,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "synchronized",
           "named": true
         },
@@ -15612,10 +15234,6 @@
         },
         {
           "type": "scope",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -15757,15 +15375,11 @@
       }
     },
     "children": {
-      "multiple": true,
+      "multiple": false,
       "required": true,
       "types": [
         {
           "type": "if_condition",
-          "named": true
-        },
-        {
-          "type": "while",
           "named": true
         }
       ]
@@ -16270,7 +15884,7 @@
   },
   {
     "type": "bool",
-    "named": true
+    "named": false
   },
   {
     "type": "break",
@@ -16278,7 +15892,7 @@
   },
   {
     "type": "byte",
-    "named": true
+    "named": false
   },
   {
     "type": "case",
@@ -16294,19 +15908,19 @@
   },
   {
     "type": "cdouble",
-    "named": true
+    "named": false
   },
   {
     "type": "cent",
-    "named": true
+    "named": false
   },
   {
     "type": "cfloat",
-    "named": true
+    "named": false
   },
   {
     "type": "char",
-    "named": true
+    "named": false
   },
   {
     "type": "class",
@@ -16326,15 +15940,15 @@
   },
   {
     "type": "creal",
-    "named": true
+    "named": false
   },
   {
     "type": "cstring",
-    "named": true
+    "named": false
   },
   {
     "type": "dchar",
-    "named": true
+    "named": false
   },
   {
     "type": "debug",
@@ -16362,15 +15976,15 @@
   },
   {
     "type": "do",
-    "named": true
+    "named": false
   },
   {
     "type": "double",
-    "named": true
+    "named": false
   },
   {
     "type": "dstring",
-    "named": true
+    "named": false
   },
   {
     "type": "else",
@@ -16414,7 +16028,7 @@
   },
   {
     "type": "float",
-    "named": true
+    "named": false
   },
   {
     "type": "float_literal",
@@ -16422,15 +16036,15 @@
   },
   {
     "type": "for",
-    "named": true
+    "named": false
   },
   {
     "type": "foreach",
-    "named": true
+    "named": false
   },
   {
     "type": "foreach_reverse",
-    "named": true
+    "named": false
   },
   {
     "type": "function",
@@ -16462,15 +16076,15 @@
   },
   {
     "type": "idouble",
-    "named": true
+    "named": false
   },
   {
     "type": "if",
-    "named": true
+    "named": false
   },
   {
     "type": "ifloat",
-    "named": true
+    "named": false
   },
   {
     "type": "immutable",
@@ -16490,7 +16104,7 @@
   },
   {
     "type": "int",
-    "named": true
+    "named": false
   },
   {
     "type": "int_literal",
@@ -16514,7 +16128,7 @@
   },
   {
     "type": "ireal",
-    "named": true
+    "named": false
   },
   {
     "type": "is",
@@ -16526,7 +16140,7 @@
   },
   {
     "type": "long",
-    "named": true
+    "named": false
   },
   {
     "type": "mixin",
@@ -16542,7 +16156,7 @@
   },
   {
     "type": "noreturn",
-    "named": true
+    "named": false
   },
   {
     "type": "not_in",
@@ -16590,7 +16204,7 @@
   },
   {
     "type": "ptrdiff_t",
-    "named": true
+    "named": false
   },
   {
     "type": "public",
@@ -16610,7 +16224,7 @@
   },
   {
     "type": "real",
-    "named": true
+    "named": false
   },
   {
     "type": "ref",
@@ -16634,19 +16248,19 @@
   },
   {
     "type": "short",
-    "named": true
+    "named": false
   },
   {
     "type": "size_t",
-    "named": true
+    "named": false
   },
   {
     "type": "static",
-    "named": true
+    "named": false
   },
   {
     "type": "string",
-    "named": true
+    "named": false
   },
   {
     "type": "struct",
@@ -16702,19 +16316,19 @@
   },
   {
     "type": "ubyte",
-    "named": true
+    "named": false
   },
   {
     "type": "ucent",
-    "named": true
+    "named": false
   },
   {
     "type": "uint",
-    "named": true
+    "named": false
   },
   {
     "type": "ulong",
-    "named": true
+    "named": false
   },
   {
     "type": "union",
@@ -16726,7 +16340,7 @@
   },
   {
     "type": "ushort",
-    "named": true
+    "named": false
   },
   {
     "type": "vector",
@@ -16742,11 +16356,11 @@
   },
   {
     "type": "wchar",
-    "named": true
+    "named": false
   },
   {
     "type": "while",
-    "named": true
+    "named": false
   },
   {
     "type": "with",
@@ -16754,7 +16368,7 @@
   },
   {
     "type": "wstring",
-    "named": true
+    "named": false
   },
   {
     "type": "x\"",

@@ -17,7 +17,7 @@ unittest {
             (new_expression
               (new)
               (type
-                (int)))))))))
+                (primitive_type)))))))))
 
 ================================================================================
 New array
@@ -38,7 +38,7 @@ unittest {
             (new_expression
               (new)
               (type
-                (char)
+                (primitive_type)
                 (expression
                   (int_literal))))))))))
 
@@ -68,7 +68,7 @@ unittest
           (aggregate_body
             (variable_declaration
               (type
-                (int))
+                (primitive_type))
               (declarator
                 (identifier)
                 (int_literal)))))))))
@@ -77,7 +77,7 @@ unittest
 New anonymous class args
 ================================================================================
 unittest {
-  x = new class(3) { this(int) { }};
+  x = new class(3) { this(primitive_type) { }};
 }
 --------------------------------------------------------------------------------
 
@@ -101,7 +101,7 @@ unittest {
                   (parameters
                     (parameter
                       (type
-                        (int))))
+                        (identifier))))
                   (function_body
                     (block_statement)))))))))))
 

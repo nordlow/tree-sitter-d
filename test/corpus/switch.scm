@@ -113,7 +113,7 @@ int f() {
 (source_file
   (function_declaration
     (type
-      (int))
+      (primitive_type))
     (identifier)
     (parameters)
     (function_body
@@ -125,7 +125,7 @@ int f() {
           (scope_statement
             (variable_declaration
               (type
-                (int))
+                (primitive_type))
               (declarator
                 (identifier)
                 (int_literal)))))))))

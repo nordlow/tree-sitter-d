@@ -8,7 +8,7 @@ int f() { return 0; }
 (source_file
   (function_declaration
     (type
-      (int))
+      (primitive_type))
     (identifier)
     (parameters)
     (function_body
@@ -28,12 +28,12 @@ int f(int c) { return c; }
 (source_file
   (function_declaration
     (type
-      (int))
+      (primitive_type))
     (identifier)
     (parameters
       (parameter
         (type
-          (int))
+          (primitive_type))
         (identifier)))
     (function_body
       (block_statement
@@ -52,12 +52,12 @@ int f(int c, ...) { return c; }
 (source_file
   (function_declaration
     (type
-      (int))
+      (primitive_type))
     (identifier)
     (parameters
       (parameter
         (type
-          (int))
+          (primitive_type))
         (identifier))
       (ellipses))
     (function_body
@@ -77,7 +77,7 @@ int f(...) { return c; }
 (source_file
   (function_declaration
     (type
-      (int))
+      (primitive_type))
     (identifier)
     (parameters
       (ellipses))
@@ -98,12 +98,12 @@ int f(int...) { return c; }
 (source_file
   (function_declaration
     (type
-      (int))
+      (primitive_type))
     (identifier)
     (parameters
       (parameter
         (type
-          (int))
+          (primitive_type))
         (ellipses)))
     (function_body
       (block_statement
@@ -122,16 +122,16 @@ int f(int a, int b) @safe pure @myattr { return a+b; }
 (source_file
   (function_declaration
     (type
-      (int))
+      (primitive_type))
     (identifier)
     (parameters
       (parameter
         (type
-          (int))
+          (primitive_type))
         (identifier))
       (parameter
         (type
-          (int))
+          (primitive_type))
         (identifier)))
     (member_function_attribute
       (at_attribute
@@ -184,7 +184,7 @@ Function literal anonymous parameter
 ================================================================================
 
 unittest {
-	f((int){return 1;});
+	f((primitive_type){return 1;});
 }
 
 --------------------------------------------------------------------------------
@@ -202,7 +202,7 @@ unittest {
                 (expression
                   (function_literal
                     (type
-                      (int))
+                      (identifier))
                     (block_statement
                       (return_statement
                         (return)
@@ -232,7 +232,7 @@ unittest {
                 (expression
                   (function_literal
                     (type
-                      (bool))
+                      (primitive_type))
                     (identifier)
                     (block_statement
                       (return_statement
@@ -264,7 +264,7 @@ alias h = delegate auto ref (int x) { return x; };
       (auto)
       (ref)
       (type
-        (int))
+        (primitive_type))
       (identifier)
       (identifier)))
   (auto_declaration
@@ -275,7 +275,7 @@ alias h = delegate auto ref (int x) { return x; };
       (auto)
       (ref)
       (type
-        (int))
+        (primitive_type))
       (identifier)
       (block_statement
         (return_statement
@@ -293,7 +293,7 @@ alias h = delegate auto ref (int x) { return x; };
       (parameters
         (parameter
           (type
-            (int))
+            (primitive_type))
           (identifier)))
       (block_statement
         (return_statement
@@ -309,7 +309,7 @@ alias h = delegate auto ref (int x) { return x; };
       (auto)
       (ref)
       (type
-        (int))
+        (primitive_type))
       (identifier)
       (block_statement
         (return_statement
@@ -450,7 +450,7 @@ interface Stack {
     (aggregate_body
       (function_declaration
         (type
-          (int))
+          (primitive_type))
         (identifier)
         (parameters)
         (function_body
@@ -469,12 +469,12 @@ int g(float = 1.3 ...) {}
 (source_file
   (function_declaration
     (type
-      (int))
+      (primitive_type))
     (identifier)
     (parameters
       (parameter
         (type
-          (int))
+          (primitive_type))
         (identifier)
         (int_literal)
         (ellipses)))
@@ -482,12 +482,12 @@ int g(float = 1.3 ...) {}
       (block_statement)))
   (function_declaration
     (type
-      (int))
+      (primitive_type))
     (identifier)
     (parameters
       (parameter
         (type
-          (float))
+          (primitive_type))
         (float_literal)
         (ellipses)))
     (function_body
@@ -533,12 +533,12 @@ int f(int x) => x * 2;
 (source_file
   (function_declaration
     (type
-      (int))
+      (primitive_type))
     (identifier)
     (parameters
       (parameter
         (type
-          (int))
+          (primitive_type))
         (identifier)))
     (function_body
       (binary_expression
@@ -555,12 +555,12 @@ float recip(float x)in(x != 0) => 1/x;
 (source_file
   (function_declaration
     (type
-      (float))
+      (primitive_type))
     (identifier)
     (parameters
       (parameter
         (type
-          (float))
+          (primitive_type))
         (identifier)))
     (function_body
       (in_contract_expression

@@ -7,7 +7,7 @@ int x  = 5 / 3;
 (source_file
   (variable_declaration
     (type
-      (int))
+      (primitive_type))
     (declarator
       (identifier)
       (binary_expression

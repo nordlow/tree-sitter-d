@@ -26,8 +26,6 @@ unittest
       (conditional_declaration
         (condition
           (static_if_condition
-            (static)
-            (if)
             (expression
               (binary_expression
                 (equal_expression
@@ -42,8 +40,6 @@ unittest
         (conditional_declaration
           (condition
             (static_if_condition
-              (static)
-              (if)
               (expression
                 (binary_expression
                   (equal_expression
@@ -52,8 +48,6 @@ unittest
           (conditional_declaration
             (condition
               (static_if_condition
-                (static)
-                (if)
                 (expression
                   (binary_expression
                     (equal_expression
@@ -61,14 +55,14 @@ unittest
                       (int_literal))))))
             (variable_declaration
               (type
-                (char))
+                (primitive_type))
               (declarator
                 (identifier)
                 (char_literal)))
             (else)
             (variable_declaration
               (type
-                (char))
+                (primitive_type))
               (declarator
                 (identifier)
                 (int_literal))))
@@ -76,8 +70,6 @@ unittest
           (conditional_declaration
             (condition
               (static_if_condition
-                (static)
-                (if)
                 (expression
                   (binary_expression
                     (equal_expression
@@ -85,7 +77,7 @@ unittest
                       (int_literal))))))
             (variable_declaration
               (type
-                (int))
+                (primitive_type))
               (declarator
                 (identifier)
                 (int_literal)))
@@ -93,8 +85,6 @@ unittest
             (conditional_declaration
               (condition
                 (static_if_condition
-                  (static)
-                  (if)
                   (expression
                     (binary_expression
                       (equal_expression

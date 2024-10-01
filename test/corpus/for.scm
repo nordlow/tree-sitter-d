@@ -16,7 +16,6 @@ void f() {
     (function_body
       (block_statement
         (for_statement
-          (for)
           (scope_statement
             (block_statement)))))))
 
@@ -38,7 +37,6 @@ void f() {
     (function_body
       (block_statement
         (for_statement
-          (for)
           (scope_statement
             (block_statement)))))))
 
@@ -60,7 +58,6 @@ void f() {
     (function_body
       (block_statement
         (for_statement
-          (for)
           (expression_statement
             (expression_list
               (assignment_expression
@@ -87,10 +84,9 @@ void f() {
     (function_body
       (block_statement
         (for_statement
-          (for)
           (variable_declaration
             (type
-              (int))
+              (primitive_type))
             (declarator
               (identifier)
               (int_literal)))
@@ -115,7 +111,6 @@ void f() {
     (function_body
       (block_statement
         (for_statement
-          (for)
           (expression_statement
             (expression_list
               (assignment_expression
@@ -147,7 +142,6 @@ void f() {
     (function_body
       (block_statement
         (for_statement
-          (for)
           (expression_statement
             (expression_list
               (assignment_expression
@@ -177,7 +171,6 @@ void f() {
     (function_body
       (block_statement
         (for_statement
-          (for)
           (expression
             (identifier))
           (expression_list
@@ -204,7 +197,6 @@ void f() {
     (function_body
       (block_statement
         (for_statement
-          (for)
           (expression_list
             (postfix_expression
               (identifier)))
@@ -229,7 +221,6 @@ void f() {
     (function_body
       (block_statement
         (for_statement
-          (for)
           (expression
             (binary_expression
               (equal_expression
@@ -256,7 +247,6 @@ void f() {
     (function_body
       (block_statement
         (for_statement
-          (for)
           (expression
             (binary_expression
               (equal_expression
@@ -283,10 +273,9 @@ void f() {
     (function_body
       (block_statement
         (for_statement
-          (for)
           (variable_declaration
             (type
-              (int))
+              (primitive_type))
             (declarator
               (identifier)
               (int_literal)))
@@ -319,10 +308,9 @@ void f() {
     (function_body
       (block_statement
         (for_statement
-          (for)
           (variable_declaration
             (type
-              (int))
+              (primitive_type))
             (declarator
               (identifier)
               (int_literal)))

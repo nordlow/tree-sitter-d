@@ -45,7 +45,6 @@
 	(lazy)
 	(align)
 	(extern)
-	(static)
 	(abstract)
 	(final)
 	(override)
@@ -126,7 +125,6 @@
 	(finally)
 	(else)
 	(goto)
-	(if)
 	(switch)
 	(try)
 ] @keyword.control
@@ -142,7 +140,7 @@
 	(ushort)
 	(wchar)
 	(dchar)
-	(int)
+	(primitive_type)
 	(uint)
 	(long)
 	(ulong)
@@ -177,7 +175,6 @@
 
 ; some editors have a repeat keyword construct
 [
-	(for)
 	(foreach)
 	(foreach_reverse)
 	(while)
@@ -240,7 +237,6 @@
 	(pure)
 	(gshared)
 	(shared)
-	(static)
 ] @keyword.modifier
 
 [

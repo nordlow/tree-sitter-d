@@ -58,7 +58,6 @@
     (ref)
     (scope)
     (shared)
-    (static)
     (super)
     (synchronized)
     (template)
@@ -95,7 +94,6 @@
     (finally)
     (else)
     (goto)
-    (if)
     (switch)
     (try)
 ] @keyword.control
@@ -105,7 +103,6 @@
 (import) @keyword.control.import
 
 [
-    (for)
     (foreach)
     (foreach_reverse)
     (while)
@@ -200,7 +197,7 @@
     (ushort)
     (wchar)
     (dchar)
-    (int)
+    (primitive_type)
     (uint)
     (long)
     (ulong)

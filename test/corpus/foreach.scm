@@ -16,7 +16,6 @@ void f() {
     (function_body
       (block_statement
         (foreach_statement
-          (foreach)
           (foreach_type
             (identifier))
           (expression
@@ -42,7 +41,6 @@ void f() {
     (function_body
       (block_statement
         (foreach_statement
-          (foreach_reverse)
           (foreach_type
             (identifier))
           (expression
@@ -68,10 +66,9 @@ void f() {
     (function_body
       (block_statement
         (foreach_statement
-          (foreach)
           (foreach_type
             (type
-              (int))
+              (primitive_type))
             (identifier))
           (expression
             (identifier))
@@ -96,14 +93,13 @@ void f() {
     (function_body
       (block_statement
         (foreach_statement
-          (foreach)
           (foreach_type
             (type
-              (int))
+              (primitive_type))
             (identifier))
           (foreach_type
             (type
-              (char))
+              (primitive_type))
             (identifier))
           (expression
             (identifier))
@@ -128,7 +124,6 @@ void f() {
     (function_body
       (block_statement
         (foreach_statement
-          (foreach)
           (foreach_type
             (identifier))
           (expression
@@ -156,10 +151,9 @@ void f() {
     (function_body
       (block_statement
         (foreach_statement
-          (foreach)
           (foreach_type
             (type
-              (int))
+              (primitive_type))
             (identifier))
           (expression
             (identifier))
@@ -186,10 +180,9 @@ void f() {
     (function_body
       (block_statement
         (foreach_statement
-          (foreach)
           (foreach_type
             (type
-              (int))
+              (primitive_type))
             (identifier))
           (expression
             (int_literal))
@@ -217,11 +210,10 @@ void f() {
     (function_body
       (block_statement
         (foreach_statement
-          (foreach)
           (foreach_type
             (scope)
             (type
-              (string))
+              (primitive_type))
             (identifier))
           (foreach_type
             (scope)

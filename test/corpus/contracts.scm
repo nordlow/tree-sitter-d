@@ -17,7 +17,7 @@ class C
     (aggregate_body
       (function_declaration
         (type
-          (int))
+          (primitive_type))
         (identifier)
         (parameters)
         (function_body

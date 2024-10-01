@@ -26,7 +26,7 @@ enum X : int { x }
     (enum)
     (identifier)
     (type
-      (int))
+      (primitive_type))
     (enum_member
       (identifier))))
 
@@ -144,7 +144,7 @@ enum { int x = 1 }
     (enum)
     (anonymous_enum_member
       (type
-        (int))
+        (primitive_type))
       (identifier)
       (int_literal))))
 
@@ -165,7 +165,7 @@ enum {
     (enum)
     (anonymous_enum_member
       (type
-        (int))
+        (primitive_type))
       (identifier)
       (int_literal))
     (enum_member

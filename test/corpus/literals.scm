@@ -361,8 +361,6 @@ auto s1 = q{ if {""} /*comment*/ bob };
     (identifier)
     (string_literal
       (token_string
-        (keyword
-          (if))
         (string_literal
           (quoted_string))
         (comment)
@@ -460,7 +458,7 @@ int x;
     (string_literal))
   (variable_declaration
     (type
-      (int))
+      (primitive_type))
     (declarator
       (identifier))))
 
@@ -481,7 +479,7 @@ int x;
     (string_literal))
   (variable_declaration
     (type
-      (int))
+      (primitive_type))
     (declarator
       (identifier))))
 
@@ -506,7 +504,7 @@ int x;
     (string_literal))
   (variable_declaration
     (type
-      (int))
+      (primitive_type))
     (declarator
       (identifier))))
 
@@ -531,7 +529,7 @@ int x;
     (string_literal))
   (variable_declaration
     (type
-      (int))
+      (primitive_type))
     (declarator
       (identifier))))
 
@@ -544,7 +542,7 @@ int b = 0xb___011__11_;
 (source_file
   (variable_declaration
     (type
-      (int))
+      (primitive_type))
     (declarator
       (identifier)
       (int_literal))))

@@ -429,7 +429,7 @@
         },
         {
           "type": "SYMBOL",
-          "name": "keyword"
+          "name": "_keyword"
         },
         {
           "type": "STRING",
@@ -653,7 +653,7 @@
         }
       ]
     },
-    "keyword": {
+    "_keyword": {
       "type": "CHOICE",
       "members": [
         {
@@ -725,8 +725,8 @@
           "name": "deprecated"
         },
         {
-          "type": "SYMBOL",
-          "name": "do"
+          "type": "STRING",
+          "value": "do"
         },
         {
           "type": "SYMBOL",
@@ -753,16 +753,16 @@
           "name": "finally"
         },
         {
-          "type": "SYMBOL",
-          "name": "for"
+          "type": "STRING",
+          "value": "for"
         },
         {
-          "type": "SYMBOL",
-          "name": "foreach"
+          "type": "STRING",
+          "value": "foreach"
         },
         {
-          "type": "SYMBOL",
-          "name": "foreach_reverse"
+          "type": "STRING",
+          "value": "foreach_reverse"
         },
         {
           "type": "SYMBOL",
@@ -773,8 +773,8 @@
           "name": "goto"
         },
         {
-          "type": "SYMBOL",
-          "name": "if"
+          "type": "STRING",
+          "value": "if"
         },
         {
           "type": "SYMBOL",
@@ -861,8 +861,8 @@
           "name": "scope"
         },
         {
-          "type": "SYMBOL",
-          "name": "static"
+          "type": "STRING",
+          "value": "static"
         },
         {
           "type": "SYMBOL",
@@ -917,8 +917,8 @@
           "name": "version"
         },
         {
-          "type": "SYMBOL",
-          "name": "while"
+          "type": "STRING",
+          "value": "while"
         },
         {
           "type": "SYMBOL",
@@ -958,7 +958,7 @@
         },
         {
           "type": "SYMBOL",
-          "name": "_builtin_type"
+          "name": "primitive_type"
         },
         {
           "type": "SYMBOL",
@@ -969,216 +969,6 @@
           "name": "type_ctor"
         }
       ]
-    },
-    "bool": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "bool"
-      }
-    },
-    "byte": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "byte"
-      }
-    },
-    "ubyte": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "ubyte"
-      }
-    },
-    "char": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "char"
-      }
-    },
-    "short": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "short"
-      }
-    },
-    "ushort": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "ushort"
-      }
-    },
-    "int": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "int"
-      }
-    },
-    "uint": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "uint"
-      }
-    },
-    "long": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "long"
-      }
-    },
-    "ulong": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "ulong"
-      }
-    },
-    "cent": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "cent"
-      }
-    },
-    "ucent": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "ucent"
-      }
-    },
-    "wchar": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "wchar"
-      }
-    },
-    "dchar": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "dchar"
-      }
-    },
-    "float": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "float"
-      }
-    },
-    "double": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "double"
-      }
-    },
-    "real": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "real"
-      }
-    },
-    "ifloat": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "ifloat"
-      }
-    },
-    "idouble": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "idouble"
-      }
-    },
-    "ireal": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "ireal"
-      }
-    },
-    "cfloat": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "cfloat"
-      }
-    },
-    "cdouble": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "cdouble"
-      }
-    },
-    "creal": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "creal"
-      }
-    },
-    "size_t": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "size_t"
-      }
-    },
-    "ptrdiff_t": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "ptrdiff_t"
-      }
-    },
-    "string": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "string"
-      }
-    },
-    "cstring": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "cstring"
-      }
-    },
-    "dstring": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "dstring"
-      }
-    },
-    "wstring": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "wstring"
-      }
-    },
-    "noreturn": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "noreturn"
-      }
     },
     "true": {
       "type": "TOKEN",
@@ -1345,10 +1135,6 @@
         "value": "deprecated"
       }
     },
-    "do": {
-      "type": "STRING",
-      "value": "do"
-    },
     "else": {
       "type": "STRING",
       "value": "else"
@@ -1379,27 +1165,6 @@
         "value": "finally"
       }
     },
-    "for": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "for"
-      }
-    },
-    "foreach": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "foreach"
-      }
-    },
-    "foreach_reverse": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "foreach_reverse"
-      }
-    },
     "function": {
       "type": "TOKEN",
       "content": {
@@ -1412,13 +1177,6 @@
       "content": {
         "type": "STRING",
         "value": "goto"
-      }
-    },
-    "if": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "if"
       }
     },
     "immutable": {
@@ -1589,13 +1347,6 @@
         "value": "shared"
       }
     },
-    "static": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "static"
-      }
-    },
     "struct": {
       "type": "TOKEN",
       "content": {
@@ -1671,13 +1422,6 @@
       "content": {
         "type": "STRING",
         "value": "version"
-      }
-    },
-    "while": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "while"
       }
     },
     "with": {
@@ -2498,8 +2242,8 @@
           "name": "deprecated"
         },
         {
-          "type": "SYMBOL",
-          "name": "static"
+          "type": "STRING",
+          "value": "static"
         },
         {
           "type": "SYMBOL",
@@ -3131,7 +2875,7 @@
           },
           {
             "type": "SYMBOL",
-            "name": "_builtin_type"
+            "name": "primitive_type"
           },
           {
             "type": "SYMBOL",
@@ -3228,128 +2972,128 @@
         }
       ]
     },
-    "_builtin_type": {
+    "primitive_type": {
       "type": "CHOICE",
       "members": [
         {
-          "type": "SYMBOL",
-          "name": "bool"
+          "type": "STRING",
+          "value": "bool"
         },
         {
-          "type": "SYMBOL",
-          "name": "byte"
+          "type": "STRING",
+          "value": "byte"
         },
         {
-          "type": "SYMBOL",
-          "name": "ubyte"
+          "type": "STRING",
+          "value": "ubyte"
         },
         {
-          "type": "SYMBOL",
-          "name": "char"
+          "type": "STRING",
+          "value": "char"
         },
         {
-          "type": "SYMBOL",
-          "name": "short"
+          "type": "STRING",
+          "value": "short"
         },
         {
-          "type": "SYMBOL",
-          "name": "ushort"
+          "type": "STRING",
+          "value": "ushort"
         },
         {
-          "type": "SYMBOL",
-          "name": "int"
+          "type": "STRING",
+          "value": "int"
         },
         {
-          "type": "SYMBOL",
-          "name": "uint"
+          "type": "STRING",
+          "value": "uint"
         },
         {
-          "type": "SYMBOL",
-          "name": "long"
+          "type": "STRING",
+          "value": "long"
         },
         {
-          "type": "SYMBOL",
-          "name": "ulong"
+          "type": "STRING",
+          "value": "ulong"
         },
         {
-          "type": "SYMBOL",
-          "name": "cent"
+          "type": "STRING",
+          "value": "cent"
         },
         {
-          "type": "SYMBOL",
-          "name": "ucent"
+          "type": "STRING",
+          "value": "ucent"
         },
         {
-          "type": "SYMBOL",
-          "name": "wchar"
+          "type": "STRING",
+          "value": "wchar"
         },
         {
-          "type": "SYMBOL",
-          "name": "dchar"
+          "type": "STRING",
+          "value": "dchar"
         },
         {
-          "type": "SYMBOL",
-          "name": "float"
+          "type": "STRING",
+          "value": "float"
         },
         {
-          "type": "SYMBOL",
-          "name": "double"
+          "type": "STRING",
+          "value": "double"
         },
         {
-          "type": "SYMBOL",
-          "name": "real"
+          "type": "STRING",
+          "value": "real"
         },
         {
-          "type": "SYMBOL",
-          "name": "ifloat"
+          "type": "STRING",
+          "value": "ifloat"
         },
         {
-          "type": "SYMBOL",
-          "name": "idouble"
+          "type": "STRING",
+          "value": "idouble"
         },
         {
-          "type": "SYMBOL",
-          "name": "ireal"
+          "type": "STRING",
+          "value": "ireal"
         },
         {
-          "type": "SYMBOL",
-          "name": "cfloat"
+          "type": "STRING",
+          "value": "cfloat"
         },
         {
-          "type": "SYMBOL",
-          "name": "cdouble"
+          "type": "STRING",
+          "value": "cdouble"
         },
         {
-          "type": "SYMBOL",
-          "name": "creal"
+          "type": "STRING",
+          "value": "creal"
         },
         {
-          "type": "SYMBOL",
-          "name": "size_t"
+          "type": "STRING",
+          "value": "size_t"
         },
         {
-          "type": "SYMBOL",
-          "name": "ptrdiff_t"
+          "type": "STRING",
+          "value": "ptrdiff_t"
         },
         {
-          "type": "SYMBOL",
-          "name": "string"
+          "type": "STRING",
+          "value": "string"
         },
         {
-          "type": "SYMBOL",
-          "name": "cstring"
+          "type": "STRING",
+          "value": "cstring"
         },
         {
-          "type": "SYMBOL",
-          "name": "dstring"
+          "type": "STRING",
+          "value": "dstring"
         },
         {
-          "type": "SYMBOL",
-          "name": "wstring"
+          "type": "STRING",
+          "value": "wstring"
         },
         {
-          "type": "SYMBOL",
-          "name": "noreturn"
+          "type": "STRING",
+          "value": "noreturn"
         }
       ]
     },
@@ -3863,8 +3607,8 @@
             "name": "export"
           },
           {
-            "type": "SYMBOL",
-            "name": "static"
+            "type": "STRING",
+            "value": "static"
           },
           {
             "type": "SYMBOL",
@@ -4609,7 +4353,7 @@
               "members": [
                 {
                   "type": "SYMBOL",
-                  "name": "_builtin_type"
+                  "name": "primitive_type"
                 },
                 {
                   "type": "SYMBOL",
@@ -4709,7 +4453,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "_builtin_type"
+              "name": "primitive_type"
             },
             {
               "type": "STRING",
@@ -7561,8 +7305,8 @@
         "type": "SEQ",
         "members": [
           {
-            "type": "SYMBOL",
-            "name": "if"
+            "type": "STRING",
+            "value": "if"
           },
           {
             "type": "SYMBOL",
@@ -7709,8 +7453,8 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "SYMBOL",
-          "name": "while"
+          "type": "STRING",
+          "value": "while"
         },
         {
           "type": "SYMBOL",
@@ -7726,16 +7470,16 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "SYMBOL",
-          "name": "do"
+          "type": "STRING",
+          "value": "do"
         },
         {
           "type": "SYMBOL",
           "name": "body"
         },
         {
-          "type": "SYMBOL",
-          "name": "while"
+          "type": "STRING",
+          "value": "while"
         },
         {
           "type": "STRING",
@@ -7759,8 +7503,8 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "SYMBOL",
-          "name": "for"
+          "type": "STRING",
+          "value": "for"
         },
         {
           "type": "STRING",
@@ -7866,12 +7610,12 @@
       "type": "CHOICE",
       "members": [
         {
-          "type": "SYMBOL",
-          "name": "foreach"
+          "type": "STRING",
+          "value": "foreach"
         },
         {
-          "type": "SYMBOL",
-          "name": "foreach_reverse"
+          "type": "STRING",
+          "value": "foreach_reverse"
         }
       ]
     },
@@ -9422,8 +9166,8 @@
                   ]
                 },
                 {
-                  "type": "SYMBOL",
-                  "name": "static"
+                  "type": "STRING",
+                  "value": "static"
                 },
                 {
                   "type": "SYMBOL",
@@ -9483,8 +9227,8 @@
                   ]
                 },
                 {
-                  "type": "SYMBOL",
-                  "name": "static"
+                  "type": "STRING",
+                  "value": "static"
                 }
               ]
             },
@@ -11018,8 +10762,8 @@
               "type": "CHOICE",
               "members": [
                 {
-                  "type": "SYMBOL",
-                  "name": "do"
+                  "type": "STRING",
+                  "value": "do"
                 },
                 {
                   "type": "BLANK"
@@ -11080,8 +10824,8 @@
           "type": "CHOICE",
           "members": [
             {
-              "type": "SYMBOL",
-              "name": "do"
+              "type": "STRING",
+              "value": "do"
             },
             {
               "type": "BLANK"
@@ -11427,7 +11171,7 @@
         },
         {
           "type": "SYMBOL",
-          "name": "_builtin_type"
+          "name": "primitive_type"
         },
         {
           "type": "SYMBOL",
@@ -11790,8 +11534,8 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "SYMBOL",
-          "name": "if"
+          "type": "STRING",
+          "value": "if"
         },
         {
           "type": "STRING",
@@ -12406,12 +12150,12 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "SYMBOL",
-          "name": "static"
+          "type": "STRING",
+          "value": "static"
         },
         {
-          "type": "SYMBOL",
-          "name": "if"
+          "type": "STRING",
+          "value": "if"
         },
         {
           "type": "STRING",
@@ -12431,8 +12175,8 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "SYMBOL",
-          "name": "static"
+          "type": "STRING",
+          "value": "static"
         },
         {
           "type": "SYMBOL",
@@ -12447,8 +12191,8 @@
           "type": "SEQ",
           "members": [
             {
-              "type": "SYMBOL",
-              "name": "static"
+              "type": "STRING",
+              "value": "static"
             },
             {
               "type": "SYMBOL",
@@ -12516,8 +12260,8 @@
           "type": "SEQ",
           "members": [
             {
-              "type": "SYMBOL",
-              "name": "static"
+              "type": "STRING",
+              "value": "static"
             },
             {
               "type": "SYMBOL",
@@ -12574,8 +12318,8 @@
           "type": "SEQ",
           "members": [
             {
-              "type": "SYMBOL",
-              "name": "static"
+              "type": "STRING",
+              "value": "static"
             },
             {
               "type": "SYMBOL",
@@ -12630,8 +12374,8 @@
           "type": "SEQ",
           "members": [
             {
-              "type": "SYMBOL",
-              "name": "static"
+              "type": "STRING",
+              "value": "static"
             },
             {
               "type": "SYMBOL",
@@ -12677,8 +12421,8 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "SYMBOL",
-          "name": "static"
+          "type": "STRING",
+          "value": "static"
         },
         {
           "type": "SYMBOL",
