@@ -9,20 +9,17 @@ void f() {
 
 (source_file
   (function_declaration
-    (type
-      (void))
+    (type)
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (foreach_statement
-          (foreach)
           (foreach_type
             (identifier))
-          (expression
-            (identifier))
+          (identifier)
           (scope_statement
-            (block_statement)))))))
+            (compound_statement)))))))
 
 ================================================================================
 Simple foreach reverse
@@ -35,20 +32,17 @@ void f() {
 
 (source_file
   (function_declaration
-    (type
-      (void))
+    (type)
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (foreach_statement
-          (foreach_reverse)
           (foreach_type
             (identifier))
-          (expression
-            (identifier))
+          (identifier)
           (scope_statement
-            (block_statement)))))))
+            (compound_statement)))))))
 
 ================================================================================
 Typed foreach
@@ -61,22 +55,19 @@ void f() {
 
 (source_file
   (function_declaration
-    (type
-      (void))
+    (type)
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (foreach_statement
-          (foreach)
           (foreach_type
             (type
-              (int))
+              (identifier))
             (identifier))
-          (expression
-            (identifier))
+          (identifier)
           (scope_statement
-            (block_statement)))))))
+            (compound_statement)))))))
 
 ================================================================================
 Multiple value foreach
@@ -89,26 +80,23 @@ void f() {
 
 (source_file
   (function_declaration
-    (type
-      (void))
+    (type)
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (foreach_statement
-          (foreach)
           (foreach_type
             (type
-              (int))
+              (identifier))
             (identifier))
           (foreach_type
             (type
-              (char))
+              (identifier))
             (identifier))
-          (expression
-            (identifier))
+          (identifier)
           (scope_statement
-            (block_statement)))))))
+            (compound_statement)))))))
 
 ================================================================================
 Range foreach
@@ -121,22 +109,18 @@ void f() {
 
 (source_file
   (function_declaration
-    (type
-      (void))
+    (type)
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (foreach_statement
-          (foreach)
           (foreach_type
             (identifier))
-          (expression
-            (identifier))
-          (expression
-            (identifier))
+          (identifier)
+          (identifier)
           (scope_statement
-            (block_statement)))))))
+            (compound_statement)))))))
 
 ================================================================================
 Range foreach typed
@@ -149,24 +133,20 @@ void f() {
 
 (source_file
   (function_declaration
-    (type
-      (void))
+    (type)
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (foreach_statement
-          (foreach)
           (foreach_type
             (type
-              (int))
+              (identifier))
             (identifier))
-          (expression
-            (identifier))
-          (expression
-            (identifier))
+          (identifier)
+          (identifier)
           (scope_statement
-            (block_statement)))))))
+            (compound_statement)))))))
 
 ================================================================================
 Range foreach numbers
@@ -179,24 +159,20 @@ void f() {
 
 (source_file
   (function_declaration
-    (type
-      (void))
+    (type)
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (foreach_statement
-          (foreach)
           (foreach_type
             (type
-              (int))
+              (identifier))
             (identifier))
-          (expression
-            (int_literal))
-          (expression
-            (int_literal))
+          (integer_literal)
+          (integer_literal)
           (scope_statement
-            (block_statement)))))))
+            (compound_statement)))))))
 
 ================================================================================
 Foreach scope
@@ -210,25 +186,20 @@ void f() {
 
 (source_file
   (function_declaration
-    (type
-      (void))
+    (type)
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (foreach_statement
-          (foreach)
           (foreach_type
-            (scope)
-            (type
-              (string))
-            (identifier))
-          (foreach_type
-            (scope)
             (type
               (identifier))
             (identifier))
-          (expression
+          (foreach_type
+            (type
+              (identifier))
             (identifier))
+          (identifier)
           (scope_statement
-            (block_statement)))))))
+            (compound_statement)))))))

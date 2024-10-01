@@ -3,25 +3,21 @@ Is expression
 ================================================================================
 
 void f() {
-	return is(int);
+	return is(primitive_type);
 }
 --------------------------------------------------------------------------------
 
 (source_file
   (function_declaration
-    (type
-      (void))
+    (type)
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (return_statement
-          (return)
-          (expression
-            (is_expression
-              (is)
-              (type
-                (int)))))))))
+          (is_expression
+            (type
+              (identifier))))))))
 
 ================================================================================
 Is expression specialization
@@ -35,30 +31,21 @@ void f() {
 
 (source_file
   (function_declaration
-    (type
-      (void))
+    (type)
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (return_statement
-          (return)
-          (expression
-            (is_expression
-              (is)
-              (type
-                (int))
-              (type_specialization
-                (shared)))))
+          (is_expression
+            (type
+              (identifier))
+            (type_specialization)))
         (return_statement
-          (return)
-          (expression
-            (is_expression
-              (is)
-              (type
-                (identifier))
-              (type_specialization
-                (enum)))))))))
+          (is_expression
+            (type
+              (identifier))
+            (type_specialization)))))))
 
 ================================================================================
 Is expression identifier
@@ -72,31 +59,22 @@ void f() {
 
 (source_file
   (function_declaration
-    (type
-      (void))
+    (type)
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (return_statement
-          (return)
-          (expression
-            (is_expression
-              (is)
-              (type
-                (int))
-              (identifier)
-              (type_specialization
-                (shared)))))
+          (is_expression
+            (type
+              (identifier))
+            (identifier)
+            (type_specialization)))
         (return_statement
-          (return)
-          (expression
-            (is_expression
-              (is)
-              (type
-                (identifier))
-              (type_specialization
-                (enum)))))))))
+          (is_expression
+            (type
+              (identifier))
+            (type_specialization)))))))
 
 ================================================================================
 Is expression templated
@@ -110,33 +88,24 @@ void f() {
 
 (source_file
   (function_declaration
-    (type
-      (void))
+    (type)
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (return_statement
-          (return)
-          (expression
-            (is_expression
-              (is)
-              (type
-                (int))
-              (identifier)
-              (type_specialization
-                (shared))
-              (template_parameter
-                (identifier)))))
+          (is_expression
+            (type
+              (identifier))
+            (identifier)
+            (type_specialization)
+            (template_parameter
+              (identifier))))
         (return_statement
-          (return)
-          (expression
-            (is_expression
-              (is)
-              (type
-                (identifier))
-              (type_specialization
-                (enum)))))))))
+          (is_expression
+            (type
+              (identifier))
+            (type_specialization)))))))
 
 ================================================================================
 Is identity expression
@@ -149,20 +118,14 @@ void f() {
 
 (source_file
   (function_declaration
-    (type
-      (void))
+    (type)
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (return_statement
-          (return)
-          (expression
-            (binary_expression
-              (identity_expression
-                (identifier)
-                (is)
-                (null)))))))))
+          (identity_binary_expression
+            (identifier)))))))
 
 ================================================================================
 Is not identity expression
@@ -175,17 +138,12 @@ void f() {
 
 (source_file
   (function_declaration
-    (type
-      (void))
+    (type)
     (identifier)
     (parameters)
     (function_body
-      (block_statement
+      (compound_statement
         (return_statement
-          (return)
-          (expression
-            (binary_expression
-              (identity_expression
-                (identifier)
-                (not_is)
-                (null)))))))))
+          (identity_binary_expression
+            (identifier)
+            (not_is)))))))

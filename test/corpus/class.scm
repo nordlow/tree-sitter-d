@@ -10,20 +10,16 @@ if (isTrue(T))
 
 (source_file
   (class_declaration
-    (class)
     (identifier)
     (template_parameters
       (template_parameter
         (identifier)))
-    (constraint
-      (if)
-      (expression
-        (call_expression
-          (identifier)
-          (named_arguments
-            (named_argument
-              (expression
-                (identifier)))))))
+    (template_constraint
+      (call_expression
+        (identifier)
+        (named_arguments
+          (named_argument
+            (identifier)))))
     (base_class
       (identifier))
     (aggregate_body)))
@@ -31,13 +27,12 @@ if (isTrue(T))
 ================================================================================
 Base class can start with dot
 ================================================================================
-class X : Y, .Z { 
+class X : Y, .Z {
 }
 --------------------------------------------------------------------------------
 
 (source_file
   (class_declaration
-    (class)
     (identifier)
     (base_class
       (identifier))
@@ -53,19 +48,16 @@ class U : int, float , __vector(int[3]) {}
 
 (source_file
   (class_declaration
-    (class)
     (identifier)
     (base_class
-      (int))
+      (identifier))
     (base_class
-      (float))
+      (identifier))
     (base_class
       (vector_type
-        (vector)
         (type
-          (int)
-          (expression
-            (int_literal)))))
+          (identifier)
+          (integer_literal))))
     (aggregate_body)))
 
 ================================================================================
@@ -77,28 +69,23 @@ class T : typeof(new A), .B, const(C), D!int {}
 
 (source_file
   (class_declaration
-    (class)
     (identifier)
     (base_class
       (typeof_expression
-        (typeof)
-        (expression
-          (new_expression
-            (new)
-            (type
-              (identifier))))))
+        (new_expression
+          (type
+            (identifier)))))
     (base_class
       (identifier))
     (base_class
-      (type_ctor
-        (const))
+      (type_qualifier)
       (type
         (identifier)))
     (base_class
       (template_instance
         (identifier)
         (template_arguments
-          (int))))
+          (identifier))))
     (aggregate_body)))
 
 ================================================================================
@@ -109,7 +96,6 @@ class Test(T = MyT);
 
 (source_file
   (class_declaration
-    (class)
     (identifier)
     (template_parameters
       (template_parameter

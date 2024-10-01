@@ -8,7 +8,6 @@ union s {}
 
 (source_file
   (union_declaration
-    (union)
     (identifier)
     (aggregate_body)))
 
@@ -24,12 +23,11 @@ union s {
 
 (source_file
   (union_declaration
-    (union)
     (identifier)
     (aggregate_body
       (variable_declaration
         (type
-          (int))
+          (identifier))
         (declarator
           (identifier))))))
 
@@ -46,17 +44,16 @@ union s {
 
 (source_file
   (union_declaration
-    (union)
     (identifier)
     (aggregate_body
       (variable_declaration
         (type
-          (int))
+          (identifier))
         (declarator
           (identifier)))
       (variable_declaration
         (type
-          (int))
+          (identifier))
         (declarator
           (identifier))))))
 
@@ -72,11 +69,10 @@ union {
 
 (source_file
   (union_declaration
-    (union)
     (aggregate_body
       (variable_declaration
         (type
-          (int))
+          (identifier))
         (declarator
           (identifier))))))
 
@@ -92,7 +88,6 @@ union u (something) {
 
 (source_file
   (union_declaration
-    (union)
     (identifier)
     (template_parameters
       (template_parameter
@@ -100,12 +95,12 @@ union u (something) {
     (aggregate_body
       (variable_declaration
         (type
-          (int))
+          (identifier))
         (declarator
           (identifier))))))
 
 ==================
-Templated union with constraint
+Templated union with template_constraint
 ==================
 
 union u (something) if (!something) {
@@ -116,20 +111,17 @@ union u (something) if (!something) {
 
 (source_file
   (union_declaration
-    (union)
     (identifier)
     (template_parameters
       (template_parameter
         (identifier)))
-    (constraint
-      (if)
-      (expression
-        (unary_expression
-          (identifier))))
+    (template_constraint
+      (unary_expression
+        (identifier)))
     (aggregate_body
       (variable_declaration
         (type
-          (int))
+          (identifier))
         (declarator
           (identifier))))))
 
@@ -147,27 +139,24 @@ auto u1 = U(asInt: 0x3F800000);
 
 (source_file
   (union_declaration
-    (union)
     (identifier)
     (aggregate_body
       (variable_declaration
         (type
-          (float))
+          (identifier))
         (declarator
           (identifier)))
       (variable_declaration
         (type
-          (uint))
+          (identifier))
         (declarator
           (identifier)))))
   (auto_declaration
-    (storage_class
-      (auto))
+    (storage_class)
     (identifier)
     (call_expression
       (identifier)
       (named_arguments
         (named_argument
           (identifier)
-          (expression
-            (int_literal)))))))
+          (integer_literal))))))

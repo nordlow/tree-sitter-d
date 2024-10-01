@@ -16,18 +16,18 @@
 #include <wctype.h>
 
 // NB: It is very important that two things are true.
-// First, this must match the externals in the grammar.js.
+// First, this must match the `externals` in the grammar.js.
 // Second, symbols and keywords must appear with least
 // specific matches in front of more specific matches.
 enum TokenType {
 	DIRECTIVE, // # <to end of line>
-	L_INT,
-	L_FLOAT,
-	L_STRING, // string literal (all forms)
+	INTEGER_LITERAL,
+	FLOAT_LITERAL,
+	REGULAR_STRING_LITERAL, // string literal (all forms)
 	NOT_IN,
 	NOT_IS,
-	AFTER_EOF,
-	ERROR,
+	_AFTER_EOF,
+	ERROR_SENTINEL,
 };
 
 static bool
@@ -78,7 +78,7 @@ match_delimited_string(TSLexer *lexer, int start, int end)
 					continue;
 				}
 				lexer->advance(lexer, false);
-				lexer->result_symbol = L_STRING;
+				lexer->result_symbol = REGULAR_STRING_LITERAL;
 				match_string_suffix(lexer);
 				return (true);
 			}
@@ -136,7 +136,7 @@ match_heredoc_string(TSLexer *lexer)
 		if (j == i) {
 			// skip the quote
 			match_string_suffix(lexer);
-			lexer->result_symbol = L_STRING;
+			lexer->result_symbol = REGULAR_STRING_LITERAL;
 			return (true);
 		}
 	}
@@ -195,7 +195,7 @@ match_number_suffix(TSLexer *lexer, const bool *valid, bool is_float)
 				return (false);
 			}
 			seen_u = true;
-			tok    = L_INT;
+			tok    = INTEGER_LITERAL;
 			break;
 
 		case 'f':
@@ -204,7 +204,7 @@ match_number_suffix(TSLexer *lexer, const bool *valid, bool is_float)
 				return (false);
 			}
 			seen_f = true;
-			tok    = L_FLOAT;
+			tok    = FLOAT_LITERAL;
 			break;
 
 		case 'i':
@@ -214,7 +214,7 @@ match_number_suffix(TSLexer *lexer, const bool *valid, bool is_float)
 			if (seen_i || seen_u) {
 				return (false);
 			}
-			tok    = L_FLOAT;
+			tok    = FLOAT_LITERAL;
 			seen_i = true;
 			break;
 
@@ -241,15 +241,15 @@ match_number_suffix(TSLexer *lexer, const bool *valid, bool is_float)
 		return (false);
 	}
 	if (is_float) {
-		tok = L_FLOAT;
+		tok = FLOAT_LITERAL;
 	}
-	if (valid[L_INT] && tok != L_FLOAT) {
-		lexer->result_symbol = L_INT;
+	if (valid[INTEGER_LITERAL] && tok != FLOAT_LITERAL) {
+		lexer->result_symbol = INTEGER_LITERAL;
 		lexer->mark_end(lexer);
 		return (true);
 	}
-	if (valid[L_FLOAT] && tok != L_INT) {
-		lexer->result_symbol = L_FLOAT;
+	if (valid[FLOAT_LITERAL] && tok != INTEGER_LITERAL) {
+		lexer->result_symbol = FLOAT_LITERAL;
 		lexer->mark_end(lexer);
 		return (true);
 	}
@@ -313,7 +313,7 @@ match_number(TSLexer *lexer, const bool *valid)
 		}
 	}
 
-	if (!(valid[L_INT] || valid[L_FLOAT])) {
+	if (!(valid[INTEGER_LITERAL] || valid[FLOAT_LITERAL])) {
 		return (false);
 	}
 
@@ -370,12 +370,12 @@ match_number(TSLexer *lexer, const bool *valid)
 				// its something like ._property or somesuch
 				// in that case we just want the original int,
 				// without the period.
-				lexer->result_symbol = L_INT;
-				return (valid[L_INT]);
+				lexer->result_symbol = INTEGER_LITERAL;
+				return (valid[INTEGER_LITERAL]);
 			}
-			lexer->result_symbol = L_FLOAT;
+			lexer->result_symbol = FLOAT_LITERAL;
 			lexer->mark_end(lexer);
-			return (valid[L_FLOAT]);
+			return (valid[FLOAT_LITERAL]);
 
 		case '_':
 			// an embedded (or possibly trailing) underscore.
@@ -490,12 +490,12 @@ tree_sitter_d_external_scanner_scan(
 	int  c             = lexer->lookahead;
 	bool start_of_line = lexer->get_column(lexer) == 0;
 
-	if (valid[AFTER_EOF] && !valid[ERROR]) {
+	if (valid[_AFTER_EOF] && !valid[ERROR_SENTINEL]) {
 	   while (lexer->lookahead != 0) {
 			lexer->advance(lexer, true);
 		}
 		lexer->mark_end(lexer);
-		lexer->result_symbol = AFTER_EOF;
+		lexer->result_symbol = _AFTER_EOF;
 		return (true);
 	}
 
@@ -529,7 +529,7 @@ tree_sitter_d_external_scanner_scan(
 	   return (match_not_in_is(lexer, valid));
 	}
 
-	if ((c == 'q') && (valid[L_STRING])) {
+	if ((c == 'q') && (valid[REGULAR_STRING_LITERAL])) {
 		lexer->advance(lexer, false);
 		if (lexer->lookahead != '"') {
 			return (false);

@@ -5,7 +5,7 @@
   (aggregate_body)
   (function_body)
   (scope_statement)
-  (block_statement)
+  (compound_statement)
   (case_statement)
 ] @indent
 

@@ -3,4 +3,4 @@
 (union_declaration (aggregate_body (#set! role type)) @subtree)
 (interface_declaration (aggregate_body (#set! role type)) @subtree)
 
-(block_statement (#set! role block)) @subtree
+(compound_statement (#set! role block)) @subtree

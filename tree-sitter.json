@@ -1,0 +1,38 @@
+{
+  "grammars": [
+    {
+      "name": "d",
+      "camelcase": "D",
+      "scope": "source.c",
+      "path": ".",
+      "file-types": [
+        "d",
+        "di"
+      ],
+      "highlights": "queries/highlights.scm",
+      "tags": "queries/tags.scm",
+      "injection-regex": "^(d|di)$"
+    }
+  ],
+  "metadata": {
+    "version": "0.25.9",
+    "license": "MIT",
+    "description": "D grammar for tree-sitter",
+    "authors": [
+      {
+        "name": "Garrett D'Amore",
+        "email": "garrett@damore.org"
+      },
+      {
+        "name": "Per Nordlöw",
+        "email": "per.nordlow@gmail.com"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/nordlow/tree-sitter-d"
+    }
+  },
+  "bindings": {
+    "c": true
+  }
+}

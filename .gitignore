@@ -1,3 +1,7 @@
 samples
 log.html
 output
+libtree-sitter-d.a
+libtree-sitter-d.so
+src/parser.o
+src/scanner.o

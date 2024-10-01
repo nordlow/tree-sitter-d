@@ -4,9 +4,9 @@
 ((enum_declaration (enum) . (identifier) @name) @subtree (#set! role enum))
 
 ((class_declaration (class) . (identifier) @name) @subtree (#set! role class))
-((constructor (this) @name) @subtree (#set! role constructor))
-((destructor (this) @name) @subtree (#set! role destructor))
-((postblit (this) @name) @subtree (#set! role constructor))
+((constructor_declaration (this) @name) @subtree (#set! role constructor_declaration))
+((destructor_declaration (this) @name) @subtree (#set! role destructor_declaration))
+((postblit (this) @name) @subtree (#set! role constructor_declaration))
 
 ((manifest_declarator . (identifier) @name) @subtree (#set! role constant))
 

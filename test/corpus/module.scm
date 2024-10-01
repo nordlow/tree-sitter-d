@@ -5,9 +5,8 @@ module test.blah.bah;
 --------------------------------------------------------------------------------
 
 (source_file
-  (module_def
+  (module_definition
     (module_declaration
-      (module)
       (module_fqn
         (identifier)
         (identifier)
@@ -20,11 +19,9 @@ deprecated module test.blah.bah;
 --------------------------------------------------------------------------------
 
 (source_file
-  (module_def
+  (module_definition
     (module_declaration
-      (deprecated_attribute
-        (deprecated))
-      (module)
+      (deprecated_attribute)
       (module_fqn
         (identifier)
         (identifier)
@@ -37,14 +34,10 @@ deprecated ("it is too old") module test.blah.bah;
 --------------------------------------------------------------------------------
 
 (source_file
-  (module_def
+  (module_definition
     (module_declaration
       (deprecated_attribute
-        (deprecated)
-        (expression
-          (string_literal
-            (quoted_string))))
-      (module)
+        (quoted_string_literal))
       (module_fqn
         (identifier)
         (identifier)
@@ -57,11 +50,10 @@ Module at-attribute
 --------------------------------------------------------------------------------
 
 (source_file
-  (module_def
+  (module_definition
     (module_declaration
       (at_attribute
         (identifier))
-      (module)
       (module_fqn
         (identifier)
         (identifier)
@@ -74,15 +66,12 @@ Module at-attribute parameter
 --------------------------------------------------------------------------------
 
 (source_file
-  (module_def
+  (module_definition
     (module_declaration
       (at_attribute
         (identifier)
         (arguments
-          (expression
-            (string_literal
-              (quoted_string)))))
-      (module)
+          (quoted_string_literal)))
       (module_fqn
         (identifier)
         (identifier)
@@ -95,19 +84,16 @@ Module multiple attributes
 --------------------------------------------------------------------------------
 
 (source_file
-  (module_def
+  (module_definition
     (module_declaration
       (at_attribute
         (identifier)
         (arguments
-          (expression
-            (int_literal))))
+          (integer_literal)))
       (at_attribute
         (identifier)
         (arguments
-          (expression
-            (int_literal))))
-      (module)
+          (integer_literal)))
       (module_fqn
         (identifier)
         (identifier)))))

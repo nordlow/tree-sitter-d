@@ -8,7 +8,6 @@ enum X { x }
 
 (source_file
   (enum_declaration
-    (enum)
     (identifier)
     (enum_member
       (identifier))))
@@ -23,10 +22,9 @@ enum X : int { x }
 
 (source_file
   (enum_declaration
-    (enum)
     (identifier)
     (type
-      (int))
+      (identifier))
     (enum_member
       (identifier))))
 
@@ -40,14 +38,13 @@ enum X { x = 1, y = 2 }
 
 (source_file
   (enum_declaration
-    (enum)
     (identifier)
     (enum_member
       (identifier)
-      (int_literal))
+      (integer_literal))
     (enum_member
       (identifier)
-      (int_literal))))
+      (integer_literal))))
 
 ================================================================================
 Enum with missing body
@@ -59,7 +56,6 @@ enum X;
 
 (source_file
   (enum_declaration
-    (enum)
     (identifier)))
 
 ================================================================================
@@ -72,7 +68,6 @@ enum X { x, }
 
 (source_file
   (enum_declaration
-    (enum)
     (identifier)
     (enum_member
       (identifier))))
@@ -87,7 +82,6 @@ enum X : Y;
 
 (source_file
   (enum_declaration
-    (enum)
     (identifier)
     (type
       (identifier))))
@@ -101,7 +95,6 @@ enum { x }
 
 (source_file
   (anonymous_enum_declaration
-    (enum)
     (enum_member
       (identifier))))
 
@@ -114,7 +107,6 @@ enum { x, }
 
 (source_file
   (anonymous_enum_declaration
-    (enum)
     (enum_member
       (identifier))))
 
@@ -127,10 +119,9 @@ enum { x = 1 }
 
 (source_file
   (anonymous_enum_declaration
-    (enum)
     (enum_member
       (identifier)
-      (int_literal))))
+      (integer_literal))))
 
 ================================================================================
 Anonymous enum typed values
@@ -141,12 +132,11 @@ enum { int x = 1 }
 
 (source_file
   (anonymous_enum_declaration
-    (enum)
     (anonymous_enum_member
       (type
-        (int))
+        (identifier))
       (identifier)
-      (int_literal))))
+      (integer_literal))))
 
 ================================================================================
 Anonymous enum mixed
@@ -162,17 +152,16 @@ enum {
 
 (source_file
   (anonymous_enum_declaration
-    (enum)
     (anonymous_enum_member
       (type
-        (int))
+        (identifier))
       (identifier)
-      (int_literal))
+      (integer_literal))
     (enum_member
       (identifier))
     (enum_member
       (identifier)
-      (int_literal))))
+      (integer_literal))))
 
 ================================================================================
 Anonymous enum with UDAs
@@ -193,27 +182,18 @@ enum
 (source_file
   (anonymous_enum_declaration
     (at_attribute
-      (expression
-        (string_literal
-          (quoted_string))))
-    (enum)
+      (quoted_string_literal))
     (enum_member
       (identifier))
     (enum_member
       (at_attribute
-        (expression
-          (string_literal
-            (quoted_string))))
+        (quoted_string_literal))
       (identifier))
     (enum_member
       (at_attribute
-        (expression
-          (string_literal
-            (quoted_string))))
+        (quoted_string_literal))
       (at_attribute
-        (expression
-          (string_literal
-            (quoted_string))))
+        (quoted_string_literal))
       (identifier))
     (enum_member
       (at_attribute
@@ -227,9 +207,7 @@ enum
       (identifier))
     (enum_member
       (at_attribute
-        (expression
-          (string_literal
-            (quoted_string))))
+        (quoted_string_literal))
       (at_attribute
         (identifier))
       (identifier))
@@ -237,7 +215,5 @@ enum
       (at_attribute
         (identifier))
       (at_attribute
-        (expression
-          (string_literal
-            (quoted_string))))
+        (quoted_string_literal))
       (identifier))))

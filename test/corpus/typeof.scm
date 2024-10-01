@@ -5,13 +5,13 @@ Typeof expression
 auto t = typeof(0);
 
 ---
+
 (source_file
-		(auto_declaration
-			(storage_class (auto))
-			(identifier)
-			(typeof_expression (typeof) (expression (int_literal)))
-		)
-)
+  (auto_declaration
+    (storage_class)
+    (identifier)
+    (typeof_expression
+      (integer_literal))))
 
 ==================
 Typeof expression (return)
@@ -20,10 +20,9 @@ Typeof expression (return)
 auto t = typeof (return);
 
 ---
+
 (source_file
-	(auto_declaration
-		(storage_class (auto))
-		(identifier)
-		(typeof_expression (typeof) (return))
-	)
-)
+  (auto_declaration
+    (storage_class)
+    (identifier)
+    (typeof_expression)))
