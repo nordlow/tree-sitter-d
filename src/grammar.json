@@ -774,10 +774,6 @@
         },
         {
           "type": "SYMBOL",
-          "name": "if"
-        },
-        {
-          "type": "SYMBOL",
           "name": "import"
         },
         {
@@ -859,10 +855,6 @@
         {
           "type": "SYMBOL",
           "name": "scope"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "static"
         },
         {
           "type": "SYMBOL",
@@ -1414,13 +1406,6 @@
         "value": "goto"
       }
     },
-    "if": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "if"
-      }
-    },
     "immutable": {
       "type": "TOKEN",
       "content": {
@@ -1587,13 +1572,6 @@
       "content": {
         "type": "STRING",
         "value": "shared"
-      }
-    },
-    "static": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "static"
       }
     },
     "struct": {
@@ -2498,8 +2476,8 @@
           "name": "deprecated"
         },
         {
-          "type": "SYMBOL",
-          "name": "static"
+          "type": "STRING",
+          "value": "static"
         },
         {
           "type": "SYMBOL",
@@ -3863,8 +3841,8 @@
             "name": "export"
           },
           {
-            "type": "SYMBOL",
-            "name": "static"
+            "type": "STRING",
+            "value": "static"
           },
           {
             "type": "SYMBOL",
@@ -7561,8 +7539,8 @@
         "type": "SEQ",
         "members": [
           {
-            "type": "SYMBOL",
-            "name": "if"
+            "type": "STRING",
+            "value": "if"
           },
           {
             "type": "SYMBOL",
@@ -9422,8 +9400,8 @@
                   ]
                 },
                 {
-                  "type": "SYMBOL",
-                  "name": "static"
+                  "type": "STRING",
+                  "value": "static"
                 },
                 {
                   "type": "SYMBOL",
@@ -9483,8 +9461,8 @@
                   ]
                 },
                 {
-                  "type": "SYMBOL",
-                  "name": "static"
+                  "type": "STRING",
+                  "value": "static"
                 }
               ]
             },
@@ -11790,8 +11768,8 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "SYMBOL",
-          "name": "if"
+          "type": "STRING",
+          "value": "if"
         },
         {
           "type": "STRING",
@@ -12406,12 +12384,12 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "SYMBOL",
-          "name": "static"
+          "type": "STRING",
+          "value": "static"
         },
         {
-          "type": "SYMBOL",
-          "name": "if"
+          "type": "STRING",
+          "value": "if"
         },
         {
           "type": "STRING",
@@ -12431,8 +12409,8 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "SYMBOL",
-          "name": "static"
+          "type": "STRING",
+          "value": "static"
         },
         {
           "type": "SYMBOL",
@@ -12447,8 +12425,8 @@
           "type": "SEQ",
           "members": [
             {
-              "type": "SYMBOL",
-              "name": "static"
+              "type": "STRING",
+              "value": "static"
             },
             {
               "type": "SYMBOL",
@@ -12516,8 +12494,8 @@
           "type": "SEQ",
           "members": [
             {
-              "type": "SYMBOL",
-              "name": "static"
+              "type": "STRING",
+              "value": "static"
             },
             {
               "type": "SYMBOL",
@@ -12574,8 +12552,8 @@
           "type": "SEQ",
           "members": [
             {
-              "type": "SYMBOL",
-              "name": "static"
+              "type": "STRING",
+              "value": "static"
             },
             {
               "type": "SYMBOL",
@@ -12630,8 +12608,8 @@
           "type": "SEQ",
           "members": [
             {
-              "type": "SYMBOL",
-              "name": "static"
+              "type": "STRING",
+              "value": "static"
             },
             {
               "type": "SYMBOL",
@@ -12677,8 +12655,8 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "SYMBOL",
-          "name": "static"
+          "type": "STRING",
+          "value": "static"
         },
         {
           "type": "SYMBOL",

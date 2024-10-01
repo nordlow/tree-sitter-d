@@ -350,10 +350,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "static_assert",
           "named": true
         },
@@ -529,10 +525,6 @@
         },
         {
           "type": "scope",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -714,10 +706,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "storage_class",
           "named": true
         },
@@ -838,10 +826,6 @@
         },
         {
           "type": "scope",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -1146,10 +1130,6 @@
         },
         {
           "type": "scope",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -1854,7 +1834,7 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
         {
           "type": "abstract",
@@ -1942,10 +1922,6 @@
         },
         {
           "type": "scope",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -2222,10 +2198,6 @@
         },
         {
           "type": "scope",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -2889,10 +2861,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "static_assert",
           "named": true
         },
@@ -3510,10 +3478,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "static_assert",
           "named": true
         },
@@ -4071,10 +4035,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "synchronized",
           "named": true
         },
@@ -4301,10 +4261,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "static_assert",
           "named": true
         },
@@ -4396,15 +4352,11 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": true,
+      "multiple": false,
       "required": true,
       "types": [
         {
           "type": "expression",
-          "named": true
-        },
-        {
-          "type": "if",
           "named": true
         }
       ]
@@ -4524,10 +4476,6 @@
         },
         {
           "type": "shared",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -5048,10 +4996,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "synchronized",
           "named": true
         },
@@ -5222,10 +5166,6 @@
         },
         {
           "type": "scope",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -6568,10 +6508,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "storage_class",
           "named": true
         },
@@ -7229,10 +7165,6 @@
           "named": true
         },
         {
-          "type": "if",
-          "named": true
-        },
-        {
           "type": "if_condition",
           "named": true
         }
@@ -7360,10 +7292,6 @@
         },
         {
           "type": "scope",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -7735,10 +7663,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "synchronized",
           "named": true
         },
@@ -7955,10 +7879,6 @@
         },
         {
           "type": "scope",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -8188,10 +8108,6 @@
           "named": true
         },
         {
-          "type": "if",
-          "named": true
-        },
-        {
           "type": "ifloat",
           "named": true
         },
@@ -8321,10 +8237,6 @@
         },
         {
           "type": "special_keyword",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -8939,10 +8851,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "storage_class",
           "named": true
         },
@@ -9431,10 +9339,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "synchronized",
           "named": true
         },
@@ -9562,10 +9466,6 @@
         },
         {
           "type": "scope",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -9792,10 +9692,6 @@
         },
         {
           "type": "scope",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -10668,10 +10564,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "synchronized",
           "named": true
         },
@@ -11180,10 +11072,6 @@
         },
         {
           "type": "scope",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -12169,10 +12057,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "static_assert",
           "named": true
         },
@@ -12606,10 +12490,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "static_assert",
           "named": true
         },
@@ -12666,15 +12546,11 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": true,
+      "multiple": false,
       "required": true,
       "types": [
         {
           "type": "assert_expression",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         }
       ]
@@ -12877,10 +12753,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "static_assert",
           "named": true
         },
@@ -12932,15 +12804,11 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": true,
+      "multiple": false,
       "required": true,
       "types": [
         {
           "type": "foreach_statement",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         }
       ]
@@ -12951,19 +12819,11 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": true,
+      "multiple": false,
       "required": true,
       "types": [
         {
           "type": "expression",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         }
       ]
@@ -12975,7 +12835,7 @@
     "fields": {},
     "children": {
       "multiple": false,
-      "required": true,
+      "required": false,
       "types": [
         {
           "type": "abstract",
@@ -13031,10 +12891,6 @@
         },
         {
           "type": "scope",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -13193,10 +13049,6 @@
         },
         {
           "type": "scope",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -13794,10 +13646,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "static_assert",
           "named": true
         },
@@ -13973,10 +13821,6 @@
         },
         {
           "type": "scope",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -15369,10 +15213,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "synchronized",
           "named": true
         },
@@ -15492,10 +15332,6 @@
           "named": true
         },
         {
-          "type": "static",
-          "named": true
-        },
-        {
           "type": "synchronized",
           "named": true
         },
@@ -15612,10 +15448,6 @@
         },
         {
           "type": "scope",
-          "named": true
-        },
-        {
-          "type": "static",
           "named": true
         },
         {
@@ -16466,7 +16298,7 @@
   },
   {
     "type": "if",
-    "named": true
+    "named": false
   },
   {
     "type": "ifloat",
@@ -16642,7 +16474,7 @@
   },
   {
     "type": "static",
-    "named": true
+    "named": false
   },
   {
     "type": "string",
