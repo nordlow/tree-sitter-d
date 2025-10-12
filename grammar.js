@@ -161,7 +161,7 @@ module.exports = grammar({
     _statement_identifier: $ => alias($.identifier, $.statement_identifier),
     _function_identifier: $ => alias($.identifier, $.function_identifier),
 
-    token_string_literal: ($) => seq("q{", optional($._token_string_tokens), "}"),
+    token_string_literal: $ => seq("q{", optional($._token_string_tokens), "}"),
 
     // we aren't tokenizing this yet
     _token_string_tokens: $ => repeat1($._token_string_token),
@@ -1046,7 +1046,7 @@ module.exports = grammar({
         'package',
       ),
 
-    raw_string_literal: ($) =>
+    raw_string_literal: $ =>
       choice(
         seq('`', token.immediate(prec(1, /[^`]*/)), token.immediate(/`[cdw]?/)),
         seq(
@@ -1056,7 +1056,7 @@ module.exports = grammar({
         ),
       ),
 
-    hex_string_literal: ($) =>
+    hex_string_literal: $ =>
       seq(
         'x"',
         token.immediate(prec(1, /[0-9A-Fa-f\s]*/)),
@@ -1065,7 +1065,7 @@ module.exports = grammar({
 
     // TODO: _unescaped_string_content: (_) => token.immediate(/[^"\\]+/),
 
-    quoted_string_literal: ($) =>
+    quoted_string_literal: $ =>
       seq(
         '"',
         repeat(
@@ -1080,7 +1080,7 @@ module.exports = grammar({
 
     interpolation_expression: $ => seq('$(', $._expression, ')'),
 
-    interpolated_raw_string_literal: ($) =>
+    interpolated_raw_string_literal: $ =>
       seq(
         'i`',
         repeat(choice(/[^`$]+/, /\$[^(`]/, $.interpolation_expression)),
@@ -1089,7 +1089,7 @@ module.exports = grammar({
 
     interpolated_escape: $ => '\\$',
 
-    interpolated_quoted_string_literal: ($) =>
+    interpolated_quoted_string_literal: $ =>
       seq(
         'i"',
         repeat(
@@ -1105,7 +1105,7 @@ module.exports = grammar({
         choice('"', '$"'), // tailing "$" special
       ),
 
-    interpolated_token_string_literal: ($) =>
+    interpolated_token_string_literal: $ =>
       seq("iq{", optional($._interpolated_token_string_tokens), "}"),
 
     // we aren't tokenizing this yet
@@ -1120,7 +1120,7 @@ module.exports = grammar({
 
     boolean_literal: $ => token(choice('false', 'true')),
 
-    _string_literal: ($) =>
+    _string_literal: $ =>
       choice(
         $.regular_string_literal,
         $.raw_string_literal,
