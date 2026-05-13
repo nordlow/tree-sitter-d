@@ -314,10 +314,6 @@
           "named": true
         },
         {
-          "type": "mixin_template_declaration",
-          "named": true
-        },
-        {
           "type": "module_fqn",
           "named": true
         },
@@ -351,6 +347,10 @@
         },
         {
           "type": "template_mixin",
+          "named": true
+        },
+        {
+          "type": "template_mixin_declaration",
           "named": true
         },
         {
@@ -4305,10 +4305,6 @@
           "named": true
         },
         {
-          "type": "mixin_template_declaration",
-          "named": true
-        },
-        {
           "type": "module_fqn",
           "named": true
         },
@@ -4426,6 +4422,10 @@
         },
         {
           "type": "template_mixin",
+          "named": true
+        },
+        {
+          "type": "template_mixin_declaration",
           "named": true
         },
         {
@@ -5077,10 +5077,6 @@
           "named": true
         },
         {
-          "type": "mixin_template_declaration",
-          "named": true
-        },
-        {
           "type": "module_fqn",
           "named": true
         },
@@ -5142,6 +5138,10 @@
         },
         {
           "type": "template_mixin",
+          "named": true
+        },
+        {
+          "type": "template_mixin_declaration",
           "named": true
         },
         {
@@ -5276,10 +5276,6 @@
           "named": true
         },
         {
-          "type": "mixin_template_declaration",
-          "named": true
-        },
-        {
           "type": "module_fqn",
           "named": true
         },
@@ -5325,6 +5321,10 @@
         },
         {
           "type": "template_mixin",
+          "named": true
+        },
+        {
+          "type": "template_mixin_declaration",
           "named": true
         },
         {
@@ -7451,10 +7451,6 @@
             "named": true
           },
           {
-            "type": "mixin_template_declaration",
-            "named": true
-          },
-          {
             "type": "postblit_declaration",
             "named": true
           },
@@ -7508,6 +7504,10 @@
           },
           {
             "type": "template_mixin",
+            "named": true
+          },
+          {
+            "type": "template_mixin_declaration",
             "named": true
           },
           {
@@ -10905,49 +10905,6 @@
     }
   },
   {
-    "type": "mixin_template_declaration",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "align_attribute",
-          "named": true
-        },
-        {
-          "type": "at_attribute",
-          "named": true
-        },
-        {
-          "type": "deprecated_attribute",
-          "named": true
-        },
-        {
-          "type": "linkage_attribute",
-          "named": true
-        },
-        {
-          "type": "module_fqn",
-          "named": true
-        },
-        {
-          "type": "pragma_expression",
-          "named": true
-        },
-        {
-          "type": "template_declaration",
-          "named": true
-        },
-        {
-          "type": "type_qualifier",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
     "type": "module_declaration",
     "named": true,
     "fields": {},
@@ -11067,10 +11024,6 @@
           "named": true
         },
         {
-          "type": "mixin_template_declaration",
-          "named": true
-        },
-        {
           "type": "module_declaration",
           "named": true
         },
@@ -11108,6 +11061,10 @@
         },
         {
           "type": "template_mixin",
+          "named": true
+        },
+        {
+          "type": "template_mixin_declaration",
           "named": true
         },
         {
@@ -12797,10 +12754,6 @@
           "named": true
         },
         {
-          "type": "mixin_template_declaration",
-          "named": true
-        },
-        {
           "type": "module_fqn",
           "named": true
         },
@@ -12834,6 +12787,10 @@
         },
         {
           "type": "template_mixin",
+          "named": true
+        },
+        {
+          "type": "template_mixin_declaration",
           "named": true
         },
         {
@@ -13973,10 +13930,6 @@
           "named": true
         },
         {
-          "type": "mixin_template_declaration",
-          "named": true
-        },
-        {
           "type": "module_fqn",
           "named": true
         },
@@ -14038,6 +13991,10 @@
         },
         {
           "type": "template_mixin",
+          "named": true
+        },
+        {
+          "type": "template_mixin_declaration",
           "named": true
         },
         {
@@ -14741,10 +14698,6 @@
           "named": true
         },
         {
-          "type": "mixin_template_declaration",
-          "named": true
-        },
-        {
           "type": "module_definition",
           "named": true
         },
@@ -14786,6 +14739,10 @@
         },
         {
           "type": "template_mixin",
+          "named": true
+        },
+        {
+          "type": "template_mixin_declaration",
           "named": true
         },
         {
@@ -15094,10 +15051,6 @@
           "named": true
         },
         {
-          "type": "mixin_template_declaration",
-          "named": true
-        },
-        {
           "type": "module_fqn",
           "named": true
         },
@@ -15187,6 +15140,10 @@
         },
         {
           "type": "template_mixin",
+          "named": true
+        },
+        {
+          "type": "template_mixin_declaration",
           "named": true
         },
         {
@@ -16549,10 +16506,6 @@
           "named": true
         },
         {
-          "type": "mixin_template_declaration",
-          "named": true
-        },
-        {
           "type": "module_fqn",
           "named": true
         },
@@ -16594,6 +16547,10 @@
         },
         {
           "type": "template_mixin",
+          "named": true
+        },
+        {
+          "type": "template_mixin_declaration",
           "named": true
         },
         {
@@ -16692,6 +16649,49 @@
         },
         {
           "type": "typeof_expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "template_mixin_declaration",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "align_attribute",
+          "named": true
+        },
+        {
+          "type": "at_attribute",
+          "named": true
+        },
+        {
+          "type": "deprecated_attribute",
+          "named": true
+        },
+        {
+          "type": "linkage_attribute",
+          "named": true
+        },
+        {
+          "type": "module_fqn",
+          "named": true
+        },
+        {
+          "type": "pragma_expression",
+          "named": true
+        },
+        {
+          "type": "template_declaration",
+          "named": true
+        },
+        {
+          "type": "type_qualifier",
           "named": true
         }
       ]
