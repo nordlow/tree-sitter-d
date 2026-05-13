@@ -27,7 +27,7 @@ unittest
           (equal_binary_expression
             (identifier)
             (integer_literal)))
-        (constant_identifier
+        (constant_declaration
           (constant_declarator
             (constant_identifier)
             (integer_literal)))
