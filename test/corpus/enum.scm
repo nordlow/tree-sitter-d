@@ -56,7 +56,7 @@ enum X;
 
 (source_file
   (enum_declaration
-    (identifier)))
+    (type_identifier)))
 
 ================================================================================
 Enum trailing comma
