@@ -9148,7 +9148,7 @@
         },
         {
           "type": "SYMBOL",
-          "name": "identifier"
+          "name": "_constant_identifier"
         },
         {
           "type": "CHOICE",
@@ -9299,7 +9299,7 @@
         },
         {
           "type": "SYMBOL",
-          "name": "identifier"
+          "name": "_constant_identifier"
         },
         {
           "type": "STRING",
