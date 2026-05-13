@@ -10,7 +10,7 @@ if (isTrue(T))
 
 (source_file
   (class_declaration
-    (identifier)
+    (type_identifier)
     (template_parameters
       (template_parameter
         (identifier)))
@@ -33,7 +33,7 @@ class X : Y, .Z {
 
 (source_file
   (class_declaration
-    (identifier)
+    (type_identifier)
     (base_class
       (identifier))
     (base_class
@@ -48,7 +48,7 @@ class U : int, float , __vector(int[3]) {}
 
 (source_file
   (class_declaration
-    (identifier)
+    (type_identifier)
     (base_class
       (identifier))
     (base_class
@@ -69,7 +69,7 @@ class T : typeof(new A), .B, const(C), D!int {}
 
 (source_file
   (class_declaration
-    (identifier)
+    (type_identifier)
     (base_class
       (typeof_expression
         (new_expression
@@ -96,7 +96,7 @@ class Test(T = MyT);
 
 (source_file
   (class_declaration
-    (identifier)
+    (type_identifier)
     (template_parameters
       (template_parameter
         (identifier)
