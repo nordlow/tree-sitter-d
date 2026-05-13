@@ -156,7 +156,6 @@ module.exports = grammar({
     _constant_identifier: $ => alias($.identifier, $.constant_identifier),
     _template_identifier: $ => alias($.identifier, $.template_identifier),
     _type_identifier: $ => alias($.identifier, $.type_identifier),
-    _enum_member_identifier: $ => alias($.identifier, $.enum_member_identifier),
     _field_identifier: $ => alias($.identifier, $.field_identifier),
     _statement_identifier: $ => alias($.identifier, $.statement_identifier),
     _function_identifier: $ => alias($.identifier, $.function_identifier),
@@ -1663,7 +1662,7 @@ module.exports = grammar({
     enum_member_declaration: $ =>
       seq(
         repeat($._enum_member_attribute),
-        $._enum_member_identifier,
+        $.identifier,
         optional(seq('=', $._expr)),
       ),
 
@@ -1677,7 +1676,7 @@ module.exports = grammar({
 
     _anonymous_enum_body: $ => seq('{', commaSep1Comma(choice($.anonymous_enum_member, $.enum_member_declaration)), '}'),
 
-    anonymous_enum_member: $ => seq($.type, $._enum_member_identifier, '=', $._expr),
+    anonymous_enum_member: $ => seq($.type, $.identifier, '=', $._expr),
 
     function_declaration: $ =>
       seq(
