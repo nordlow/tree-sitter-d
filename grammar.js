@@ -1670,7 +1670,7 @@ module.exports = grammar({
       seq(
         repeat($._attribute),
         'enum',
-        optional(seq(':', field('type', $._type_identifier))),
+        optional(seq(':', field('type', $.type))),
         field('body', $._anonymous_enum_body),
       ),
 
