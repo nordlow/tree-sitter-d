@@ -8,7 +8,7 @@ union s {}
 
 (source_file
   (union_declaration
-    (identifier)
+    (type_identifier)
     (aggregate_body)))
 
 ==================
@@ -23,7 +23,7 @@ union s {
 
 (source_file
   (union_declaration
-    (identifier)
+    (type_identifier)
     (aggregate_body
       (variable_declaration
         (type
@@ -44,7 +44,7 @@ union s {
 
 (source_file
   (union_declaration
-    (identifier)
+    (type_identifier)
     (aggregate_body
       (variable_declaration
         (type
@@ -88,7 +88,7 @@ union u (something) {
 
 (source_file
   (union_declaration
-    (identifier)
+    (type_identifier)
     (template_parameters
       (template_parameter
         (identifier)))
@@ -111,7 +111,7 @@ union u (something) if (!something) {
 
 (source_file
   (union_declaration
-    (identifier)
+    (type_identifier)
     (template_parameters
       (template_parameter
         (identifier)))
@@ -139,7 +139,7 @@ auto u1 = U(asInt: 0x3F800000);
 
 (source_file
   (union_declaration
-    (identifier)
+    (type_identifier)
     (aggregate_body
       (variable_declaration
         (type
