@@ -27,8 +27,8 @@ unittest
           (equal_binary_expression
             (identifier)
             (integer_literal)))
-        (manifest_constant
-          (manifest_declarator
+        (constant_identifier
+          (constant_declarator
             (identifier)
             (integer_literal)))
         (conditional_declaration
@@ -69,11 +69,11 @@ unittest
                 (equal_binary_expression
                   (identifier)
                   (integer_literal)))
-              (manifest_constant
-                (manifest_declarator
+              (constant_identifier
+                (constant_declarator
                   (identifier)
                   (integer_literal)))
-              (manifest_constant
-                (manifest_declarator
+              (constant_identifier
+                (constant_declarator
                   (identifier)
                   (integer_literal))))))))))

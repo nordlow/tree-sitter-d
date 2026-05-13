@@ -64,19 +64,19 @@ enum w = "/+ is /* not */ a // comment+/";
 ---
 
 (source_file
-  (manifest_constant
-    (manifest_declarator
-      (identifier)
+  (constant_declaration
+    (constant_declarator
+      (constant_identifier)
       (quoted_string_literal)))
-  (manifest_constant
-    (manifest_declarator
-      (identifier)
+  (constant_declaration
+    (constant_declarator
+      (constant_identifier)
       (quoted_string_literal)))
-  (manifest_constant
-    (manifest_declarator
-      (identifier)
+  (constant_declaration
+    (constant_declarator
+      (constant_identifier)
       (quoted_string_literal)))
-  (manifest_constant
-    (manifest_declarator
-      (identifier)
+  (constant_declaration
+    (constant_declarator
+      (constant_identifier)
       (quoted_string_literal))))
