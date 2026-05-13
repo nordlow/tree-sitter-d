@@ -29,7 +29,7 @@ unittest
             (integer_literal)))
         (constant_identifier
           (constant_declarator
-            (identifier)
+            (constant_identifier)
             (integer_literal)))
         (conditional_declaration
           (static_if_condition
