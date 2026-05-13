@@ -1662,7 +1662,7 @@ module.exports = grammar({
     enum_member_declaration: $ =>
       seq(
         repeat($._enum_member_attribute),
-        $.constant_identifier,
+        $._constant_identifier,
         optional(seq('=', $._expr)),
       ),
 
@@ -1676,7 +1676,7 @@ module.exports = grammar({
 
     _anonymous_enum_body: $ => seq('{', commaSep1Comma(choice($.anonymous_enum_member, $.enum_member_declaration)), '}'),
 
-    anonymous_enum_member: $ => seq($.type, $.constant_identifier, '=', $._expr),
+    anonymous_enum_member: $ => seq($.type, $._constant_identifier, '=', $._expr),
 
     function_declaration: $ =>
       seq(
