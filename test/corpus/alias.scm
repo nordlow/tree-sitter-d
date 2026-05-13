@@ -261,7 +261,7 @@ template  t(alias F, Args...)
 
 (source_file
   (template_declaration
-    (identifier)
+    (template_identifier)
     (template_parameters
       (template_parameter
         (identifier))
