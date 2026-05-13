@@ -71,9 +71,9 @@ unittest
                   (integer_literal)))
               (constant_identifier
                 (constant_declarator
-                  (identifier)
+                  (constant_identifier)
                   (integer_literal)))
               (constant_identifier
                 (constant_declarator
-                  (identifier)
+                  (constant_identifier)
                   (integer_literal))))))))))
