@@ -8,8 +8,8 @@ enum X { x }
 
 (source_file
   (enum_declaration
-    (identifier)
-    (enum_member
+    (type_identifier)
+    (enum_member_declaration
       (identifier))))
 
 ================================================================================
@@ -25,7 +25,7 @@ enum X : int { x }
     (identifier)
     (type
       (identifier))
-    (enum_member
+    (enum_member_declaration
       (identifier))))
 
 ================================================================================
@@ -39,10 +39,10 @@ enum X { x = 1, y = 2 }
 (source_file
   (enum_declaration
     (identifier)
-    (enum_member
+    (enum_member_declaration
       (identifier)
       (integer_literal))
-    (enum_member
+    (enum_member_declaration
       (identifier)
       (integer_literal))))
 
@@ -69,7 +69,7 @@ enum X { x, }
 (source_file
   (enum_declaration
     (identifier)
-    (enum_member
+    (enum_member_declaration
       (identifier))))
 
 ================================================================================
@@ -95,7 +95,7 @@ enum { x }
 
 (source_file
   (anonymous_enum_declaration
-    (enum_member
+    (enum_member_declaration
       (identifier))))
 
 ================================================================================
@@ -107,7 +107,7 @@ enum { x, }
 
 (source_file
   (anonymous_enum_declaration
-    (enum_member
+    (enum_member_declaration
       (identifier))))
 
 ================================================================================
@@ -119,7 +119,7 @@ enum { x = 1 }
 
 (source_file
   (anonymous_enum_declaration
-    (enum_member
+    (enum_member_declaration
       (identifier)
       (integer_literal))))
 
@@ -157,9 +157,9 @@ enum {
         (identifier))
       (identifier)
       (integer_literal))
-    (enum_member
+    (enum_member_declaration
       (identifier))
-    (enum_member
+    (enum_member_declaration
       (identifier)
       (integer_literal))))
 
@@ -183,35 +183,35 @@ enum
   (anonymous_enum_declaration
     (at_attribute
       (quoted_string_literal))
-    (enum_member
+    (enum_member_declaration
       (identifier))
-    (enum_member
+    (enum_member_declaration
       (at_attribute
         (quoted_string_literal))
       (identifier))
-    (enum_member
+    (enum_member_declaration
       (at_attribute
         (quoted_string_literal))
       (at_attribute
         (quoted_string_literal))
       (identifier))
-    (enum_member
+    (enum_member_declaration
       (at_attribute
         (identifier))
       (identifier))
-    (enum_member
+    (enum_member_declaration
       (at_attribute
         (identifier))
       (at_attribute
         (identifier))
       (identifier))
-    (enum_member
+    (enum_member_declaration
       (at_attribute
         (quoted_string_literal))
       (at_attribute
         (identifier))
       (identifier))
-    (enum_member
+    (enum_member_declaration
       (at_attribute
         (identifier))
       (at_attribute
