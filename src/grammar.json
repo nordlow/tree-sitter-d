@@ -9202,7 +9202,7 @@
                   "name": "type",
                   "content": {
                     "type": "SYMBOL",
-                    "name": "_type_identifier"
+                    "name": "type"
                   }
                 }
               ]
