@@ -8,7 +8,7 @@ struct s {}
 
 (source_file
   (struct_declaration
-    (identifier)
+    (type_identifier)
     (aggregate_body)))
 
 ==================
@@ -23,7 +23,7 @@ struct s {
 
 (source_file
   (struct_declaration
-    (identifier)
+    (type_identifier)
     (aggregate_body
       (variable_declaration
         (type
@@ -44,7 +44,7 @@ struct s {
 
 (source_file
   (struct_declaration
-    (identifier)
+    (type_identifier)
     (aggregate_body
       (variable_declaration
         (type
