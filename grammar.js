@@ -756,7 +756,6 @@ module.exports = grammar({
           $.assignment_expression,
           $.ternary_expression,
           $._binary_expression,
-          $.ternary_expression,
           $._unary_expr,
         ),
       ),
