@@ -375,15 +375,6 @@
       "named": true,
       "value": "type_identifier"
     },
-    "_enum_member_identifier": {
-      "type": "ALIAS",
-      "content": {
-        "type": "SYMBOL",
-        "name": "identifier"
-      },
-      "named": true,
-      "value": "enum_member_identifier"
-    },
     "_field_identifier": {
       "type": "ALIAS",
       "content": {
@@ -9157,7 +9148,7 @@
         },
         {
           "type": "SYMBOL",
-          "name": "_enum_member_identifier"
+          "name": "identifier"
         },
         {
           "type": "CHOICE",
@@ -9308,7 +9299,7 @@
         },
         {
           "type": "SYMBOL",
-          "name": "_enum_member_identifier"
+          "name": "identifier"
         },
         {
           "type": "STRING",
