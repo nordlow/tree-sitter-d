@@ -20,7 +20,7 @@ unittest
 --------------------------------------------------------------------------------
 
 (source_file
-  (unittest_declaration
+  (unittest_definition
     (compound_statement
       (conditional_declaration
         (static_if_condition

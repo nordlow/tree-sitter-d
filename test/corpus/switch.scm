@@ -13,7 +13,7 @@ unittest {
 --------------------------------------------------------------------------------
 
 (source_file
-  (unittest_declaration
+  (unittest_definition
     (compound_statement
       (switch_statement
         (identifier)
@@ -41,7 +41,7 @@ unittest {
 --------------------------------------------------------------------------------
 
 (source_file
-  (unittest_declaration
+  (unittest_definition
     (compound_statement
       (switch_statement
         (identifier)
@@ -67,7 +67,7 @@ unittest {
 --------------------------------------------------------------------------------
 
 (source_file
-  (unittest_declaration
+  (unittest_definition
     (compound_statement
       (switch_statement
         (identifier)

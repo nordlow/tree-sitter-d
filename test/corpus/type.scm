@@ -47,7 +47,7 @@ unittest {
 --------------------------------------------------------------------------------
 
 (source_file
-  (unittest_declaration
+  (unittest_definition
     (compound_statement
       (variable_declaration
         (type
@@ -64,7 +64,7 @@ unittest {
 --------------------------------------------------------------------------------
 
 (source_file
-  (unittest_declaration
+  (unittest_definition
     (compound_statement
       (variable_declaration
         (type
@@ -81,7 +81,7 @@ myType.subType x;
 --------------------------------------------------------------------------------
 
 (source_file
-  (unittest_declaration
+  (unittest_definition
     (compound_statement
       (variable_declaration
         (type

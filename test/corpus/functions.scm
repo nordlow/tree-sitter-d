@@ -150,7 +150,7 @@ unittest {
 --------------------------------------------------------------------------------
 
 (source_file
-  (unittest_declaration
+  (unittest_definition
     (compound_statement
       (expression_statement
         (expression_list
@@ -174,7 +174,7 @@ unittest {
 --------------------------------------------------------------------------------
 
 (source_file
-  (unittest_declaration
+  (unittest_definition
     (compound_statement
       (expression_statement
         (expression_list
@@ -200,7 +200,7 @@ unittest {
 --------------------------------------------------------------------------------
 
 (source_file
-  (unittest_declaration
+  (unittest_definition
     (compound_statement
       (expression_statement
         (expression_list
@@ -509,7 +509,7 @@ unittest {
 --------------------------------------------------------------------------------
 
 (source_file
-  (unittest_declaration
+  (unittest_definition
     (compound_statement
       (expression_statement
         (expression_list
@@ -529,7 +529,7 @@ unittest {
 --------------------------------------------------------------------------------
 
 (source_file
-  (unittest_declaration
+  (unittest_definition
     (compound_statement
       (expression_statement
         (expression_list
@@ -552,7 +552,7 @@ unittest {
 --------------------------------------------------------------------------------
 
 (source_file
-  (unittest_declaration
+  (unittest_definition
     (compound_statement
       (expression_statement
         (expression_list

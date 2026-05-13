@@ -5,7 +5,7 @@ unittest { with (x) x++; }
 --------------------------------------------------------------------------------
 
 (source_file
-  (unittest_declaration
+  (unittest_definition
     (compound_statement
       (with_statement
         (identifier)
@@ -22,7 +22,7 @@ unittest { with (x) int y = 0; }
 --------------------------------------------------------------------------------
 
 (source_file
-  (unittest_declaration
+  (unittest_definition
     (compound_statement
       (with_statement
         (identifier)

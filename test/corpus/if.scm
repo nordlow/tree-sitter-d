@@ -8,7 +8,7 @@ unittest {
 --------------------------------------------------------------------------------
 
 (source_file
-  (unittest_declaration
+  (unittest_definition
     (compound_statement
       (if_statement
         (if_condition)
@@ -28,7 +28,7 @@ unittest {
 --------------------------------------------------------------------------------
 
 (source_file
-  (unittest_declaration
+  (unittest_definition
     (compound_statement
       (if_statement
         (if_condition)
@@ -53,7 +53,7 @@ unittest {
 --------------------------------------------------------------------------------
 
 (source_file
-  (unittest_declaration
+  (unittest_definition
     (compound_statement
       (if_statement
         (if_condition
