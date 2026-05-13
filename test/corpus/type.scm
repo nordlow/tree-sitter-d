@@ -197,7 +197,7 @@ void f()
               (type
                 (identifier)
                 (integer_literal))))
-          (enum_member
+          (enum_member_declaration
             (identifier)
             (primary_expression
               (vector_type
