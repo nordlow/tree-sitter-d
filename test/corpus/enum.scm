@@ -82,7 +82,7 @@ enum X : Y;
 
 (source_file
   (enum_declaration
-    (identifier)
+    (type_identifier)
     (type
       (identifier))))
 
