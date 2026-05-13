@@ -5,3 +5,7 @@ libtree-sitter-d.a
 libtree-sitter-d.so
 src/parser.o
 src/scanner.o
+
+# Ignore these for now as adding this to the repo is wrong.
+src/parser.c
+src/scanner.c
