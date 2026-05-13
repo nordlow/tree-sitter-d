@@ -384,7 +384,7 @@ module.exports = grammar({
           $.interface_declaration,
           $.invariant_declaration,
           $.mixin_declaration,
-          $.mixin_template_declaration,
+          $.template_mixin_declaration,
           $.pragma_declaration,
           $.struct_declaration,
           $.template_declaration,
@@ -1944,7 +1944,7 @@ module.exports = grammar({
 
     template_constraint: $ => seq('if', '(', $._expression, ')'),
 
-    mixin_template_declaration: $ =>
+    template_mixin_declaration: $ =>
       seq(repeat($._attribute), 'mixin', $.template_declaration),
 
     template_mixin: $ =>
