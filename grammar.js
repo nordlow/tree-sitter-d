@@ -1443,8 +1443,6 @@ module.exports = grammar({
 
     asm_inline: $ => repeat1($._token_no_braces),
 
-    mixin_statement: $ => seq('mixin', '(', $._argument_list, ')', ';'),
-
     struct_declaration: $ =>
       seq(
         repeat($._attribute),
