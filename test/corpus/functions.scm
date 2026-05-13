@@ -496,7 +496,7 @@ enum x() {}
 
 (source_file
   (ERROR
-    (identifier)
+    (constant_identifier)
     (template_parameters)))
 
 ================================================================================
