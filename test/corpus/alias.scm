@@ -8,7 +8,7 @@ alias n1 = int;
 (source_file
   (alias_declaration
     (alias_initializer
-      (identifier)
+      (alias_identifier)
       (type
         (identifier)))))
 
@@ -22,7 +22,7 @@ alias n1 = extern int;
 (source_file
   (alias_declaration
     (alias_initializer
-      (identifier)
+      (alias_identifier)
       (storage_class)
       (type
         (identifier)))))
@@ -37,7 +37,7 @@ alias n1 = extern int[6];
 (source_file
   (alias_declaration
     (alias_initializer
-      (identifier)
+      (alias_identifier)
       (storage_class)
       (type
         (identifier)
@@ -53,7 +53,7 @@ alias n1 = int(primitive_type);
 (source_file
   (alias_declaration
     (alias_initializer
-      (identifier)
+      (alias_identifier)
       (type
         (identifier))
       (parameters
@@ -71,7 +71,7 @@ alias n1 = int(primitive_type) pure;
 (source_file
   (alias_declaration
     (alias_initializer
-      (identifier)
+      (alias_identifier)
       (type
         (identifier))
       (parameters
@@ -90,7 +90,7 @@ alias n1 = f!(primitive_type);
 (source_file
   (alias_declaration
     (alias_initializer
-      (identifier)
+      (alias_identifier)
       (type
         (template_instance
           (identifier)
@@ -108,7 +108,7 @@ alias n1 = f!(primitive_type)(primitive_type);
 (source_file
   (alias_declaration
     (alias_initializer
-      (identifier)
+      (alias_identifier)
       (type
         (template_instance
           (identifier)
@@ -130,7 +130,7 @@ alias n1 = f => f++;
 (source_file
   (alias_declaration
     (alias_initializer
-      (identifier)
+      (alias_identifier)
       (function_literal
         (identifier)
         (postfix_expression
@@ -146,11 +146,11 @@ alias n1 = int,  n2 = char;
 (source_file
   (alias_declaration
     (alias_initializer
-      (identifier)
+      (alias_identifier)
       (type
         (identifier)))
     (alias_initializer
-      (identifier)
+      (alias_identifier)
       (type
         (identifier)))))
 
@@ -207,7 +207,7 @@ alias id = other.name;
 (source_file
   (alias_declaration
     (alias_initializer
-      (identifier)
+      (alias_identifier)
       (type
         (identifier)
         (identifier)))))
@@ -269,7 +269,7 @@ template  t(alias F, Args...)
         (identifier)))
     (alias_declaration
       (alias_initializer
-        (identifier)
+        (alias_identifier)
         (type
           (template_instance
             (identifier)
@@ -301,7 +301,7 @@ alias g_t = align(8) _gg_t[NREG];
 (source_file
   (alias_declaration
     (alias_initializer
-      (identifier)
+      (alias_identifier)
       (storage_class
         (align_attribute
           (integer_literal)))
