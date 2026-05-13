@@ -837,7 +837,7 @@
         "required": false,
         "types": [
           {
-            "type": "type_identifier",
+            "type": "type",
             "named": true
           }
         ]
@@ -927,11 +927,11 @@
           "named": true
         },
         {
-          "type": "delete_expression",
+          "type": "constant_identifier",
           "named": true
         },
         {
-          "type": "enum_member_identifier",
+          "type": "delete_expression",
           "named": true
         },
         {
@@ -4875,7 +4875,7 @@
     },
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
         {
           "type": "aggregate_body",
@@ -4915,10 +4915,6 @@
         },
         {
           "type": "template_parameters",
-          "named": true
-        },
-        {
-          "type": "type_identifier",
           "named": true
         },
         {
@@ -6596,7 +6592,7 @@
         "required": false,
         "types": [
           {
-            "type": "type_identifier",
+            "type": "type",
             "named": true
           }
         ]
@@ -6690,15 +6686,15 @@
           "named": true
         },
         {
+          "type": "constant_identifier",
+          "named": true
+        },
+        {
           "type": "delete_expression",
           "named": true
         },
         {
           "type": "deprecated_attribute",
-          "named": true
-        },
-        {
-          "type": "enum_member_identifier",
           "named": true
         },
         {
@@ -19314,10 +19310,6 @@
   {
     "type": "enum",
     "named": false
-  },
-  {
-    "type": "enum_member_identifier",
-    "named": true
   },
   {
     "type": "exit",
