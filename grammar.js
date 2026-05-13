@@ -2181,10 +2181,6 @@ function commaSep1Comma(rule) {
   return seq(rule, repeat(seq(',', rule)), optional(','));
 }
 
-function commaSep(rule) {
-  return optional(commaSep1(rule));
-}
-
 function sep1(rule, delim) {
   return seq(rule, repeat(seq(delim, rule)));
 }
