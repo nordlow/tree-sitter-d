@@ -369,7 +369,7 @@ interface Stack {
 
 (source_file
   (interface_declaration
-    (identifier)
+    (type_identifier)
     (aggregate_body
       (function_declaration
         (type
