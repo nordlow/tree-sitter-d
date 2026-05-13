@@ -12,7 +12,7 @@ class C
 
 (source_file
   (class_declaration
-    (identifier)
+    (type_identifier)
     (aggregate_body
       (function_declaration
         (type
