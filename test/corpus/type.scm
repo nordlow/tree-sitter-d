@@ -191,14 +191,14 @@ void f()
     (function_body
       (compound_statement
         (enum_declaration
-          (identifier)
+          (type_identifier)
           (type
             (vector_type
               (type
                 (identifier)
                 (integer_literal))))
           (enum_member_declaration
-            (identifier)
+            (constant_identifier)
             (primary_expression
               (vector_type
                 (type
