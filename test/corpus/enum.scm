@@ -10,7 +10,7 @@ enum X { x }
   (enum_declaration
     (type_identifier)
     (enum_member_declaration
-      (identifier))))
+      (constant_identifier))))
 
 ================================================================================
 Typed enum
@@ -26,7 +26,7 @@ enum X : int { x }
     (type
       (identifier))
     (enum_member_declaration
-      (identifier))))
+      (constant_identifier))))
 
 ================================================================================
 Enum with initialized values
@@ -40,10 +40,10 @@ enum X { x = 1, y = 2 }
   (enum_declaration
     (type_identifier)
     (enum_member_declaration
-      (identifier)
+      (constant_identifier)
       (integer_literal))
     (enum_member_declaration
-      (identifier)
+      (constant_identifier)
       (integer_literal))))
 
 ================================================================================
@@ -70,7 +70,7 @@ enum X { x, }
   (enum_declaration
     (type_identifier)
     (enum_member_declaration
-      (identifier))))
+      (constant_identifier))))
 
 ================================================================================
 Typed enum with missing body
@@ -96,7 +96,7 @@ enum { x }
 (source_file
   (anonymous_enum_declaration
     (enum_member_declaration
-      (identifier))))
+      (constant_identifier))))
 
 ================================================================================
 Anonymous trailing comma
@@ -108,7 +108,7 @@ enum { x, }
 (source_file
   (anonymous_enum_declaration
     (enum_member_declaration
-      (identifier))))
+      (constant_identifier))))
 
 ================================================================================
 Anonymous enum values
@@ -120,7 +120,7 @@ enum { x = 1 }
 (source_file
   (anonymous_enum_declaration
     (enum_member_declaration
-      (identifier)
+      (constant_identifier)
       (integer_literal))))
 
 ================================================================================
@@ -135,7 +135,7 @@ enum { int x = 1 }
     (anonymous_enum_member
       (type
         (identifier))
-      (identifier)
+      (constant_identifier)
       (integer_literal))))
 
 ================================================================================
@@ -155,12 +155,12 @@ enum {
     (anonymous_enum_member
       (type
         (identifier))
-      (identifier)
+      (constant_identifier)
       (integer_literal))
     (enum_member_declaration
-      (identifier))
+      (constant_identifier))
     (enum_member_declaration
-      (identifier)
+      (constant_identifier)
       (integer_literal))))
 
 ================================================================================
@@ -184,36 +184,36 @@ enum
     (at_attribute
       (quoted_string_literal))
     (enum_member_declaration
-      (identifier))
+      (constant_identifier))
     (enum_member_declaration
       (at_attribute
         (quoted_string_literal))
-      (identifier))
-    (enum_member_declaration
-      (at_attribute
-        (quoted_string_literal))
-      (at_attribute
-        (quoted_string_literal))
-      (identifier))
-    (enum_member_declaration
-      (at_attribute
-        (identifier))
-      (identifier))
-    (enum_member_declaration
-      (at_attribute
-        (identifier))
-      (at_attribute
-        (identifier))
-      (identifier))
+      (constant_identifier))
     (enum_member_declaration
       (at_attribute
         (quoted_string_literal))
       (at_attribute
+        (quoted_string_literal))
+      (constant_identifier))
+    (enum_member_declaration
+      (at_attribute
         (identifier))
-      (identifier))
+      (constant_identifier))
+    (enum_member_declaration
+      (at_attribute
+        (identifier))
+      (at_attribute
+        (identifier))
+      (constant_identifier))
+    (enum_member_declaration
+      (at_attribute
+        (quoted_string_literal))
+      (at_attribute
+        (identifier))
+      (constant_identifier))
     (enum_member_declaration
       (at_attribute
         (identifier))
       (at_attribute
         (quoted_string_literal))
-      (identifier))))
+      (constant_identifier))))
