@@ -317,7 +317,7 @@ struct S { int n; alias this = n; }
 
 (source_file
   (struct_declaration
-    (identifier)
+    (type_identifier)
     (aggregate_body
       (variable_declaration
         (type
